@@ -1,0 +1,35 @@
+{
+  "storage_path": "storage",
+  "log_level": "INFO",
+  "log_file": "storage/logs/ai_system.log",
+  "default_model_type": "text_classifier",
+  "auto_update_check": true,
+  "update_interval_hours": 24,
+  "max_interaction_history": 1000,
+  "backup_enabled": true,
+  
+  "preprocessing": {
+    "remove_stopwords": true,
+    "scaling_method": "standard",
+    "handle_missing": "mean"
+  },
+  
+  "model_settings": {
+    "confidence_threshold": 0.5,
+    "incremental_learning": true,
+    "auto_save": true
+  },
+  
+  "updater": {
+    "base_url": "https://your-update-server.com/api",
+    "api_key": "your_api_key_here",
+    "timeout": 30,
+    "max_retries": 3
+  },
+  
+  "performance": {
+    "enable_caching": true,
+    "cache_ttl": 300,
+    "log_metrics": true
+  }
+}

@@ -1,0 +1,80 @@
+# AI System Requirements
+# Compatible with existing ai_engine and utils implementations
+
+# Core Machine Learning Libraries
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Text Processing
+nltk>=3.8.1
+
+# HTTP Requests and Online Updates
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Data Validation and Type Checking
+typing-extensions>=4.7.0
+
+# Performance Monitoring (optional but recommended)
+psutil>=5.9.0
+
+# Development and Testing (optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Built-in Libraries (no installation required)
+# sqlite3 - Database operations
+# pickle - Model serialization
+# json - Configuration and data storage
+# logging - System logging
+# os - Operating system interface
+# sys - System-specific parameters
+# time - Time-related functions
+# datetime - Date and time handling
+# pathlib - Path operations
+# hashlib - Hash functions
+# functools - Higher-order functions
+# contextlib - Context managers
+# traceback - Exception tracing
+# re - Regular expressions
+# string - String operations
+# math - Mathematical functions
+# platform - Platform identification
+
+# Optional Enhanced Features
+# Uncomment these for additional functionality:
+
+# Advanced Text Processing
+# spacy>=3.6.0
+# textblob>=0.17.1
+
+# Advanced Numerical Computing  
+# scipy>=1.11.0
+
+# Data Visualization (for debugging/analysis)
+# matplotlib>=3.7.0
+# seaborn>=0.12.0
+
+# Configuration File Formats
+# pyyaml>=6.0.1
+# toml>=0.10.2
+
+# Enhanced Logging
+# colorlog>=6.7.0
+
+# Database Alternatives
+# sqlalchemy>=2.0.0
+
+# Web Interface (future enhancement)
+# flask>=2.3.0
+# fastapi>=0.100.0
+
+# API Rate Limiting
+# ratelimit>=2.2.1
+
+# Memory Profiling
+# memory-profiler>=0.61.0
+
+# Progress Bars
+# tqdm>=4.65.0
