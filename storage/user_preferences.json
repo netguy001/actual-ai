@@ -1,1 +1,164 @@
-{}
+{
+  "conversation_patterns": [
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] search result: china,",
+      "timestamp": "2025-08-14T14:17:35.247502"
+    },
+    {
+      "user_input_pattern": "823728328+23982932983",
+      "ai_response_pattern": "result 823728328+23982932983 24806661311",
+      "timestamp": "2025-08-14T14:19:24.031093"
+    },
+    {
+      "user_input_pattern": "what matrix",
+      "ai_response_pattern": "'matrix' could refer several things:",
+      "timestamp": "2025-08-14T14:19:43.621122"
+    },
+    {
+      "user_input_pattern": "what matrix biology",
+      "ai_response_pattern": "according wikipedia: biology, matrix (pl.:",
+      "timestamp": "2025-08-14T14:20:15.982916"
+    },
+    {
+      "user_input_pattern": "what instagram",
+      "ai_response_pattern": "according wikipedia: instagram american photo",
+      "timestamp": "2025-08-14T14:20:39.024344"
+    },
+    {
+      "user_input_pattern": "piece real",
+      "ai_response_pattern": "understand you're asking about piece",
+      "timestamp": "2025-08-14T14:21:55.067595"
+    },
+    {
+      "user_input_pattern": "mukesh",
+      "ai_response_pattern": "according wikipedia: mukesh madhavan (born",
+      "timestamp": "2025-08-14T14:41:42.164531"
+    },
+    {
+      "user_input_pattern": "current india",
+      "ai_response_pattern": "here latest news headlines: maps:",
+      "timestamp": "2025-08-14T14:42:17.543723"
+    },
+    {
+      "user_input_pattern": "what national flower india",
+      "ai_response_pattern": "according wikipedia: government india designated",
+      "timestamp": "2025-08-14T14:43:15.215763"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] [context: [learned response]",
+      "timestamp": "2025-08-14T14:47:10.255865"
+    },
+    {
+      "user_input_pattern": "dhoni",
+      "ai_response_pattern": "according wikipedia: m.s. dhoni: untold",
+      "timestamp": "2025-08-14T14:47:53.713929"
+    },
+    {
+      "user_input_pattern": "what blood",
+      "ai_response_pattern": "according wikipedia: blood body fluid",
+      "timestamp": "2025-08-14T14:48:19.829755"
+    },
+    {
+      "user_input_pattern": "what a^2-b^2",
+      "ai_response_pattern": "'a^2-b^2' could refer several things:",
+      "timestamp": "2025-08-14T14:49:14.384995"
+    },
+    {
+      "user_input_pattern": "samantha",
+      "ai_response_pattern": "according wikipedia: samantha english feminine",
+      "timestamp": "2025-08-14T14:49:28.521291"
+    },
+    {
+      "user_input_pattern": "what fuck",
+      "ai_response_pattern": "understand you're asking about 'what",
+      "timestamp": "2025-08-14T14:49:52.737192"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] [context: [learned response]",
+      "timestamp": "2025-08-14T15:00:34.887853"
+    },
+    {
+      "user_input_pattern": "isha ambani",
+      "ai_response_pattern": "according wikipedia: mukesh dhirubhai ambani",
+      "timestamp": "2025-08-14T15:01:35.497586"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] [context: [learned response]",
+      "timestamp": "2025-08-14T15:07:03.087472"
+    },
+    {
+      "user_input_pattern": "georgina",
+      "ai_response_pattern": "'georgina' could refer several things:",
+      "timestamp": "2025-08-14T15:07:41.884414"
+    },
+    {
+      "user_input_pattern": "sunny leone",
+      "ai_response_pattern": "according wikipedia: sunny leone canadian-american",
+      "timestamp": "2025-08-14T15:08:08.608754"
+    },
+    {
+      "user_input_pattern": "level pornstar female",
+      "ai_response_pattern": "current date time: thursday, august",
+      "timestamp": "2025-08-14T15:08:37.131298"
+    },
+    {
+      "user_input_pattern": "what",
+      "ai_response_pattern": "'sex' could refer several things:",
+      "timestamp": "2025-08-14T15:09:00.045017"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] [context: [learned response]",
+      "timestamp": "2025-08-14T15:15:08.170382"
+    },
+    {
+      "user_input_pattern": "what",
+      "ai_response_pattern": "according wikipedia: dimethyltryptamine (dmt), also",
+      "timestamp": "2025-08-14T15:16:15.375608"
+    },
+    {
+      "user_input_pattern": "what",
+      "ai_response_pattern": "'mpb' could refer several things:",
+      "timestamp": "2025-08-14T15:16:30.212205"
+    },
+    {
+      "user_input_pattern": "male pattern baldness",
+      "ai_response_pattern": "understand you're asking about 'male",
+      "timestamp": "2025-08-14T15:19:28.247721"
+    },
+    {
+      "user_input_pattern": "access google.com",
+      "ai_response_pattern": "understand you're asking about 'access",
+      "timestamp": "2025-08-14T15:19:46.703898"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "understand you're asking about 'who",
+      "timestamp": "2025-08-14T15:19:59.584940"
+    },
+    {
+      "user_input_pattern": "",
+      "ai_response_pattern": "[learned response] [context: [learned response]",
+      "timestamp": "2025-08-14T15:29:20.837542"
+    },
+    {
+      "user_input_pattern": "nobita",
+      "ai_response_pattern": "according wikipedia: nobita nobi (japanese:",
+      "timestamp": "2025-08-14T15:30:16.021538"
+    },
+    {
+      "user_input_pattern": "shisuka",
+      "ai_response_pattern": "according wikipedia: chiyo nakamura (japanese:",
+      "timestamp": "2025-08-14T15:30:46.917242"
+    },
+    {
+      "user_input_pattern": "exiuit",
+      "ai_response_pattern": "understand you're asking about 'exiuit'.",
+      "timestamp": "2025-08-14T15:31:17.356741"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "session_start": 1755163800.9375365,
+  "session_duration": 200.64344906806946,
+  "metrics": {
+    "response_time": [
+      {
+        "timestamp": 1755163876.9977596,
+        "value": 42.09015703201294
+      },
+      {
+        "timestamp": 1755163895.521104,
+        "value": 8.32449197769165
+      }
+    ],
+    "confidence": [
+      {
+        "timestamp": 1755163876.9977663,
+        "value": 0.9
+      },
+      {
+        "timestamp": 1755163895.5211067,
+        "value": 0.9
+      }
+    ],
+    "evaluation_score": [
+      {
+        "timestamp": 1755163876.9977698,
+        "value": 0.5
+      },
+      {
+        "timestamp": 1755163895.521108,
+        "value": 0.4977652406692505
+      }
+    ]
+  },
+  "summaries": {
+    "response_time": {
+      "count": 2,
+      "min": 8.32449197769165,
+      "max": 42.09015703201294,
+      "mean": 25.207324504852295,
+      "latest": 8.32449197769165
+    },
+    "confidence": {
+      "count": 2,
+      "min": 0.9,
+      "max": 0.9,
+      "mean": 0.9,
+      "latest": 0.9
+    },
+    "evaluation_score": {
+      "count": 2,
+      "min": 0.4977652406692505,
+      "max": 0.5,
+      "mean": 0.49888262033462527,
+      "latest": 0.4977652406692505
+    }
+  }
+}

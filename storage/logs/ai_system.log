@@ -276,3 +276,1729 @@ Query:
 2025-08-14 13:26:39 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
 2025-08-14 13:26:39 - root - INFO - Trained default text classifier with sample data
 2025-08-14 13:30:30 - ai_engine.smart_ai - ERROR - Error saving smart data: Object of type deque is not JSON serializable
+2025-08-14 13:33:02 - root - INFO - Starting new session: session_1755158582063_5ef53a3e
+2025-08-14 13:33:02 - ai_engine.enhanced_ai - INFO - Loaded 21 conversation records
+2025-08-14 13:33:02 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 9 entries
+2025-08-14 13:33:02 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 13:33:02 - ai_engine.smart_ai - ERROR - Error loading smart data: Expecting value: line 18 column 29 (char 1140)
+2025-08-14 13:33:02 - root - INFO - Initializing storage system...
+2025-08-14 13:33:02 - root - ERROR - System initialization failed: 'version'
+2025-08-14 13:33:02 - root - INFO - Creating fallback model...
+2025-08-14 13:33:02 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 13:33:02 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 13:33:02 - root - INFO - Trained default text classifier with sample data
+2025-08-14 14:15:43 - ai_engine.smart_ai - ERROR - Error saving smart data: Object of type deque is not JSON serializable
+2025-08-14 14:15:43 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:15:43 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:15:43 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:15:43 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 14:15:43 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:15:43 - root - INFO - Session ended. Duration: 54.8 minutes, Interactions: 0
+2025-08-14 14:15:43 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755161143'
+2025-08-14 14:15:43 - ai_engine.smart_ai - ERROR - Error saving smart data: Object of type deque is not JSON serializable
+2025-08-14 14:15:43 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:15:43 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:15:43 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:15:43 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 14:15:43 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:15:43 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755161143'
+2025-08-14 14:15:43 - root - INFO - Session ended. Duration: 54.8 minutes, Interactions: 0
+2025-08-14 14:17:30 - root - INFO - Starting new session: session_1755161250385_778c48d9
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded 21 conversation records
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 9 entries
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:17:30 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 14:17:30 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 14:17:30 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:17:30 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 14:17:30 - ai_engine.smart_ai - ERROR - Error loading smart data: Expecting value: line 18 column 29 (char 484)
+2025-08-14 14:17:30 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 14:17:30 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 14:17:30 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 14:17:30 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 14:17:30 - root - INFO - Initializing storage system...
+2025-08-14 14:17:30 - root - ERROR - System initialization failed: 'version'
+2025-08-14 14:17:30 - root - INFO - Creating fallback model...
+2025-08-14 14:17:30 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 14:17:30 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 14:17:30 - root - INFO - Trained default text classifier with sample data
+2025-08-14 14:17:34 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:17:35 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:17:35 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 14:17:36 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 14:17:40 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 14:17:51 - root - INFO - Starting new session: session_1755161271717_8359340c
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded 21 conversation records
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 9 entries
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:17:51 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 14:17:51 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 14:17:51 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:17:51 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 14:17:51 - ai_engine.smart_ai - ERROR - Error loading smart data: Expecting value: line 18 column 29 (char 484)
+2025-08-14 14:17:51 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 14:17:51 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 14:17:51 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 14:17:51 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 14:17:51 - root - INFO - Initializing storage system...
+2025-08-14 14:17:51 - root - ERROR - System initialization failed: 'version'
+2025-08-14 14:17:51 - root - INFO - Creating fallback model...
+2025-08-14 14:17:51 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 14:17:51 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 14:17:51 - root - INFO - Trained default text classifier with sample data
+2025-08-14 14:17:55 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:17:55 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:17:55 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 14:17:55 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 14:17:58 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 14:17:58 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 14:17:58 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.410
+2025-08-14 14:17:58 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 14:17:58 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.410
+2025-08-14 14:18:14 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 14:18:14 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.410
+2025-08-14 14:18:15 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 14:18:15 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.410
+2025-08-14 14:18:24 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:18:29 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'musk': Page id "e on musk" does not match any pages. Try another id!
+2025-08-14 14:18:30 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'elon musk': Page id "e on musk" does not match any pages. Try another id!
+2025-08-14 14:18:30 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:18:34 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nElon Musk is the wealthiest person in the world, with an estimated net worth of US$381 billion as of May 2025, according to the Bloomberg Billionaires Index, and $424.7 billion according to Forbes, primarily from his ownership stakes in Tesla and SpaceX. However, in early 2025 he was worth over $487 billion according to Forbes \nHaving been first listed on the Forbes Billionaires List in 2012, around 75% of Musk\'s wealth was derived from Tesla stock in November 2020. Describing himself as "cash poor", he became the first person in the world to have a net worth above $300 billion a year later. By December 2024, he became the first person to reach a net worth of $400 billion.\n\n\n== History ==\nElon Musk made $175.8 million when PayPal was sold to eBay in October 2002.\n\nSource: https://en.wikipedia.org/wiki/Wealth_of_Elon_Musk', 'type': 'wikipedia', 'title': 'Wealth of Elon Musk', 'url': 'https://en.wikipedia.org/wiki/Wealth_of_Elon_Musk'}
+2025-08-14 14:18:35 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.478
+2025-08-14 14:18:35 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.478
+2025-08-14 14:18:54 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:18:56 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:18:57 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't find specific information about 'mukwsh amabani'. Try rephrasing your question or being more specific.", 'type': 'factual'}
+2025-08-14 14:18:57 - root - ERROR - Enhanced AI error: Enhanced AI failed
+2025-08-14 14:18:57 - root - ERROR - Error processing input: Enhanced AI failed
+2025-08-14 14:18:57 - root - WARNING - All AI systems failed, falling back to original model
+2025-08-14 14:19:09 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:19:13 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:19:14 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't find specific information about 'mukesh amabani'. Try rephrasing your question or being more specific.", 'type': 'factual'}
+2025-08-14 14:19:14 - root - ERROR - Enhanced AI error: Enhanced AI failed
+2025-08-14 14:19:14 - root - ERROR - Error processing input: Enhanced AI failed
+2025-08-14 14:19:14 - root - WARNING - All AI systems failed, falling back to original model
+2025-08-14 14:19:23 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:19:24 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:19:24 - root - INFO - Enhanced AI result: {'success': True, 'response': 'The result of 823728328+23982932983 = 24806661311', 'type': 'math', 'expression': '823728328+23982932983', 'result': 24806661311, 'method': 'basic_eval'}
+2025-08-14 14:19:24 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 14:19:24 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 14:19:38 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:19:41 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:19:43 - root - INFO - Enhanced AI result: {'success': True, 'response': "'matrix' could refer to several things:\n\n1. Matrix (mathematics)\n2. Matrix (logic)\n3. Matrix (biology)\n4. Matrix (chemical analysis)\n5. Matrix (geology)\n\nPlease be more specific.", 'type': 'wikipedia_disambiguation'}
+2025-08-14 14:19:43 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:19:43 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.630
+2025-08-14 14:19:43 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.630
+2025-08-14 14:20:03 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:20:12 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 3, Confidence: 0.800
+2025-08-14 14:20:15 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nIn biology, matrix (pl.: matrices) is the material (or tissue) in between a eukaryotic organism's cells.\nA structure(not arrangement) of connective tissues is an extracellular matrix. Fingernails and toenails grow from matrices. It is found in various connective tissues.\n\nSource: https://en.wikipedia.org/wiki/Matrix_(biology)", 'type': 'wikipedia', 'title': 'Matrix (biology)', 'url': 'https://en.wikipedia.org/wiki/Matrix_(biology)'}
+2025-08-14 14:20:15 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.562
+2025-08-14 14:20:16 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.562
+2025-08-14 14:20:32 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:20:36 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:20:39 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nInstagram is an American photo and short-form video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tags and locations, view trending content, like photos, and follow other users to add their content to a personal feed.\n\nSource: https://en.wikipedia.org/wiki/Instagram", 'type': 'wikipedia', 'title': 'Instagram', 'url': 'https://en.wikipedia.org/wiki/Instagram'}
+2025-08-14 14:20:39 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.637
+2025-08-14 14:20:39 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.637
+2025-08-14 14:21:34 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:21:39 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'piecce': Page id "happy metal" does not match any pages. Try another id!
+2025-08-14 14:21:41 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'one piecce': Page id "happy metal" does not match any pages. Try another id!
+2025-08-14 14:21:41 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:21:44 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't find specific information about 'one piecce'. Try rephrasing your question or being more specific.", 'type': 'factual'}
+2025-08-14 14:21:44 - root - ERROR - Enhanced AI error: Enhanced AI failed
+2025-08-14 14:21:44 - root - ERROR - Error processing input: Enhanced AI failed
+2025-08-14 14:21:44 - root - WARNING - All AI systems failed, falling back to original model
+2025-08-14 14:21:54 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:21:55 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:21:55 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'is one piece real'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 14:21:55 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:21:55 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.770
+2025-08-14 14:21:55 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.770
+2025-08-14 14:22:13 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:22:20 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 3, Confidence: 0.800
+2025-08-14 14:22:22 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nMukesh Dhirubhai Ambani (born 19 April 1957) is an Indian billionaire and businessman who is the chairman and managing director of Reliance Industries. As of May 2025, he is the richest person in Asia and 13th richest in the world, with a net worth of US$108 billion.\nSometimes characterized as a plutocrat, he has attracted both fame and notoriety for reports of market manipulation, political corruption, cronyism, and exploitation.\nIn October 2024, Ambani was ranked 1st on the Forbes list of India's 100 richest tycoons, with a net worth of $119.5 billion.\n\nSource: https://en.wikipedia.org/wiki/Mukesh_Ambani", 'type': 'wikipedia', 'title': 'Mukesh Ambani', 'url': 'https://en.wikipedia.org/wiki/Mukesh_Ambani'}
+2025-08-14 14:22:22 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:22:22 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 14:22:22 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 14:23:38 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:23:42 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'was': "Was" may refer to: 
+to be
+David Was
+Don Was
+W. A. Sibly
+Was (novel)
+Go Down, Moses
+Folke Rabe
+Was (Not Was)
+IBM WebSphere Application Server
+Windows Activation Services
+All airports serving the Washington, D.C. area
+Washington Union Station
+Washington Commanders
+Washington Commanders
+Washington Wizards
+Washington Capitals
+Washington Nationals
+Was-sceptre
+Was (horse)
+We Are Singaporeans
+Wearne's Air Service
+Welsh Ambulance Service
+Wiskott–Aldrich syndrome
+World Association for Sexual Health
+Wass (disambiguation)
+WA (disambiguation)
+2025-08-14 14:23:44 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for '14th': Page id "1 number" does not match any pages. Try another id!
+2025-08-14 14:23:47 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:23:47 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'Who was the 14th President of the United States?' -> 'who was the 14th president of the united states?'
+2025-08-14 14:23:51 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nFranklin Pierce (November 23, 1804 – October 8, 1869) was the 14th president of the United States, serving from 1853 to 1857. A northern Democrat who believed that the abolitionist movement was a fundamental threat to the nation's unity, he alienated anti-slavery groups by signing the Kansas–Nebraska Act and enforcing the Fugitive Slave Act. Conflict between North and South continued after Pierce's presidency, and, after Abraham Lincoln was elected president in 1860, the Southern states seceded, resulting in the American Civil War.\nPierce was born in New Hampshire, the son of state governor Benjamin Pierce.\n\nSource: https://en.wikipedia.org/wiki/Franklin_Pierce", 'type': 'general'}
+2025-08-14 14:23:51 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 14:23:51 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 14:26:24 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:26:32 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'capital': "Capital" may refer to: 
+Capital city
+Capital region
+List of national capitals
+Capital letter
+Capital (economics)
+Capital (Marxism)
+Economic capital
+Financial capital
+Capital good
+Human capital
+Natural capital
+Public capital
+Social capital
+Capital (architecture)
+The Capital (building)
+Capital (fortification)
+Capital (novel)
+Das Kapital
+Capital in the Twenty-First Century
+Capital: The Eruption of Delhi
+Capital (French magazine)
+Capital (German magazine)
+Kapital (magazine)
+Capital (Bulgarian newspaper)
+Kapital (newspaper)
+Capital (Romanian newspaper)
+Capital (Ukrainian newspaper)
+Capital (Ethiopia)
+A Capital
+Capital New York
+The Capital
+La Capital
+La Capital (Mar del Plata)
+La Capitale
+Capital (radio network)
+Capital (film)
+Capital (British TV series)
+Capital (Iranian TV series)
+Canal Capital
+Capital TV
+Capital TV (Belarus)
+Capital TV (Cardiff)
+CTC (TV station)
+Capital Television (New Zealand)
+Capital TV (Nigeria)
+Capital TV (Malaysia)
+Capital FM 88.9
+YLE Capital FM
+DWFT
+Capital (album)
+Capital (band)
+Another Day/Another Dollar
+Capital College (disambiguation)
+Capital Community College
+Capital University
+Capital University, Jharkhand
+La Capital Department, Santa Fe
+La Capital Department, San Luis
+City of Capitals
+Capital CF
+Albany Capitals
+Atlanta Capitals
+Baton Rouge Capitals
+Bonn Capitals
+Brampton Capitals
+Bratislava Capitals
+Brisbane Capitals
+Central Penn Capitals
+Columbus Capitals
+Cowichan Valley Capitals
+Delhi Capitals
+Delhi Capitals (basketball)
+Delhi Capitals (WPL)
+Dubai Capitals
+Edinburgh Capitals
+Edmonton Capitals
+India Capitals
+Indianapolis Capitals
+Cincinnati Wings
+Ottawa Capitals
+Québec Capitales
+Quezon City Capitals
+Pretoria Capitals
+Puerto Rico Capitals
+Raleigh Capitals
+Regina Capitals
+Rouyn-Noranda Capitales
+Sacramento Capitals
+Salem Capitals
+St. John's Capitals
+Springfield Capitals
+Summerside Western Capitals
+Tallahassee Capitals
+Topeka Capitals
+University of Canberra Capitals
+Victoria Capitals
+Vienna Capitals
+Walkerton Capitals
+Walkerton Capitals (PJHL)
+Washington Capitals
+Capital (sidewheeler)
+Capital Airlines (disambiguation)
+Capitals Limited
+Capital ship
+Capitals (typeface)
+Gaisano Capital
+La Capitale (company)
+Studio Capitale
+Capital punishment
+All pages with titles beginning with Capital 
+All pages with titles containing Capital
+Cap (disambiguation)
+Capitalism (disambiguation)
+Capitalization (disambiguation)
+Capital City (disambiguation)
+Capital Radio (disambiguation)
+Capital region (disambiguation)
+Old capital
+Captal
+Category:Capital (economics)
+
+
+v
+t
+e
+Academic
+Accumulation of capital
+Circulating
+Cultural
+Cross-cultural
+Educational
+Financial
+Fixed
+Human
+Individual
+Information
+Intangible
+Intellectual
+Natural
+Organizational
+Physical
+Political
+Public
+Reputation
+Sexual
+Social
+Symbolic
+Venture
+Working
+Liquid
+Constant
+Variable
+Fictitious
+Monopoly
+Financial capital
+2025-08-14 14:26:35 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 2, Confidence: 0.800
+2025-08-14 14:26:35 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'What’s the capital of Kazakhstan?' -> 'what’s the capital of kazakhstan?'
+2025-08-14 14:26:35 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't evaluate the expression 'whats the capital of kazakhstan'. Expression not recognized", 'type': 'math'}
+2025-08-14 14:26:35 - root - ERROR - Enhanced AI error: Enhanced AI failed
+2025-08-14 14:26:35 - root - ERROR - Error processing input: Enhanced AI failed
+2025-08-14 14:26:35 - root - WARNING - All AI systems failed, falling back to original model
+2025-08-14 14:27:10 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:27:17 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'entanglement': Page id "tanglement" does not match any pages. Try another id!
+2025-08-14 14:27:17 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 2, Confidence: 0.800
+2025-08-14 14:27:17 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'Explain quantum entanglement in simple words.' -> 'explain quantum entanglement in simple words.'
+2025-08-14 14:27:21 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Following up on explain quantum entanglement simple words.:\n\nAccording to Wikipedia:\n\nQuantum entanglement is the phenomenon where the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.\nMeasurements of physical properties such as position, momentum, spin, and polarization performed on entangled particles can, in some cases, be found to be perfectly correlated. For example, if a pair of entangled particles is generated such that their total spin is known to be zero, and one particle is found to have clockwise spin on a first axis, then the spin of the other particle, measured on the same axis, is found to be anticlockwise.\n\nSource: https://en.wikipedia.org/wiki/Quantum_entanglement', 'type': 'context_aware', 'topic': 'explain quantum entanglement simple words.'}
+2025-08-14 14:27:21 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.420
+2025-08-14 14:27:23 - ai_engine.error_analysis - INFO - Error analysis completed - Type: no_answer, Correction: True
+2025-08-14 14:27:23 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.420
+2025-08-14 14:27:47 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:27:48 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:27:48 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'How far is the Moon from Earth right now?' -> 'how far is the moon from earth right now?'
+2025-08-14 14:27:52 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Following up on far moon from earth right now?:\n\nAccording to Wikipedia:\n\nThe far side of the Moon is the hemisphere of the Moon that is facing away from Earth; the opposite hemisphere is the near side. It always has the same part of the Moon oriented away from Earth because of synchronous rotation in the Moon\'s orbit. Compared to the near side, the far side\'s terrain is rugged, with a multitude of impact craters and relatively few flat and dark lunar maria ("seas"), giving it an appearance closer to other barren places in the Solar System such as Mercury and Callisto. It has one of the largest craters in the Solar System, the South Pole–Aitken basin.\n\nSource: https://en.wikipedia.org/wiki/Far_side_of_the_Moon', 'type': 'context_aware', 'topic': 'far moon from earth right now?'}
+2025-08-14 14:27:52 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:27:52 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.756
+2025-08-14 14:27:52 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.756
+2025-08-14 14:28:16 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:28:17 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:28:17 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'My name is Alex. Remember that.' -> 'my name is alex. remember that.'
+2025-08-14 14:28:17 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'my name is alex. remember that.'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 14:28:17 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.770
+2025-08-14 14:28:17 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.770
+2025-08-14 14:28:31 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:28:35 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'name?': "page" may refer to: 
+Page (paper)
+Page (assistance occupation)
+Page (servant)
+Page (wedding attendant)
+Page (given name)
+Page (surname)
+Pages (surname)
+Alexander Hay Japp
+Page, Australian Capital Territory
+Division of Page
+Pages River
+The Pages
+The Pages Conservation Park
+Page, Arizona
+Page, Indiana
+Page, Minneapolis
+Page, Nebraska
+Page, North Dakota
+Page, Oklahoma
+Page, Virginia
+Page, Washington
+Page, West Virginia
+Page Airport (disambiguation)
+Page City, Kansas
+Page County, Iowa
+Page County, Virginia
+Page Township, Mille Lacs County, Minnesota
+Page Township, Cass County, North Dakota
+Page Valley
+Page (computer memory)
+Paging
+Bank switching
+Electronic page
+Multiple buffering
+Ogg page
+Pages (word processor)
+Web page
+pager
+Polyacrylamide gel electrophoresis
+SDS-PAGE
+Skirt lifter
+Page (novel)
+The Pages (novel)
+Hannah Weiner
+Page Music
+Page (South Korean band)
+Page (Swedish band)
+Pages (band)
+A Page
+Page (album)
+Tangerine
+Conqueror
+Pages (EP)
+Pages (Shane & Shane album)
+Pages (Sexy Zone album)
+Pages (Shaznay Lewis album)
+Bering Strait
+Julie Feeney
+Versailles
+Public address
+Kimberly-Clark
+Presidential Ambassadors for Global Entrepreneurship
+Pakistan & Gulf Economist
+Page Corps
+Page Organ Company
+Page playoff system
+International Geosphere-Biosphere Programme
+Page boy (disambiguation)
+Pager (disambiguation)
+Paige (disambiguation)
+All pages with titles beginning with Page
+All pages with titles containing Page
+2025-08-14 14:28:38 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'what’s name?': "What's in a Name?" may refer to: 
+Dave Dee, Dozy, Beaky, Mick & Tich (album)
+What's in a Name? (1934 film)
+What's in a Name? (2012 film)
+What's in a Name? (play)
+"What's in a Name?" (short story)
+What's in a Name? (Hercules: The Legendary Journeys)
+2025-08-14 14:28:38 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:28:38 - ai_engine.enhanced_ai - INFO - Auto-corrected: '. What’s my name?' -> '. what’s my name?'
+2025-08-14 14:28:40 - root - INFO - Enhanced AI result: {'success': True, 'response': '\'what’s name?\' could refer to several things:\n\n1. Dave Dee, Dozy, Beaky, Mick & Tich (album)\n2. What\'s in a Name? (1934 film)\n3. What\'s in a Name? (2012 film)\n4. What\'s in a Name? (play)\n5. "What\'s in a Name?" (short story)\n\nPlease be more specific.', 'type': 'general'}
+2025-08-14 14:28:40 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.527
+2025-08-14 14:28:40 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.527
+2025-08-14 14:28:51 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:28:51 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:28:51 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'Write a Python function that reverses a string.' -> 'write a python function that reverses a string.'
+2025-08-14 14:28:51 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'write a python function that reverses a string.'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 14:28:51 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:28:51 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 14:28:51 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 14:29:05 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:29:06 - ai_engine.knowledge_retrieval - ERROR - Error in time search: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-08-14 14:29:10 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'complexity': Page id "complexivity" does not match any pages. Try another id!
+2025-08-14 14:29:13 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'binary': "Binary" may refer to: 
+Binary number
+Binary function
+Binary operation
+Binary relation
+Finger binary
+Binary code
+Bit
+Binary file
+Executable
+Binary tree
+Binary-coded decimal
+Binary star
+Binary planet
+Binary asteroid
+Binary fission
+Binary phase
+Binary (Doctor Who audio)
+Binary (Carol Danvers)
+Binary (Carol Danvers)
+Binary (Marvel Cinematic Universe)
+Binary form
+Binary (Ani DiFranco album)
+Binary (Kay Tse album)
+"Binary" (song)
+Binary (novel)
+InterWorld
+Binary opposition
+Gender binary
+Binary logic (disambiguation)
+Binomial (disambiguation)
+Boolean (disambiguation)
+Secondary (disambiguation)
+Ternary (disambiguation)
+Unary (disambiguation)
+All pages with titles beginning with Binary
+All pages with titles containing Binary
+2025-08-14 14:29:13 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:29:13 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'What is the time complexity of binary search?' -> 'what is the time complexity of binary search?'
+2025-08-14 14:29:13 - root - INFO - Enhanced AI result: {'success': True, 'response': 'The current time is 02:29 PM', 'type': 'time', 'timestamp': '2025-08-14T14:29:13.255286'}
+2025-08-14 14:29:13 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.480
+2025-08-14 14:29:13 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.480
+2025-08-14 14:30:56 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:30:57 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:30:57 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?' -> 'if it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?'
+2025-08-14 14:31:12 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Following up on takes machines minutes make widgets, long would take 100 machines make 100 widgets?:\n\nAccording to Wikipedia:\n\nThe cognitive reflection test (CRT) is a task designed to measure a person\'s tendency to override an incorrect "gut" response and engage in further reflection to find a correct answer. However, the validity of the assessment as a measure of "cognitive reflection" or "intuitive thinking" is under question. It was first described in 2005 by Shane Frederick.\n\nSource: https://en.wikipedia.org/wiki/Cognitive_reflection_test', 'type': 'context_aware', 'topic': 'takes machines minutes make widgets, long would take 100 machines make 100 widgets?'}
+2025-08-14 14:31:12 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.561
+2025-08-14 14:31:12 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.561
+2025-08-14 14:31:33 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:31:34 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:31:34 - ai_engine.enhanced_ai - INFO - Auto-corrected: 'How many zeros are there in a billion?' -> 'how many zeros are there in a billion?'
+2025-08-14 14:31:41 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Following up on many zeros are there billion?:\n\nAccording to Wikipedia:\n\nIn mathematics, the Riemann hypothesis is the conjecture that the Riemann zeta function has its zeros only at the negative even integers and complex numbers with real part \u20601/2\u2060. Many consider it to be the most important unsolved problem in pure mathematics. It is of great interest in number theory because it implies results about the distribution of prime numbers. It was proposed by Bernhard Riemann (1859), after whom it is named.\n\nSource: https://en.wikipedia.org/wiki/Riemann_hypothesis', 'type': 'context_aware', 'topic': 'many zeros are there billion?'}
+2025-08-14 14:31:41 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:31:41 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.655
+2025-08-14 14:31:41 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.655
+2025-08-14 14:33:52 - root - INFO - Cleaned 9 expired cache entries
+2025-08-14 14:33:52 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 14:33:52 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:33:52 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:33:52 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:33:52 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:33:52 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:33:52 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 14:33:52 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 14:33:52 - root - INFO - Session ended. Duration: 16.4 minutes, Interactions: 9
+2025-08-14 14:33:52 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755162232'
+2025-08-14 14:33:52 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 14:33:52 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:33:52 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:33:52 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:33:52 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:33:52 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:33:52 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 14:33:52 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 14:33:52 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755162232'
+2025-08-14 14:33:52 - root - INFO - Session ended. Duration: 16.4 minutes, Interactions: 9
+2025-08-14 14:41:28 - root - INFO - Starting new session: session_1755162688586_9d976dea
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - INFO - Loaded 27 conversation records
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 21 entries
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:41:28 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 14:41:28 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 14:41:28 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:41:28 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 14:41:28 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 14:41:28 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:41:28 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:41:28 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 14:41:28 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 14:41:28 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 14:41:28 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 14:41:28 - root - INFO - Initializing storage system...
+2025-08-14 14:41:28 - root - ERROR - System initialization failed: 'version'
+2025-08-14 14:41:28 - root - INFO - Creating fallback model...
+2025-08-14 14:41:28 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 14:41:28 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 14:41:28 - root - INFO - Trained default text classifier with sample data
+2025-08-14 14:41:34 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:41:36 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:41:42 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nMukesh Madhavan (born Mukesh Babu; 5 March 1957), known mononymously as Mukesh, is an Indian actor, film producer, television presenter, and politician who predominantly works in Malayalam cinema besides also having sporadically appeared in Tamil-language films. In a film career spanning four decades, he has acted in over 275 Malayalam films.\nHe made his onscreen debut in the 1982 film Balloon in the leading role. His 1996 film Kaanaakkinaavu premiered at the IFFI and won the Nargis Dutt Award for Best Feature Film on National Integration.\n\nSource: https://en.wikipedia.org/wiki/Mukesh_(actor)', 'type': 'wikipedia', 'title': 'Mukesh (actor)', 'url': 'https://en.wikipedia.org/wiki/Mukesh_(actor)'}
+2025-08-14 14:41:42 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 14:41:45 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 14:42:02 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 14:42:02 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 14:42:02 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 14:42:16 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:42:17 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:42:17 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Here are the latest news headlines:\n\n1. In maps: The war-ravaged Ukrainian territories at the heart of the Trump-Putin summit\n   Kyiv has rejected ceding territory seized by Russia to secure a ceasefire. ...\n\n2. UK economic growth slows to 0.3% between April and June but beats forecasts\n   The economy expanded by 0.3% between April to June period, ahead of economists\' expectations....\n\n3. Humanitarian groups say Israel vetting process preventing life-saving aid getting into Gaza\n   More than 100 aid organisations say they are increasingly being told they are "not authorised" to de...\n\n4. Burial \'fat tax\' on wider plots at council cemetery criticised\n   The move at a Wolverhampton cemetery is due to high obesity rates, a council says....\n\n5. Relationship and Easter eggs - what we learned from Taylor Swift on Travis Kelce\'s podcast\n   The pop superstar gives a rare insight into their life together and reveals details of her new album...\n\n', 'type': 'news', 'source': 'BBC News RSS'}
+2025-08-14 14:42:17 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.728
+2025-08-14 14:42:17 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.728
+2025-08-14 14:42:55 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:42:58 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'national': "National" may refer to: 
+Nation
+Nationality
+National, Maryland
+National, Nevada
+National, Utah
+National, West Virginia
+National (brand)
+National Benzole
+National Book Store
+National Car Rental
+Eco Marine Power
+Media Rating Council
+National Motor Vehicle Company
+National Radio Company
+National Supermarkets
+National String Instrument Corporation
+National Dobro Corporation
+National Dobro Corporation
+National Reso-Phonic Guitars
+tricone
+Nationwide Mutual Insurance Company
+Championnat National
+National (curling)
+SK Nationalkameratene
+TIL National
+Cymanfa Ganu
+All pages with titles beginning with National 
+All pages with titles containing National
+Le National (disambiguation)
+Nacional (disambiguation)
+National Party (disambiguation)
+Nationals (disambiguation)
+The National (disambiguation)
+International (disambiguation)
+Transnational (disambiguation)
+Supranational (disambiguation)
+Subnational (disambiguation)
+Nationality (disambiguation)
+Nation (disambiguation)
+Nationalism
+2025-08-14 14:43:02 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'flower': "flow" may refer to: 
+Fluid flow
+Flow (geomorphology)
+Flow (mathematics)
+Flow (psychology)
+GRAIL
+Flow network
+Dataflow
+Microsoft Flow
+Neos Flow
+webMethods Flow
+FLOW (programming language)
+Flow (web browser)
+Flow (Google)
+Flow (journal)
+Flow Podcast
+The Flow (book)
+Flow (video game)
+Flow (comics)
+Flow 93.5
+Flow FM (Australia)
+Flow (Argentina)
+Flow (television)
+Flow TV
+Irena Salina
+Flow (1996 film)
+Flow (2014 film)
+Flow (2024 film)
+Flow (rapping)
+Flow (American band)
+Flow G
+Flow (Japanese band)
+Flow (rapper)
+Flow (Terence Blanchard album)
+Flow (Conception album)
+Flow (Foetus album)
+The Flow
+Flow (EP)
+Slowly Rolling Camera
+Thank You, Happy Birthday
+Cloud Wan
+Lovers Rock
+Flow (brand)
+Flow (policy debate)
+Flow (real estate company)
+All pages with titles beginning with Flow
+All pages with titles containing Flow
+Flo (disambiguation)
+Floe (disambiguation)
+Floh (disambiguation)
+Flou (disambiguation)
+Streamflow
+Phlow
+2025-08-14 14:43:05 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'india': "indian" may refer to: 
+India
+Indian people
+Indian diaspora
+Languages of India
+Indian English
+Indian cuisine
+Indigenous peoples of the Americas
+First Nations in Canada
+Native Americans in the United States
+Indigenous peoples of the Caribbean
+Indigenous languages of the Americas
+Indian, West Virginia
+The Indians
+Indian (film series)
+Indian (1996 film)
+Indian (2001 film)
+Indians (musician)
+unreleased song by Basshunter
+"Indian" (song)
+"Indians" (song)
+The Link
+Indian (card game)
+Indian soap opera
+Indians (play)
+Indians (sculpture)
+Akwesasne Indians
+Cleveland Guardians
+Frölunda HC
+Hannover Indians
+Indianapolis Indians
+Indios de Mayagüez
+Springfield Indians
+Indian Airlines
+Indian Motorcycle
+All pages with titles beginning with Indian
+All pages with titles containing Indian
+Hindustani (disambiguation)
+India (disambiguation)
+Indianism (disambiguation)
+Indien (disambiguation)
+Indo (disambiguation)
+Indio (disambiguation)
+Indus (disambiguation)
+Indies (disambiguation)
+Indiana (disambiguation)
+Indian Raj (disambiguation)
+Indian Creek (disambiguation)
+Indian Island (disambiguation)
+Indian Peak
+Indian Point (disambiguation)
+Indian River (disambiguation)
+Indian Run (disambiguation)
+Indian Ocean
+Indian subcontinent
+American Indians (disambiguation)
+Classification of the Indigenous peoples of the Americas
+Ethnic groups in South Asia
+Native American name controversy
+2025-08-14 14:43:05 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:43:15 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nThe Government of India has designated official national symbols that represent the Republic of India. These symbols serve as the representation of the identity of the country. When India obtained independence from the British Raj on 15 August 1947, the tricolour flag officially became the first national symbol of the Dominion of India. The Indian Rupee which was in circulation earlier was adopted as the official legal tender after independence.\n\nSource: https://en.wikipedia.org/wiki/National_symbols_of_India', 'type': 'wikipedia', 'title': 'National symbols of India', 'url': 'https://en.wikipedia.org/wiki/National_symbols_of_India'}
+2025-08-14 14:43:15 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:43:15 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.541
+2025-08-14 14:43:15 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.541
+2025-08-14 14:47:06 - root - INFO - Starting new session: session_1755163026139_3e97e9cc
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - INFO - Loaded 30 conversation records
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 23 entries
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:47:06 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 14:47:06 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 14:47:06 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:47:06 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 14:47:06 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 14:47:06 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 14:47:06 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 14:47:06 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 14:47:06 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 14:47:06 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 14:47:06 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 14:47:06 - root - INFO - Initializing storage system...
+2025-08-14 14:47:06 - root - ERROR - System initialization failed: 'version'
+2025-08-14 14:47:06 - root - INFO - Creating fallback model...
+2025-08-14 14:47:06 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 14:47:06 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 14:47:06 - root - INFO - Trained default text classifier with sample data
+2025-08-14 14:47:10 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:47:10 - ai_engine.knowledge_retrieval - INFO - Retrieved cached result for query: hi
+2025-08-14 14:47:10 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 14:47:10 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 14:47:12 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 14:47:30 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 14:47:30 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 14:47:30 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 14:47:45 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:47:48 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'dhoni': Page id "m s dhoni" does not match any pages. Try another id!
+2025-08-14 14:47:48 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:47:53 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nM.S. Dhoni: The Untold Story is a 2016 Indian Hindi-language biographical sports drama film directed and co-written by Neeraj Pandey. It is based on the life of former Test, ODI and T20I captain of the Indian national cricket team, Mahendra Singh Dhoni. The film stars the late Sushant Singh Rajput as MS Dhoni, along with Disha Patani, Kiara Advani, and Anupam Kher. The film chronicles the life of Dhoni from a young age through a series of life events.\n\nSource: https://en.wikipedia.org/wiki/M.S._Dhoni:_The_Untold_Story', 'type': 'wikipedia', 'title': 'M.S. Dhoni: The Untold Story', 'url': 'https://en.wikipedia.org/wiki/M.S._Dhoni:_The_Untold_Story'}
+2025-08-14 14:47:53 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.492
+2025-08-14 14:47:53 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.492
+2025-08-14 14:48:11 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:48:14 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:48:19 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nBlood is a body fluid in the circulatory system of humans and other vertebrates that delivers necessary substances such as nutrients and oxygen to the cells, and transports metabolic waste products away from those same cells.\nBlood is composed of blood cells suspended in blood plasma. Plasma, which constitutes 55% of blood fluid, is mostly water (92% by volume), and contains proteins, glucose, mineral ions, and hormones. The blood cells are mainly red blood cells (erythrocytes), white blood cells (leukocytes), and (in mammals) platelets (thrombocytes).\n\nSource: https://en.wikipedia.org/wiki/Blood%2B', 'type': 'wikipedia', 'title': 'Blood+', 'url': 'https://en.wikipedia.org/wiki/Blood%2B'}
+2025-08-14 14:48:19 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:48:19 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.582
+2025-08-14 14:48:19 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.582
+2025-08-14 14:48:32 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:48:45 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 2, Confidence: 0.800
+2025-08-14 14:48:46 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't evaluate the expression 'can you explain pythagorous theorem'. Expression not recognized", 'type': 'math'}
+2025-08-14 14:48:46 - root - ERROR - Enhanced AI error: Enhanced AI failed
+2025-08-14 14:48:46 - root - ERROR - Error processing input: Enhanced AI failed
+2025-08-14 14:48:46 - root - WARNING - All AI systems failed, falling back to original model
+2025-08-14 14:49:07 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:49:10 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:49:14 - root - INFO - Enhanced AI result: {'success': True, 'response': "'a^2-b^2' could refer to several things:\n\n1. visa granted by South Korea\n2. visa granted by the United States of America\n3. B2 (disambiguation)\n4. B-2\n\nPlease be more specific.", 'type': 'wikipedia_disambiguation'}
+2025-08-14 14:49:14 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.595
+2025-08-14 14:49:14 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.595
+2025-08-14 14:49:23 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:49:26 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 1, Confidence: 0.800
+2025-08-14 14:49:28 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nSamantha is an English feminine given name in use since the 17th century that is of uncertain derivation. It is now in popular use worldwide due to various popular culture influences.\n\n\n== Etymology ==\nSome etymologists have suggested Samantha might be a derivative of Semanthe, a similar name likely invented by English playwright Sir John Suckling for a character in his play Aglaura, which was first staged in England in 1637. Semanthe was later used by other English or Irish writers for characters in works of fiction published in the 17th and 18th centuries, including for a character in the 1682 tragic play The Loyal Brother by Irish dramatist Thomas Southerne, a character in the 1690 tragic play The Treacherous Brothers by English playwright George Powell, a character in the 1699 tragic play Friendship Improved by Anglo-Irish dramatist Charles Hopkins, a character in the 1705 tragic play Ulysses by English dramatist Nicholas Rowe, a character in the 1718 historical tragic play Scipo Africanus by English dramatist Charles Beckingham, and in 1758 for an English translation of the works of Françoise d'Aubigné, Marquise de Maintenon.\n\nSource: https://en.wikipedia.org/wiki/Samantha", 'type': 'wikipedia', 'title': 'Samantha', 'url': 'https://en.wikipedia.org/wiki/Samantha'}
+2025-08-14 14:49:28 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.595
+2025-08-14 14:49:30 - ai_engine.error_analysis - INFO - Error analysis completed - Type: outdated, Correction: True
+2025-08-14 14:49:30 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.595
+2025-08-14 14:49:49 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 14:49:52 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'fuck': "suck" may refer to: 
+Suction
+.sucks
+Suck (band)
+Teengenerate
+The Revs
+Gub
+Nothing Feels Natural
+Jam Science
+"Sucks" (song)
+Suck (film)
+Suck (publication)
+Suck.com
+River Suck
+Suck Run
+Suck Creek (disambiguation)
+Sucker (disambiguation)
+Suk (disambiguation)
+Sux (disambiguation)
+Mediocrity (disambiguation)
+2025-08-14 14:49:52 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 0, Confidence: 0.000
+2025-08-14 14:49:52 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'what the fuck'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 14:49:52 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:49:52 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.728
+2025-08-14 14:49:52 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.728
+2025-08-14 14:50:02 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 14:50:02 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:50:02 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:50:02 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:50:02 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:50:02 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:50:02 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 14:50:02 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 14:50:02 - root - INFO - Session ended. Duration: 2.9 minutes, Interactions: 7
+2025-08-14 14:50:02 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755163202'
+2025-08-14 14:50:02 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 14:50:02 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 14:50:02 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 14:50:02 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 14:50:02 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 14:50:02 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 14:50:02 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 14:50:02 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 14:50:02 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755163202'
+2025-08-14 14:50:02 - root - INFO - Session ended. Duration: 2.9 minutes, Interactions: 7
+2025-08-14 15:00:00 - root - INFO - Starting new session: session_1755163800927_26b39a12
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - INFO - Loaded 36 conversation records
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 26 entries
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:00:00 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 15:00:00 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:00:00 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:00:00 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:00:00 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:00:00 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:00:00 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:00:00 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:00:00 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:00:00 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:00:00 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:00:00 - root - INFO - Initializing storage system...
+2025-08-14 15:00:00 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:00:00 - root - INFO - Creating fallback model...
+2025-08-14 15:00:00 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:00:00 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:00:00 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:00:34 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:00:34 - ai_engine.knowledge_retrieval - INFO - Retrieved cached result for query: hi
+2025-08-14 15:00:34 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 15:00:35 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 15:00:59 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 15:01:16 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 15:01:16 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 15:01:16 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 15:01:27 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:01:32 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 3, Confidence: 0.800
+2025-08-14 15:01:35 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nMukesh Dhirubhai Ambani (born 19 April 1957) is an Indian billionaire and businessman who is the chairman and managing director of Reliance Industries. As of May 2025, he is the richest person in Asia and 13th richest in the world, with a net worth of US$108 billion.\nSometimes characterized as a plutocrat, he has attracted both fame and notoriety for reports of market manipulation, political corruption, cronyism, and exploitation.\nIn October 2024, Ambani was ranked 1st on the Forbes list of India's 100 richest tycoons, with a net worth of $119.5 billion.\n\nSource: https://en.wikipedia.org/wiki/Mukesh_Ambani", 'type': 'wikipedia', 'title': 'Mukesh Ambani', 'url': 'https://en.wikipedia.org/wiki/Mukesh_Ambani'}
+2025-08-14 15:01:35 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.498
+2025-08-14 15:01:35 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.498
+2025-08-14 15:03:21 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:03:21 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:03:21 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:03:21 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:03:21 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:03:21 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:03:21 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:03:21 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:03:21 - root - INFO - Session ended. Duration: 3.3 minutes, Interactions: 2
+2025-08-14 15:03:21 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755164001'
+2025-08-14 15:03:21 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:03:21 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:03:21 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:03:21 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:03:21 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:03:21 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:03:21 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:03:21 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:03:21 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755164001'
+2025-08-14 15:03:21 - root - INFO - Session ended. Duration: 3.3 minutes, Interactions: 2
+2025-08-14 15:06:57 - root - INFO - Starting new session: session_1755164217113_b6025e10
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - INFO - Loaded 38 conversation records
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 27 entries
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:06:57 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 15:06:57 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:06:57 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:06:57 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:06:57 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:06:57 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:06:57 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:06:57 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:06:57 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:06:57 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:06:57 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:06:57 - root - INFO - Initializing storage system...
+2025-08-14 15:06:57 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:06:57 - root - INFO - Creating fallback model...
+2025-08-14 15:06:57 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:06:57 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:06:57 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:07:03 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:07:03 - ai_engine.knowledge_retrieval - INFO - Retrieved cached result for query: hi
+2025-08-14 15:07:03 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 15:07:03 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 15:07:05 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 15:07:21 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 15:07:21 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:07:21 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 15:07:21 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 15:07:36 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:07:39 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'georgina': "georgia" may refer to: 
+Georgia (country)
+Georgia (U.S. state)
+Georgia (name)
+Georgia (musician)
+Kingdom of Georgia
+Kingdom of Eastern Georgia
+Kingdom of Western Georgia
+Georgia Governorate
+Georgia within the Russian Empire
+Democratic Republic of Georgia
+Georgian Soviet Socialist Republic
+Republic of Georgia
+Province of Georgia
+Georgia Street
+Strait of Georgia
+Georgia, Cornwall
+South Georgia and the South Sandwich Islands
+Georgia, Indiana
+Georgia, Nebraska
+Georgia, New Jersey
+Georgia, Vermont
+Georgia Avenue
+359 Georgia
+Georgia (1988 film)
+Georgia (1995 film)
+Georgia
+Georgia (EP)
+Macon, Georgia
+Silk Degrees
+A Single Man
+Architecture & Morality
+"Georgia" (Carolyn Dawn Johnson song)
+"Georgia" (Field Mob and Ludacris song)
+The Walk
+"Georgia" (Cee Lo Green song)
+"Georgia" (Vance Joy song)
+Stranger in the Alps
+Jaime
+CSS Georgia (1862)
+CSS Georgia (1863)
+SS Georgia (1890)
+SS Georgia (1908)
+USS Georgia (BB-15)
+USS Georgia (SSGN-729)
+University of Georgia
+Georgia Bulldogs
+University of Georgia (Tbilisi)
+Georgia (coffee)
+Georgia (typeface)
+Category:National sports teams of Georgia (country)
+Georgia national football team
+Typhoon Georgia (1959)
+Republic of Georgia (disambiguation)
+State of Georgia (disambiguation)
+Georgia state (disambiguation)
+All pages with titles beginning with Georgia
+All pages with titles containing Georgia
+George (disambiguation)
+Georgian (disambiguation)
+Giorgia (disambiguation)
+2025-08-14 15:07:39 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 5, Confidence: 0.900
+2025-08-14 15:07:41 - root - INFO - Enhanced AI result: {'success': True, 'response': "'georgina' could refer to several things:\n\n1. Georgina (name)\n2. Georgina, Queensland\n3. Georgina Basin\n4. Georgina River\n5. Georgina, Ontario\n\nPlease be more specific.", 'type': 'wikipedia_disambiguation'}
+2025-08-14 15:07:41 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.532
+2025-08-14 15:07:41 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.532
+2025-08-14 15:07:55 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:08:03 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'sunny leone': Page id "sunny leon" does not match any pages. Try another id!
+2025-08-14 15:08:03 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 7, Confidence: 0.879
+2025-08-14 15:08:08 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nSunny Leone is a Canadian-American actress, model, and former pornstar, currently active in Indian film industry. She was named Penthouse Pet of the Year in 2003, was a contract performer for Vivid Entertainment, and was named by Maxim as one of the 12 top porn stars in 2010. She has played roles in independent mainstream events, films and television shows. Her first mainstream appearance was in 2005, when she worked as a red carpet reporter for the MTV Video Music Awards on MTV India.\n\nSource: https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone', 'type': 'wikipedia', 'title': 'List of filmography and awards of Sunny Leone', 'url': 'https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone'}
+2025-08-14 15:08:08 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.478
+2025-08-14 15:08:08 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.478
+2025-08-14 15:08:24 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:08:37 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 6, Confidence: 0.888
+2025-08-14 15:08:37 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Current date and time: Thursday, August 14, 2025 at 03:08 PM', 'type': 'time', 'timestamp': '2025-08-14T15:08:37.131047'}
+2025-08-14 15:08:37 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:08:37 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.420
+2025-08-14 15:08:43 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:08:43 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.420
+2025-08-14 15:08:54 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:08:57 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'sex': "se" may refer to: 
+Java Platform, Standard Edition
+Special Edition
+Windows 98 Second Edition
+Sé (album)
+Se (instrument)
+Societas Europaea
+Sea Ltd
+Slovenské elektrárne
+XL Airways France
+Southeastern (train operating company)
+Sè, Atlantique
+Sè, Mono
+Subprefecture of Sé
+Sé (district of São Paulo)
+Sé (São Paulo Metro)
+Sé, Hungary
+Sé, Macau
+Sé (Angra do Heroísmo)
+Sé (Braga)
+Sé (Bragança)
+Sé (Funchal)
+Lamego
+Sé (Lisbon)
+Portalegre, Portugal
+Sé (Porto)
+SE postcode area
+Sergipe
+Sweden
+Se (kana)
+Northern Sami language
+Standard English
+Se (letter)
+Se (unit of measurement)
+.se
+Se
+Selenium
+Special Euclidean group
+Standard error
+Status epilepticus
+Synthetic environment
+Sony Mobile
+iPhone SE
+Macintosh SE
+Southeast (direction)
+S. E. (name)
+Lisbon Cathedral
+Sé da Guarda
+wide receiver
+Somatic experiencing
+Asüna SE
+Secondary School Entrance Examination
+Single-ended (disambiguation)
+Windows 11 SE
+2025-08-14 15:08:57 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 5, Confidence: 0.900
+2025-08-14 15:09:00 - root - INFO - Enhanced AI result: {'success': True, 'response': "'sex' could refer to several things:\n\n1. Java Platform, Standard Edition\n2. Special Edition\n3. Windows 98 Second Edition\n4. Sé (album)\n5. Se (instrument)\n\nPlease be more specific.", 'type': 'wikipedia_disambiguation'}
+2025-08-14 15:09:00 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.582
+2025-08-14 15:09:00 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.582
+2025-08-14 15:09:28 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:09:28 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:09:28 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:09:28 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:09:28 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:09:28 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:09:28 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:09:28 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:09:28 - root - INFO - Session ended. Duration: 2.5 minutes, Interactions: 5
+2025-08-14 15:09:28 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755164368'
+2025-08-14 15:09:28 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:09:28 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:09:28 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:09:28 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:09:28 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:09:28 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:09:28 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:09:28 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:09:28 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755164368'
+2025-08-14 15:09:28 - root - INFO - Session ended. Duration: 2.5 minutes, Interactions: 5
+2025-08-14 15:14:52 - root - INFO - Starting new session: session_1755164692402_da9bf610
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - INFO - Loaded 43 conversation records
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 28 entries
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:14:52 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 15:14:52 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:14:52 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:14:52 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:14:52 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:14:52 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:14:52 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:14:52 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:14:52 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:14:52 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:14:52 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:14:52 - root - INFO - Initializing storage system...
+2025-08-14 15:14:52 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:14:52 - root - INFO - Creating fallback model...
+2025-08-14 15:14:52 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:14:52 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:14:52 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:15:08 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:15:08 - ai_engine.knowledge_retrieval - INFO - Retrieved cached result for query: hi
+2025-08-14 15:15:08 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 15:15:08 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 15:15:29 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 15:15:47 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 15:15:47 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 15:15:47 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 15:16:09 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:16:13 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 6, Confidence: 0.888
+2025-08-14 15:16:15 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nDimethyltryptamine (DMT), also known as N,N-dimethyltryptamine (N,N-DMT), is a serotonergic hallucinogen and investigational drug of the tryptamine family that occurs naturally in many plants and animals. DMT is used as a psychedelic drug and prepared by various cultures for ritual purposes as an entheogen. \nDMT has a rapid onset, intense effects, and a relatively short duration of action. For those reasons, DMT was known as the "businessman\'s trip" during the 1960s in the United States, as a user could access the full depth of a psychedelic experience in considerably less time than with other substances such as LSD or psilocybin mushrooms.\n\nSource: https://en.wikipedia.org/wiki/Dimethyltryptamine', 'type': 'wikipedia', 'title': 'Dimethyltryptamine', 'url': 'https://en.wikipedia.org/wiki/Dimethyltryptamine'}
+2025-08-14 15:16:15 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:16:15 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.635
+2025-08-14 15:16:15 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.635
+2025-08-14 15:16:24 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:16:28 - ai_engine.knowledge_retrieval - ERROR - Error searching Wikipedia for 'mpb': "MP" may refer to: 
+M.P. (opera)
+Magic point
+musical dynamic
+Multiplayer
+Multipremier
+MusiquePlus
+Mario Party
+Margaret Preston
+Mike Portnoy
+Member of Parliament
+Ministry of Planning, Budget, and Management
+Public Ministry (Portugal)
+Public Prosecutor's Office (Brazil)
+Military police
+Mumbai Police
+Municipal police
+Metropolitan police
+Member of Parliament (Bangladesh)
+Member of Parliament (India)
+Member of Parliament (United Kingdom)
+Member of Parliament (Canada)
+Member of Parliament (Australia)
+Member of Parliament (New Zealand)
+Member of Parliament (South Africa)
+Progressive Movement (Cameroon)
+Green Party (Sweden)
+Member of Parliament (Sri Lanka)
+Martinair
+Mikkelin Palloilijat
+Ming Pao
+Missouri Pacific Railroad
+MyProtein
+Manu propria
+Provisory measure
+Missing person
+Mp (digraph)
+Malayo-Polynesian languages
+Minimalist program
+Madhya Pradesh
+Manipur Pradesh
+Mandatory Palestine
+Northern Mariana Islands
+.mp
+System Center Configuration Manager
+Massive parallelism (disambiguation)
+Media player (disambiguation)
+Media processor
+Megapixel
+MPLS local protection
+Microprocessor
+Microsoft Project
+Multilink Protocol
+Multi-platform
+Multiprocessing
+Maximum parsimony (phylogenetics)
+Modus ponens
+Megapond
+Melting point
+proton
+Machine pistol
+Macrophage
+Mammal Paleogene zone
+Meralgia paraesthetica
+Methylphenidate
+Microprinting
+Møller–Plesset perturbation theory
+Monoprinting
+Movement protein
+Mikkelin Palloilijat
+MP Motorsport
+Marka polska
+Glossary of contract bridge terms
+Glossary of contract bridge terms
+Mile post
+Roman mile
+Izhevsk Mechanical Plant
+MP-71
+MP-412 REX
+MP-443 Grach
+MP-444
+MP-445
+MP-446 Viking
+MP-448 Skyph
+Paris Métro
+MP 59
+MP 73
+MP 89
+MP 05
+Moving Picture Experts Group
+MP1
+MP2
+MP3
+MP4
+MPS (disambiguation)
+Metropolitan Police Service
+Metacarpophalangeal joint
+2025-08-14 15:16:28 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 5, Confidence: 0.900
+2025-08-14 15:16:30 - root - INFO - Enhanced AI result: {'success': True, 'response': "'mpb' could refer to several things:\n\n1. Mountain pine beetle\n2. Male pattern baldness\n3. PZT\n4. Mississippi Public Broadcasting\n5. Maritime and Port Bureau\n\nPlease be more specific.", 'type': 'wikipedia_disambiguation'}
+2025-08-14 15:16:30 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.626
+2025-08-14 15:16:30 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.626
+2025-08-14 15:19:27 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:19:28 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 5, Confidence: 0.900
+2025-08-14 15:19:28 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'male pattern baldness'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 15:19:28 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:19:28 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:19:46 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:19:46 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 5, Confidence: 0.900
+2025-08-14 15:19:46 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'access google.com'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 15:19:46 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:19:46 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:19:46 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:19:56 - root - INFO - Predicted best model: enhanced_ai (confidence: 0.500)
+2025-08-14 15:19:59 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval completed - Sources: 6, Confidence: 0.888
+2025-08-14 15:19:59 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'who are you'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 15:19:59 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.690
+2025-08-14 15:19:59 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.690
+2025-08-14 15:20:07 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:20:07 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:20:07 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:20:07 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:20:07 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:20:07 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:20:07 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:20:07 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:20:07 - root - INFO - Session ended. Duration: 5.2 minutes, Interactions: 6
+2025-08-14 15:20:07 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755165007'
+2025-08-14 15:20:07 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:20:07 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:20:07 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:20:07 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:20:07 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:20:07 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:20:07 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:20:07 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:20:07 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755165007'
+2025-08-14 15:20:07 - root - INFO - Session ended. Duration: 5.2 minutes, Interactions: 6
+2025-08-14 15:29:17 - root - INFO - Starting new session: session_1755165557408_1461
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - INFO - Loaded 49 conversation records
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 29 entries
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:29:17 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 15:29:17 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:29:17 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:29:17 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:29:17 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:29:17 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:29:17 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:29:17 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:29:17 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:29:17 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:29:17 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:29:17 - root - INFO - Initializing storage system...
+2025-08-14 15:29:17 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:29:17 - root - INFO - Creating fallback model...
+2025-08-14 15:29:17 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:29:17 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:29:17 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:29:20 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 15:29:21 - ai_engine.enhanced_ai - INFO - News feed updated
+2025-08-14 15:29:24 - ai_engine.enhanced_ai - INFO - Weather feed updated
+2025-08-14 15:29:41 - ai_engine.enhanced_ai - INFO - Knowledge base updated
+2025-08-14 15:29:41 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.500
+2025-08-14 15:29:41 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.500
+2025-08-14 15:30:16 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:30:16 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.637
+2025-08-14 15:30:16 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.637
+2025-08-14 15:30:46 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.486
+2025-08-14 15:30:49 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:30:49 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.486
+2025-08-14 15:31:17 - root - INFO - Enhanced AI result: {'success': True, 'response': "I understand you're asking about 'exiuit'. Let me provide you with the most relevant and current information available.", 'type': 'general'}
+2025-08-14 15:31:17 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:31:17 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:31:22 - root - ERROR - Failed to write file {'session_start': 1755165557.4218738, 'session_duration': 124.62627410888672, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:31:22 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:31:22 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:31:22 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:31:22 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:31:22 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:31:22 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:31:22 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:31:22 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:31:22 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:31:22 - root - ERROR - Failed to write file {'session_start': 1755165557.4218738, 'session_duration': 124.63852787017822, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:31:22 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:31:22 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:31:22 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:31:22 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:31:22 - ai_engine.enhanced_ai - ERROR - Error saving persistent data: Object of type datetime is not JSON serializable
+2025-08-14 15:31:22 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:31:22 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:31:22 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:31:22 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:33:45 - root - INFO - Starting new session: session_1755165825918_3934
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - INFO - Loaded 53 conversation records
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 31 entries
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:33:45 - ai_engine.enhanced_ai - ERROR - Error loading persistent data: Expecting value: line 2 column 23 (char 24)
+2025-08-14 15:33:45 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:33:45 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:33:45 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:33:45 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:33:45 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:33:45 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:33:45 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:33:45 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:33:45 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:33:45 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:33:45 - root - INFO - Initializing storage system...
+2025-08-14 15:33:45 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:33:45 - root - INFO - Creating fallback model...
+2025-08-14 15:33:45 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:33:45 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:33:45 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:33:49 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.770
+2025-08-14 15:33:49 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.770
+2025-08-14 15:33:58 - root - ERROR - Failed to write file {'session_start': 1755165825.9848583, 'session_duration': 12.115131855010986, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:33:58 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:33:58 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:33:58 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:33:58 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:33:58 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:33:58 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:33:58 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:33:58 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:33:58 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:33:58 - root - ERROR - Failed to write file {'session_start': 1755165825.9848583, 'session_duration': 12.128798484802246, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:33:58 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:33:58 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:33:58 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:33:58 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:33:58 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:33:58 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:33:58 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:33:58 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:33:58 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:35:51 - root - INFO - Starting new session: session_1755165951583_6570
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded 53 conversation records
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 31 entries
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:35:51 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:35:51 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:35:51 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:35:51 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:35:51 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:35:51 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:35:51 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:35:51 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:35:51 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:35:51 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:35:51 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:35:51 - root - INFO - Initializing storage system...
+2025-08-14 15:35:51 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:35:51 - root - INFO - Creating fallback model...
+2025-08-14 15:35:51 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:35:51 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:35:51 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:37:11 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:37:11 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.680
+2025-08-14 15:37:12 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:37:12 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.680
+2025-08-14 15:37:33 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:37:33 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.650
+2025-08-14 15:37:33 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:37:33 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.650
+2025-08-14 15:37:45 - root - ERROR - Enhanced AI error: 'EnhancedAI' object has no attribute 'logger'
+2025-08-14 15:37:45 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.680
+2025-08-14 15:37:45 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: error_fallback, Score: 0.680
+2025-08-14 15:37:58 - root - ERROR - Failed to write file {'session_start': 1755165951.602036, 'session_duration': 126.6659586429596, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:37:58 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:37:58 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:37:58 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:37:58 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:37:58 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:37:58 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:37:58 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:37:58 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:37:58 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:37:58 - root - ERROR - Failed to write file {'session_start': 1755165951.602036, 'session_duration': 126.67912030220032, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:37:58 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:37:58 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:37:58 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:37:58 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:37:58 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:37:58 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:37:58 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:37:58 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:37:58 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:38:35 - root - INFO - Starting new session: session_1755166115265_7330
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded 56 conversation records
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 32 entries
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:38:35 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:38:35 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:38:35 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:38:35 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:38:35 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:38:35 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:38:35 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:38:35 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:38:35 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:38:35 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:38:35 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:38:35 - root - INFO - Initializing storage system...
+2025-08-14 15:38:35 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:38:35 - root - INFO - Creating fallback model...
+2025-08-14 15:38:35 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:38:35 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:38:35 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:38:45 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:38:45 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.650
+2025-08-14 15:38:46 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:38:46 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.650
+2025-08-14 15:38:56 - root - ERROR - Failed to write file {'session_start': 1755166115.3121264, 'session_duration': 20.731552839279175, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:38:56 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:38:56 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:38:56 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:38:56 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:38:56 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:38:56 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:38:56 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:38:56 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:38:56 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:38:56 - root - ERROR - Failed to write file {'session_start': 1755166115.3121264, 'session_duration': 20.74592113494873, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:38:56 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:38:56 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:38:56 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:38:56 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:38:56 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:38:56 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:38:56 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:38:56 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:38:56 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:39:40 - root - INFO - Starting new session: session_1755166180684_9102
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded 57 conversation records
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 33 entries
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:39:40 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:39:40 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:39:40 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:39:40 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:39:40 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:39:40 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:39:40 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:39:40 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:39:40 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:39:40 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:39:40 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:39:40 - root - INFO - Initializing storage system...
+2025-08-14 15:39:40 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:39:40 - root - INFO - Creating fallback model...
+2025-08-14 15:39:40 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:39:40 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:39:40 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:40:01 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:40:01 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.650
+2025-08-14 15:40:01 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:40:01 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.650
+2025-08-14 15:40:08 - root - ERROR - Failed to write file {'session_start': 1755166180.7007194, 'session_duration': 27.703943252563477, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:40:08 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:40:08 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:40:08 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:40:08 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:40:08 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:40:08 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:40:08 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:40:08 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:40:08 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:40:08 - root - ERROR - Failed to write file {'session_start': 1755166180.7007194, 'session_duration': 27.715399980545044, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:40:08 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:40:08 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:40:08 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:40:08 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:40:08 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:40:08 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:40:08 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:40:08 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:40:08 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:40:30 - root - INFO - Starting new session: session_1755166230332_7638
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded 58 conversation records
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 34 entries
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:40:30 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:40:30 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:40:30 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:40:30 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:40:30 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:40:30 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:40:30 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:40:30 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:40:30 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:40:30 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:40:30 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:40:30 - root - INFO - Initializing storage system...
+2025-08-14 15:40:30 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:40:30 - root - INFO - Creating fallback model...
+2025-08-14 15:40:30 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:40:30 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:40:30 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:40:44 - root - ERROR - Enhanced AI error: 'EnhancedAI' object has no attribute 'logger'
+2025-08-14 15:40:44 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.650
+2025-08-14 15:40:45 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:40:45 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: error_fallback, Score: 0.650
+2025-08-14 15:40:49 - root - ERROR - Failed to write file {'session_start': 1755166230.3753567, 'session_duration': 19.476378917694092, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:40:49 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:40:49 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:40:49 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:40:49 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:40:49 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:40:49 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:40:49 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:40:49 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:40:49 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:40:49 - root - ERROR - Failed to write file {'session_start': 1755166230.3753567, 'session_duration': 19.48921823501587, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:40:49 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:40:49 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:40:49 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:40:49 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:40:49 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:40:49 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:40:49 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:40:49 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:40:49 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:41:19 - root - INFO - Starting new session: session_1755166279161_8781
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded 58 conversation records
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 34 entries
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:41:19 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:41:19 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:41:19 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:41:19 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:41:19 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:41:19 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:41:19 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:41:19 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:41:19 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:41:19 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:41:19 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:41:19 - root - INFO - Initializing storage system...
+2025-08-14 15:41:19 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:41:19 - root - INFO - Creating fallback model...
+2025-08-14 15:41:19 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:41:19 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:41:19 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:41:27 - ai_engine.enhanced_ai - INFO - Query: 'hi' -> Clean: 'hi' -> Type: general
+2025-08-14 15:41:27 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:41:27 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.680
+2025-08-14 15:41:27 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:41:27 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.680
+2025-08-14 15:41:43 - ai_engine.enhanced_ai - INFO - Query: 'what is 8+8' -> Clean: 'what is 88' -> Type: definition
+2025-08-14 15:41:43 - ai_engine.enhanced_ai - ERROR - Error processing query: 'EnhancedAI' object has no attribute '_handle_definition_query'
+2025-08-14 15:41:43 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.730
+2025-08-14 15:41:48 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:41:48 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: fallback, Score: 0.730
+2025-08-14 15:41:56 - root - ERROR - Failed to write file {'session_start': 1755166279.2079215, 'session_duration': 37.68364858627319, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:41:56 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:41:56 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:41:56 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:41:56 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:41:56 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:41:56 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:41:56 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:41:56 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:41:56 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:41:56 - root - ERROR - Failed to write file {'session_start': 1755166279.2079215, 'session_duration': 37.69816756248474, 'metrics': {}, 'summaries': {}}: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'dict'
+2025-08-14 15:41:56 - ai_engine.smart_ai - INFO - Smart data saved successfully
+2025-08-14 15:41:56 - ai_engine.smart_ai - INFO - Smart AI cleanup completed
+2025-08-14 15:41:56 - ai_engine.advanced_core - INFO - Advanced data saved successfully
+2025-08-14 15:41:56 - ai_engine.advanced_core - INFO - Advanced AI core cleanup completed
+2025-08-14 15:41:56 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:41:56 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 15:41:56 - ai_engine.iterative_learning - INFO - Iterative learning module cleaned up
+2025-08-14 15:41:56 - ai_engine.knowledge_retrieval - INFO - Knowledge retrieval module cleaned up
+2025-08-14 15:41:56 - root - ERROR - Error during cleanup: type object 'JSONManager' has no attribute 'update_knowledge_json'
+2025-08-14 15:42:47 - root - INFO - Starting new session: session_1755166367970_8025
+2025-08-14 15:42:47 - ai_engine.enhanced_ai - INFO - Loaded 60 conversation records
+2025-08-14 15:42:47 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 34 entries
+2025-08-14 15:42:48 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:42:48 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:42:48 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:42:48 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:42:48 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:42:48 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:42:48 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:42:48 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:42:48 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:42:48 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:42:48 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:42:48 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:42:48 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:42:48 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:42:48 - root - INFO - Initializing storage system...
+2025-08-14 15:42:48 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:42:48 - root - INFO - Creating fallback model...
+2025-08-14 15:42:48 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:42:48 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:42:48 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:42:52 - ai_engine.enhanced_ai - INFO - Query: 'hi' -> Clean: 'hi' -> Type: general
+2025-08-14 15:42:52 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:42:52 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.680
+2025-08-14 15:42:52 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:42:52 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.680
+2025-08-14 15:43:02 - ai_engine.enhanced_ai - INFO - Query: '34334+23232' -> Clean: '34334+23232' -> Type: math
+2025-08-14 15:43:02 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:43:02 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:43:02 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:43:31 - root - INFO - Starting new session: session_1755166411583_5329
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded 62 conversation records
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 34 entries
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded conversation context
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:43:31 - ai_engine.enhanced_ai - INFO - Loaded data feeds
+2025-08-14 15:43:31 - ai_engine.advanced_core - INFO - Loaded 0 conversation records
+2025-08-14 15:43:31 - ai_engine.advanced_core - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:43:31 - ai_engine.advanced_core - INFO - Loaded 0 code snippets
+2025-08-14 15:43:31 - ai_engine.smart_ai - INFO - Loaded 0 conversation records
+2025-08-14 15:43:31 - ai_engine.smart_ai - INFO - Loaded knowledge base with 0 entries
+2025-08-14 15:43:31 - ai_engine.smart_ai - INFO - Loaded 0 typo corrections
+2025-08-14 15:43:31 - ai_engine.self_evaluation - INFO - Evaluation database initialized successfully
+2025-08-14 15:43:31 - ai_engine.error_analysis - INFO - Error analysis database initialized successfully
+2025-08-14 15:43:31 - ai_engine.iterative_learning - INFO - Started iterative learning scheduler
+2025-08-14 15:43:31 - ai_engine.knowledge_retrieval - INFO - Knowledge cache database initialized successfully
+2025-08-14 15:43:31 - root - INFO - Initializing storage system...
+2025-08-14 15:43:31 - root - ERROR - System initialization failed: 'version'
+2025-08-14 15:43:31 - root - INFO - Creating fallback model...
+2025-08-14 15:43:31 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 15:43:31 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 15:43:31 - root - INFO - Trained default text classifier with sample data
+2025-08-14 15:43:34 - ai_engine.enhanced_ai - INFO - Query: 'hi' -> Clean: 'hi' -> Type: general
+2025-08-14 15:43:34 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:43:34 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.680
+2025-08-14 15:43:35 - ai_engine.error_analysis - INFO - Error analysis completed - Type: irrelevant, Correction: True
+2025-08-14 15:43:35 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.680
+2025-08-14 15:43:44 - ai_engine.enhanced_ai - INFO - Query: 'what is coolie' -> Clean: 'what is coolie' -> Type: definition
+2025-08-14 15:43:46 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:43:46 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.757
+2025-08-14 15:43:46 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.757
+2025-08-14 15:44:01 - ai_engine.enhanced_ai - INFO - Query: 'imean coolie' -> Clean: 'imean coolie' -> Type: general
+2025-08-14 15:44:01 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:44:01 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:44:01 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:44:13 - ai_engine.enhanced_ai - INFO - Query: '892343+3984239482' -> Clean: '892343+3984239482' -> Type: math
+2025-08-14 15:44:13 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:44:13 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:44:13 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:44:19 - ai_engine.enhanced_ai - INFO - Query: 'what is sex' -> Clean: 'what is sex' -> Type: definition
+2025-08-14 15:44:21 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:44:21 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.716
+2025-08-14 15:44:21 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.716
+2025-08-14 15:44:29 - ai_engine.enhanced_ai - INFO - Query: 'what is vagina' -> Clean: 'what is vagina' -> Type: definition
+2025-08-14 15:44:32 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:44:32 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.760
+2025-08-14 15:44:32 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.760
+2025-08-14 15:44:42 - ai_engine.enhanced_ai - INFO - Query: 'what is youtube' -> Clean: 'what is youtube' -> Type: definition
+2025-08-14 15:44:44 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:44:44 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.759
+2025-08-14 15:44:44 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.759
+2025-08-14 15:44:58 - ai_engine.enhanced_ai - INFO - Query: 'who is the ceo of open ai' -> Clean: 'who is the ceo of open ai' -> Type: definition
+2025-08-14 15:45:00 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:45:00 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.663
+2025-08-14 15:45:00 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.663
+2025-08-14 15:45:25 - ai_engine.enhanced_ai - INFO - Query: 'sam altman' -> Clean: 'sam altman' -> Type: general
+2025-08-14 15:45:25 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:45:25 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:45:25 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 15:52:11 - ai_engine.enhanced_ai - INFO - Query: 'python main.py' -> Clean: 'python main.py' -> Type: general
+2025-08-14 15:52:11 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 15:52:11 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.740
+2025-08-14 15:52:11 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.740
+2025-08-14 16:01:53 - ai_engine.enhanced_ai - INFO - Query: 'what is hiroshima' -> Clean: 'what is hiroshima' -> Type: definition
+2025-08-14 16:01:54 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 16:01:54 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.737
+2025-08-14 16:01:54 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.737
+2025-08-14 16:06:35 - ai_engine.enhanced_ai - INFO - Query: 'what is sex' -> Clean: 'what is sex' -> Type: definition
+2025-08-14 16:06:38 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 16:06:38 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.657
+2025-08-14 16:06:38 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.657
+2025-08-14 16:06:53 - ai_engine.enhanced_ai - INFO - Query: 'what is dopomoine' -> Clean: 'what is dopomoine' -> Type: definition
+2025-08-14 16:06:55 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 16:06:55 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.742
+2025-08-14 16:06:55 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.742
+2025-08-14 16:07:21 - ai_engine.enhanced_ai - INFO - Query: 'what is dick' -> Clean: 'what is dick' -> Type: definition
+2025-08-14 16:07:24 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 16:07:24 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.671
+2025-08-14 16:07:24 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.671
+2025-08-14 16:07:34 - ai_engine.enhanced_ai - INFO - Query: 'who is pooja hedge' -> Clean: 'who is pooja hedge' -> Type: definition
+2025-08-14 16:07:36 - ai_engine.enhanced_ai - INFO - Enhanced persistent data saved successfully
+2025-08-14 16:07:36 - ai_engine.self_evaluation - INFO - Response evaluated - Overall Score: 0.684
+2025-08-14 16:07:36 - ai_engine.iterative_learning - INFO - Learned from interaction - Model: enhanced_ai, Score: 0.684

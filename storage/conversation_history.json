@@ -166,5 +166,2650 @@
     "feedback": null,
     "input_type": "greeting",
     "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T14:17:35.247436",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "hi",
+        "who is mukwsh amabani",
+        "who is mukesh amabani",
+        "823728328+23982932983",
+        "what is matrix",
+        "what is matrix in biology"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:19:24.031057",
+    "user_input": "823728328+23982932983",
+    "ai_response": "The result of 823728328+23982932983 = 24806661311",
+    "feedback": null,
+    "input_type": "calculation",
+    "response_type": "calculation",
+    "conversation_context": {
+      "topic": "823728328+23982932983",
+      "last_questions": [
+        "hi",
+        "who is mukwsh amabani",
+        "who is mukesh amabani",
+        "823728328+23982932983",
+        "what is matrix",
+        "what is matrix in biology"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "823728328+23982932983",
+    "related_questions": [
+      "who is mukwsh amabani",
+      "who is mukesh amabani",
+      "823728328+23982932983"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:19:43.621090",
+    "user_input": "what is matrix",
+    "ai_response": "'matrix' could refer to several things:\n\n1. Matrix (mathematics)\n2. Matrix (logic)\n3. Matrix (biology)\n4. Matrix (chemical analysis)\n5. Matrix (geology)\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "matrix",
+      "last_questions": [
+        "hi",
+        "who is mukwsh amabani",
+        "who is mukesh amabani",
+        "823728328+23982932983",
+        "what is matrix",
+        "what is matrix in biology"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "matrix",
+    "related_questions": [
+      "who is mukesh amabani",
+      "823728328+23982932983",
+      "what is matrix"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:20:15.982880",
+    "user_input": "what is matrix in biology",
+    "ai_response": "According to Wikipedia:\n\nIn biology, matrix (pl.: matrices) is the material (or tissue) in between a eukaryotic organism's cells.\nA structure(not arrangement) of connective tissues is an extracellular matrix. Fingernails and toenails grow from matrices. It is found in various connective tissues.\n\nSource: https://en.wikipedia.org/wiki/Matrix_(biology)",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "matrix biology",
+      "last_questions": [
+        "who is mukwsh amabani",
+        "who is mukesh amabani",
+        "823728328+23982932983",
+        "what is matrix",
+        "what is matrix in biology",
+        "what is instagram"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "matrix biology",
+    "related_questions": [
+      "823728328+23982932983",
+      "what is matrix",
+      "what is matrix in biology"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:20:39.024286",
+    "user_input": "what is instagram",
+    "ai_response": "According to Wikipedia:\n\nInstagram is an American photo and short-form video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tags and locations, view trending content, like photos, and follow other users to add their content to a personal feed.\n\nSource: https://en.wikipedia.org/wiki/Instagram",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "instagram",
+      "last_questions": [
+        "who is mukesh amabani",
+        "823728328+23982932983",
+        "what is matrix",
+        "what is matrix in biology",
+        "what is instagram",
+        "what is one piecce"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "instagram",
+    "related_questions": [
+      "what is matrix",
+      "what is matrix in biology",
+      "what is instagram"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:21:55.067551",
+    "user_input": "is one piece real",
+    "ai_response": "I understand you're asking about 'is one piece real'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "one piece real",
+      "last_questions": [
+        "what is matrix",
+        "what is matrix in biology",
+        "what is instagram",
+        "what is one piecce",
+        "is one piece real"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        }
+      ]
+    },
+    "topic": "one piece real",
+    "related_questions": [
+      "what is instagram",
+      "what is one piecce",
+      "is one piece real"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:41:42.164491",
+    "user_input": "who is mukesh",
+    "ai_response": "According to Wikipedia:\n\nMukesh Madhavan (born Mukesh Babu; 5 March 1957), known mononymously as Mukesh, is an Indian actor, film producer, television presenter, and politician who predominantly works in Malayalam cinema besides also having sporadically appeared in Tamil-language films. In a film career spanning four decades, he has acted in over 275 Malayalam films.\nHe made his onscreen debut in the 1982 film Balloon in the leading role. His 1996 film Kaanaakkinaavu premiered at the IFFI and won the Nargis Dutt Award for Best Feature Film on National Integration.\n\nSource: https://en.wikipedia.org/wiki/Mukesh_(actor)",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "mukesh",
+      "last_questions": [
+        "what is matrix in biology",
+        "what is instagram",
+        "what is one piecce",
+        "is one piece real",
+        "who is mukesh",
+        "current pm of india"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:17:35.246325"
+        },
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        }
+      ]
+    },
+    "topic": "mukesh",
+    "related_questions": [
+      "what is one piecce",
+      "is one piece real",
+      "who is mukesh"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:42:17.543679",
+    "user_input": "current pm of india",
+    "ai_response": "Here are the latest news headlines:\n\n1. In maps: The war-ravaged Ukrainian territories at the heart of the Trump-Putin summit\n   Kyiv has rejected ceding territory seized by Russia to secure a ceasefire. ...\n\n2. UK economic growth slows to 0.3% between April and June but beats forecasts\n   The economy expanded by 0.3% between April to June period, ahead of economists' expectations....\n\n3. Humanitarian groups say Israel vetting process preventing life-saving aid getting into Gaza\n   More than 100 aid organisations say they are increasingly being told they are \"not authorised\" to de...\n\n4. Burial 'fat tax' on wider plots at council cemetery criticised\n   The move at a Wolverhampton cemetery is due to high obesity rates, a council says....\n\n5. Relationship and Easter eggs - what we learned from Taylor Swift on Travis Kelce's podcast\n   The pop superstar gives a rare insight into their life together and reveals details of her new album...\n\n",
+    "feedback": null,
+    "input_type": "news_request",
+    "response_type": "news",
+    "conversation_context": {
+      "topic": "india",
+      "last_questions": [
+        "what is instagram",
+        "what is one piecce",
+        "is one piece real",
+        "who is mukesh",
+        "current pm of india",
+        "what is the national flower of india"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is mukwsh amabani",
+          "topic": "mukwsh amabani",
+          "timestamp": "2025-08-14T14:18:56.350860"
+        },
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        }
+      ]
+    },
+    "topic": "india",
+    "related_questions": [
+      "is one piece real",
+      "who is mukesh",
+      "current pm of india"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:43:15.215727",
+    "user_input": "what is the national flower of india",
+    "ai_response": "According to Wikipedia:\n\nThe Government of India has designated official national symbols that represent the Republic of India. These symbols serve as the representation of the identity of the country. When India obtained independence from the British Raj on 15 August 1947, the tricolour flag officially became the first national symbol of the Dominion of India. The Indian Rupee which was in circulation earlier was adopted as the official legal tender after independence.\n\nSource: https://en.wikipedia.org/wiki/National_symbols_of_India",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "national flower india",
+      "last_questions": [
+        "what is one piecce",
+        "is one piece real",
+        "who is mukesh",
+        "current pm of india",
+        "what is the national flower of india"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is mukesh amabani",
+          "topic": "mukesh amabani",
+          "timestamp": "2025-08-14T14:19:13.123894"
+        },
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        }
+      ]
+    },
+    "topic": "national flower india",
+    "related_questions": [
+      "who is mukesh",
+      "current pm of india",
+      "what is the national flower of india"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:47:10.255797",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "is one piece real",
+        "who is mukesh",
+        "current pm of india",
+        "what is the national flower of india",
+        "hi",
+        "who is ms dhoni"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "823728328+23982932983",
+          "topic": "823728328+23982932983",
+          "timestamp": "2025-08-14T14:19:24.029943"
+        },
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "current pm of india",
+      "what is the national flower of india",
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:47:53.713877",
+    "user_input": "who is ms dhoni",
+    "ai_response": "According to Wikipedia:\n\nM.S. Dhoni: The Untold Story is a 2016 Indian Hindi-language biographical sports drama film directed and co-written by Neeraj Pandey. It is based on the life of former Test, ODI and T20I captain of the Indian national cricket team, Mahendra Singh Dhoni. The film stars the late Sushant Singh Rajput as MS Dhoni, along with Disha Patani, Kiara Advani, and Anupam Kher. The film chronicles the life of Dhoni from a young age through a series of life events.\n\nSource: https://en.wikipedia.org/wiki/M.S._Dhoni:_The_Untold_Story",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "dhoni",
+      "last_questions": [
+        "who is mukesh",
+        "current pm of india",
+        "what is the national flower of india",
+        "hi",
+        "who is ms dhoni",
+        "what is blood"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is matrix",
+          "topic": "matrix",
+          "timestamp": "2025-08-14T14:19:41.021182"
+        },
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        }
+      ]
+    },
+    "topic": "dhoni",
+    "related_questions": [
+      "what is the national flower of india",
+      "hi",
+      "who is ms dhoni"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:48:19.829712",
+    "user_input": "what is blood",
+    "ai_response": "According to Wikipedia:\n\nBlood is a body fluid in the circulatory system of humans and other vertebrates that delivers necessary substances such as nutrients and oxygen to the cells, and transports metabolic waste products away from those same cells.\nBlood is composed of blood cells suspended in blood plasma. Plasma, which constitutes 55% of blood fluid, is mostly water (92% by volume), and contains proteins, glucose, mineral ions, and hormones. The blood cells are mainly red blood cells (erythrocytes), white blood cells (leukocytes), and (in mammals) platelets (thrombocytes).\n\nSource: https://en.wikipedia.org/wiki/Blood%2B",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "blood",
+      "last_questions": [
+        "current pm of india",
+        "what is the national flower of india",
+        "hi",
+        "who is ms dhoni",
+        "what is blood",
+        "can you explain pythagorous theorem"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is matrix in biology",
+          "topic": "matrix biology",
+          "timestamp": "2025-08-14T14:20:12.077869"
+        },
+        {
+          "query": "what is instagram",
+          "topic": "instagram",
+          "timestamp": "2025-08-14T14:20:36.231654"
+        },
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        }
+      ]
+    },
+    "topic": "blood",
+    "related_questions": [
+      "hi",
+      "who is ms dhoni",
+      "what is blood"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:49:14.384968",
+    "user_input": "what is a^2-b^2",
+    "ai_response": "'a^2-b^2' could refer to several things:\n\n1. visa granted by South Korea\n2. visa granted by the United States of America\n3. B2 (disambiguation)\n4. B-2\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "a^2-b^2",
+      "last_questions": [
+        "hi",
+        "who is ms dhoni",
+        "what is blood",
+        "can you explain pythagorous theorem",
+        "what is a^2-b^2",
+        "who is samantha"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is one piecce",
+          "topic": "one piecce",
+          "timestamp": "2025-08-14T14:21:41.265231"
+        },
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        }
+      ]
+    },
+    "topic": "a^2-b^2",
+    "related_questions": [
+      "what is blood",
+      "can you explain pythagorous theorem",
+      "what is a^2-b^2"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:49:28.521227",
+    "user_input": "who is samantha",
+    "ai_response": "According to Wikipedia:\n\nSamantha is an English feminine given name in use since the 17th century that is of uncertain derivation. It is now in popular use worldwide due to various popular culture influences.\n\n\n== Etymology ==\nSome etymologists have suggested Samantha might be a derivative of Semanthe, a similar name likely invented by English playwright Sir John Suckling for a character in his play Aglaura, which was first staged in England in 1637. Semanthe was later used by other English or Irish writers for characters in works of fiction published in the 17th and 18th centuries, including for a character in the 1682 tragic play The Loyal Brother by Irish dramatist Thomas Southerne, a character in the 1690 tragic play The Treacherous Brothers by English playwright George Powell, a character in the 1699 tragic play Friendship Improved by Anglo-Irish dramatist Charles Hopkins, a character in the 1705 tragic play Ulysses by English dramatist Nicholas Rowe, a character in the 1718 historical tragic play Scipo Africanus by English dramatist Charles Beckingham, and in 1758 for an English translation of the works of Françoise d'Aubigné, Marquise de Maintenon.\n\nSource: https://en.wikipedia.org/wiki/Samantha",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "samantha",
+      "last_questions": [
+        "who is ms dhoni",
+        "what is blood",
+        "can you explain pythagorous theorem",
+        "what is a^2-b^2",
+        "who is samantha",
+        "what the fuck"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "is one piece real",
+          "topic": "one piece real",
+          "timestamp": "2025-08-14T14:21:55.066207"
+        },
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        }
+      ]
+    },
+    "topic": "samantha",
+    "related_questions": [
+      "can you explain pythagorous theorem",
+      "what is a^2-b^2",
+      "who is samantha"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T14:49:52.737167",
+    "user_input": "what the fuck",
+    "ai_response": "I understand you're asking about 'what the fuck'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "fuck",
+      "last_questions": [
+        "what is blood",
+        "can you explain pythagorous theorem",
+        "what is a^2-b^2",
+        "who is samantha",
+        "what the fuck"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is mukesh",
+          "topic": "mukesh",
+          "timestamp": "2025-08-14T14:41:36.810451"
+        },
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        }
+      ]
+    },
+    "topic": "fuck",
+    "related_questions": [
+      "what is a^2-b^2",
+      "who is samantha",
+      "what the fuck"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:00:34.887799",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "can you explain pythagorous theorem",
+        "what is a^2-b^2",
+        "who is samantha",
+        "what the fuck",
+        "hi",
+        "who is isha ambani"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "current pm of india",
+          "topic": "india",
+          "timestamp": "2025-08-14T14:42:17.381909"
+        },
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "who is samantha",
+      "what the fuck",
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:01:35.497530",
+    "user_input": "who is isha ambani",
+    "ai_response": "According to Wikipedia:\n\nMukesh Dhirubhai Ambani (born 19 April 1957) is an Indian billionaire and businessman who is the chairman and managing director of Reliance Industries. As of May 2025, he is the richest person in Asia and 13th richest in the world, with a net worth of US$108 billion.\nSometimes characterized as a plutocrat, he has attracted both fame and notoriety for reports of market manipulation, political corruption, cronyism, and exploitation.\nIn October 2024, Ambani was ranked 1st on the Forbes list of India's 100 richest tycoons, with a net worth of $119.5 billion.\n\nSource: https://en.wikipedia.org/wiki/Mukesh_Ambani",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "isha ambani",
+      "last_questions": [
+        "what is a^2-b^2",
+        "who is samantha",
+        "what the fuck",
+        "hi",
+        "who is isha ambani"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is the national flower of india",
+          "topic": "national flower india",
+          "timestamp": "2025-08-14T14:43:05.591907"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        }
+      ]
+    },
+    "topic": "isha ambani",
+    "related_questions": [
+      "what the fuck",
+      "hi",
+      "who is isha ambani"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:07:03.087417",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "who is samantha",
+        "what the fuck",
+        "hi",
+        "who is isha ambani",
+        "hi",
+        "who is georgina"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T14:47:10.254893"
+        },
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "hi",
+      "who is isha ambani",
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:07:41.884382",
+    "user_input": "who is georgina",
+    "ai_response": "'georgina' could refer to several things:\n\n1. Georgina (name)\n2. Georgina, Queensland\n3. Georgina Basin\n4. Georgina River\n5. Georgina, Ontario\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "georgina",
+      "last_questions": [
+        "what the fuck",
+        "hi",
+        "who is isha ambani",
+        "hi",
+        "who is georgina",
+        "who is sunny leone"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is ms dhoni",
+          "topic": "dhoni",
+          "timestamp": "2025-08-14T14:47:48.366964"
+        },
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        }
+      ]
+    },
+    "topic": "georgina",
+    "related_questions": [
+      "who is isha ambani",
+      "hi",
+      "who is georgina"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:08:08.608703",
+    "user_input": "who is sunny leone",
+    "ai_response": "According to Wikipedia:\n\nSunny Leone is a Canadian-American actress, model, and former pornstar, currently active in Indian film industry. She was named Penthouse Pet of the Year in 2003, was a contract performer for Vivid Entertainment, and was named by Maxim as one of the 12 top porn stars in 2010. She has played roles in independent mainstream events, films and television shows. Her first mainstream appearance was in 2005, when she worked as a red carpet reporter for the MTV Video Music Awards on MTV India.\n\nSource: https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "sunny leone",
+      "last_questions": [
+        "hi",
+        "who is isha ambani",
+        "hi",
+        "who is georgina",
+        "who is sunny leone",
+        "who is the top level pornstar female now"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is blood",
+          "topic": "blood",
+          "timestamp": "2025-08-14T14:48:14.524845"
+        },
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        }
+      ]
+    },
+    "topic": "sunny leone",
+    "related_questions": [
+      "hi",
+      "who is georgina",
+      "who is sunny leone"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:08:37.131280",
+    "user_input": "who is the top level pornstar female now",
+    "ai_response": "Current date and time: Thursday, August 14, 2025 at 03:08 PM",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "time",
+    "conversation_context": {
+      "topic": "top level pornstar female now",
+      "last_questions": [
+        "who is isha ambani",
+        "hi",
+        "who is georgina",
+        "who is sunny leone",
+        "who is the top level pornstar female now",
+        "what is sex"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "can you explain pythagorous theorem",
+          "topic": "can you explain pythagorous theorem",
+          "timestamp": "2025-08-14T14:48:45.275704"
+        },
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        }
+      ]
+    },
+    "topic": "top level pornstar female now",
+    "related_questions": [
+      "who is georgina",
+      "who is sunny leone",
+      "who is the top level pornstar female now"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:09:00.044972",
+    "user_input": "what is sex",
+    "ai_response": "'sex' could refer to several things:\n\n1. Java Platform, Standard Edition\n2. Special Edition\n3. Windows 98 Second Edition\n4. Sé (album)\n5. Se (instrument)\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "sex",
+      "last_questions": [
+        "hi",
+        "who is georgina",
+        "who is sunny leone",
+        "who is the top level pornstar female now",
+        "what is sex"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is a^2-b^2",
+          "topic": "a^2-b^2",
+          "timestamp": "2025-08-14T14:49:10.251160"
+        },
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        }
+      ]
+    },
+    "topic": "sex",
+    "related_questions": [
+      "who is sunny leone",
+      "who is the top level pornstar female now",
+      "what is sex"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:15:08.170275",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "who is georgina",
+        "who is sunny leone",
+        "who is the top level pornstar female now",
+        "what is sex",
+        "hi",
+        "what is dmt"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is samantha",
+          "topic": "samantha",
+          "timestamp": "2025-08-14T14:49:26.129417"
+        },
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "who is the top level pornstar female now",
+      "what is sex",
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:16:15.375563",
+    "user_input": "what is dmt",
+    "ai_response": "According to Wikipedia:\n\nDimethyltryptamine (DMT), also known as N,N-dimethyltryptamine (N,N-DMT), is a serotonergic hallucinogen and investigational drug of the tryptamine family that occurs naturally in many plants and animals. DMT is used as a psychedelic drug and prepared by various cultures for ritual purposes as an entheogen. \nDMT has a rapid onset, intense effects, and a relatively short duration of action. For those reasons, DMT was known as the \"businessman's trip\" during the 1960s in the United States, as a user could access the full depth of a psychedelic experience in considerably less time than with other substances such as LSD or psilocybin mushrooms.\n\nSource: https://en.wikipedia.org/wiki/Dimethyltryptamine",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "dmt",
+      "last_questions": [
+        "who is sunny leone",
+        "who is the top level pornstar female now",
+        "what is sex",
+        "hi",
+        "what is dmt",
+        "what is mpb"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what the fuck",
+          "topic": "fuck",
+          "timestamp": "2025-08-14T14:49:52.736600"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        }
+      ]
+    },
+    "topic": "dmt",
+    "related_questions": [
+      "what is sex",
+      "hi",
+      "what is dmt"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:16:30.212179",
+    "user_input": "what is mpb",
+    "ai_response": "'mpb' could refer to several things:\n\n1. Mountain pine beetle\n2. Male pattern baldness\n3. PZT\n4. Mississippi Public Broadcasting\n5. Maritime and Port Bureau\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "time",
+    "conversation_context": {
+      "topic": "mpb",
+      "last_questions": [
+        "who is the top level pornstar female now",
+        "what is sex",
+        "hi",
+        "what is dmt",
+        "what is mpb",
+        "male pattern baldness"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:00:34.886916"
+        },
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        }
+      ]
+    },
+    "topic": "mpb",
+    "related_questions": [
+      "hi",
+      "what is dmt",
+      "what is mpb"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:19:28.247691",
+    "user_input": "male pattern baldness",
+    "ai_response": "I understand you're asking about 'male pattern baldness'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "male pattern baldness",
+      "last_questions": [
+        "what is sex",
+        "hi",
+        "what is dmt",
+        "what is mpb",
+        "male pattern baldness",
+        "access google.com"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is isha ambani",
+          "topic": "isha ambani",
+          "timestamp": "2025-08-14T15:01:32.879444"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        }
+      ]
+    },
+    "topic": "male pattern baldness",
+    "related_questions": [
+      "what is dmt",
+      "what is mpb",
+      "male pattern baldness"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:19:46.703874",
+    "user_input": "access google.com",
+    "ai_response": "I understand you're asking about 'access google.com'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "access google.com",
+      "last_questions": [
+        "hi",
+        "what is dmt",
+        "what is mpb",
+        "male pattern baldness",
+        "access google.com",
+        "who are you"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:07:03.086486"
+        },
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        }
+      ]
+    },
+    "topic": "access google.com",
+    "related_questions": [
+      "what is mpb",
+      "male pattern baldness",
+      "access google.com"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:19:59.584911",
+    "user_input": "who are you",
+    "ai_response": "I understand you're asking about 'who are you'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "are you",
+      "last_questions": [
+        "what is dmt",
+        "what is mpb",
+        "male pattern baldness",
+        "access google.com",
+        "who are you"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is georgina",
+          "topic": "georgina",
+          "timestamp": "2025-08-14T15:07:39.881013"
+        },
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        }
+      ]
+    },
+    "topic": "are you",
+    "related_questions": [
+      "male pattern baldness",
+      "access google.com",
+      "who are you"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:29:20.837471",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] [Context: hi] [Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "hi",
+      "last_questions": [
+        "what is mpb",
+        "male pattern baldness",
+        "access google.com",
+        "who are you",
+        "hi",
+        "who is nobita"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is sunny leone",
+          "topic": "sunny leone",
+          "timestamp": "2025-08-14T15:08:03.355163"
+        },
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:29:20.836244"
+        },
+        {
+          "query": "who is nobita",
+          "topic": "nobita",
+          "timestamp": "2025-08-14T15:30:12.275780"
+        }
+      ]
+    },
+    "topic": "hi",
+    "related_questions": [
+      "access google.com",
+      "who are you",
+      "hi"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:30:16.021472",
+    "user_input": "who is nobita",
+    "ai_response": "According to Wikipedia:\n\nNobita Nobi (Japanese: 野比 のび太, Hepburn: Nobi Nobita) is a fictional character and one of the main characters in the Doraemon anime and manga series created by Fujiko Fujio. Known as Sidney, Specky and Noby in some English localizations of the anime, Nobita is usually depicted as an elementary school student. The title character, Doraemon, is sent back in time by Nobita's great-great grandson Sewashi Nobi to look after Nobita.\nAlong with Doraemon, Nobita is considered to be one of the most popular and widely recognizable manga characters due to the series' popularity, which extends beyond its native Japan.\n\nSource: https://en.wikipedia.org/wiki/Nobita_Nobi",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "nobita",
+      "last_questions": [
+        "male pattern baldness",
+        "access google.com",
+        "who are you",
+        "hi",
+        "who is nobita",
+        "who is shisuka"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "who is the top level pornstar female now",
+          "topic": "top level pornstar female now",
+          "timestamp": "2025-08-14T15:08:37.131027"
+        },
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:29:20.836244"
+        },
+        {
+          "query": "who is nobita",
+          "topic": "nobita",
+          "timestamp": "2025-08-14T15:30:12.275780"
+        },
+        {
+          "query": "who is shisuka",
+          "topic": "shisuka",
+          "timestamp": "2025-08-14T15:30:38.459903"
+        }
+      ]
+    },
+    "topic": "nobita",
+    "related_questions": [
+      "who are you",
+      "hi",
+      "who is nobita"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:30:46.917192",
+    "user_input": "who is shisuka",
+    "ai_response": "According to Wikipedia:\n\nChiyo Nakamura (Japanese: 中村チヨ, romanized: Nakamura Chiyo; 1906–1969) was a Japanese Nivkh shaman, craftswoman, performer, and writer of Nivkh folklore and songs.\n\n\n== Early life ==\nIn September 1905, the year before Chiyo was born, Sakhalin island below the 50° north parallel became Japanese territory under the Treaty of Portsmouth.\nIn 1906, Chiyo was born in Shisuka, Karafuto Prefecture, Japan. Her father was a Santan person (Japanese: 山丹), born on Sakhalin and raised on the Asian mainland, who came to Shisuka in his 20s and married a Nivkh woman.\n\nSource: https://en.wikipedia.org/wiki/Chiyo_Nakamura",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual",
+    "conversation_context": {
+      "topic": "shisuka",
+      "last_questions": [
+        "access google.com",
+        "who are you",
+        "hi",
+        "who is nobita",
+        "who is shisuka",
+        "exiuit"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "what is sex",
+          "topic": "sex",
+          "timestamp": "2025-08-14T15:08:57.111473"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:29:20.836244"
+        },
+        {
+          "query": "who is nobita",
+          "topic": "nobita",
+          "timestamp": "2025-08-14T15:30:12.275780"
+        },
+        {
+          "query": "who is shisuka",
+          "topic": "shisuka",
+          "timestamp": "2025-08-14T15:30:38.459903"
+        },
+        {
+          "query": "exiuit",
+          "topic": "exiuit",
+          "timestamp": "2025-08-14T15:31:17.356007"
+        }
+      ]
+    },
+    "topic": "shisuka",
+    "related_questions": [
+      "hi",
+      "who is nobita",
+      "who is shisuka"
+    ]
+  },
+  {
+    "timestamp": "2025-08-14T15:31:17.356711",
+    "user_input": "exiuit",
+    "ai_response": "I understand you're asking about 'exiuit'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational",
+    "conversation_context": {
+      "topic": "exiuit",
+      "last_questions": [
+        "who are you",
+        "hi",
+        "who is nobita",
+        "who is shisuka",
+        "exiuit"
+      ],
+      "related_info": {},
+      "conversation_chain": [
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:15:08.169172"
+        },
+        {
+          "query": "what is dmt",
+          "topic": "dmt",
+          "timestamp": "2025-08-14T15:16:13.106750"
+        },
+        {
+          "query": "what is mpb",
+          "topic": "mpb",
+          "timestamp": "2025-08-14T15:16:28.256419"
+        },
+        {
+          "query": "male pattern baldness",
+          "topic": "male pattern baldness",
+          "timestamp": "2025-08-14T15:19:28.247337"
+        },
+        {
+          "query": "access google.com",
+          "topic": "access google.com",
+          "timestamp": "2025-08-14T15:19:46.703505"
+        },
+        {
+          "query": "who are you",
+          "topic": "are you",
+          "timestamp": "2025-08-14T15:19:59.584353"
+        },
+        {
+          "query": "hi",
+          "topic": "hi",
+          "timestamp": "2025-08-14T15:29:20.836244"
+        },
+        {
+          "query": "who is nobita",
+          "topic": "nobita",
+          "timestamp": "2025-08-14T15:30:12.275780"
+        },
+        {
+          "query": "who is shisuka",
+          "topic": "shisuka",
+          "timestamp": "2025-08-14T15:30:38.459903"
+        },
+        {
+          "query": "exiuit",
+          "topic": "exiuit",
+          "timestamp": "2025-08-14T15:31:17.356007"
+        }
+      ]
+    },
+    "topic": "exiuit",
+    "related_questions": [
+      "who is nobita",
+      "who is shisuka",
+      "exiuit"
+    ]
+  },
+  {
+    "query": "hi",
+    "timestamp": "2025-08-14T15:37:11.837599",
+    "type": "general",
+    "response": "Hello! I'm your AI assistant. How can I help you today?"
+  },
+  {
+    "query": "3487298739828382949832438428849289349218319203102830132",
+    "timestamp": "2025-08-14T15:37:33.195766",
+    "type": "general",
+    "response": "I understand you're asking about '3487298739828382949832438428849289349218319203102830132'. Let me provide you with the most relevant and current information available."
+  },
+  {
+    "query": "what is 88",
+    "timestamp": "2025-08-14T15:37:45.756199",
+    "type": "definition"
+  },
+  {
+    "query": "879342398289429847298238934293492349329834893",
+    "timestamp": "2025-08-14T15:38:45.691822",
+    "type": "general",
+    "response": "I understand you're asking about '879342398289429847298238934293492349329834893'. Let me provide you with the most relevant and current information available."
+  },
+  {
+    "query": "32432423342323442342342323243423",
+    "timestamp": "2025-08-14T15:40:01.596211",
+    "type": "general",
+    "response": "I understand you're asking about '32432423342323442342342323243423'. Let me provide you with the most relevant and current information available."
+  },
+  {
+    "query": "hi",
+    "timestamp": "2025-08-14T15:41:27.060069",
+    "type": "general",
+    "response": "Hello! I'm your AI assistant. How can I help you today?"
+  },
+  {
+    "query": "what is 88",
+    "timestamp": "2025-08-14T15:41:43.571622",
+    "type": "definition"
+  },
+  {
+    "query": "hi",
+    "timestamp": "2025-08-14T15:42:52.091849",
+    "type": "general",
+    "response": "Hello! I'm your AI assistant. How can I help you today?"
+  },
+  {
+    "query": "34334+23232",
+    "timestamp": "2025-08-14T15:43:02.548010",
+    "type": "math",
+    "response": "Result: 34334+23232 = 57566"
+  },
+  {
+    "query": "python main.py",
+    "timestamp": "2025-08-14T15:52:11.660658",
+    "type": "general",
+    "response": "I understand you're asking about 'python main.py'. Let me provide you with the most relevant and current information available."
+  },
+  {
+    "query": "what is hiroshima",
+    "timestamp": "2025-08-14T16:01:53.195401",
+    "type": "wikipedia",
+    "response": "I couldn't find information about 'hiroshima' on Wikipedia."
+  },
+  {
+    "query": "what is sex",
+    "timestamp": "2025-08-14T16:06:35.026604",
+    "type": "wikipedia",
+    "response": "'sex' could refer to several things:\n\n1. Java Platform, Standard Edition\n2. Special Edition\n3. Windows 98 Second Edition\n4. Sé (album)\n5. Se (instrument)\n\nPlease be more specific."
+  },
+  {
+    "query": "what is dopomoine",
+    "timestamp": "2025-08-14T16:06:53.082995",
+    "type": "wikipedia",
+    "response": "According to Wikipedia:\n\nDopamine (DA, a contraction of 3,4-dihydroxyphenethylamine) is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys."
+  },
+  {
+    "query": "what is dick",
+    "timestamp": "2025-08-14T16:07:21.442731",
+    "type": "wikipedia",
+    "response": "'dick' could refer to several things:\n\n1. Nick (given name)\n2. Désirée Nick\n3. Nick, Hungary\n4. Nick, Warmian-Masurian Voivodeship\n5. arrested\n\nPlease be more specific."
+  },
+  {
+    "query": "who is pooja hedge",
+    "timestamp": "2025-08-14T16:07:34.858754",
+    "type": "wikipedia",
+    "response": "I couldn't find information about 'pooja hedge' on Wikipedia."
   }
 ]

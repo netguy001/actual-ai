@@ -16,13 +16,26 @@ from urllib.parse import quote_plus
 import logging
 from bs4 import BeautifulSoup
 from pathlib import Path
+import time
+import requests
+import wikipedia
+import math
+import re
+from datetime import datetime
+from typing import Dict, List, Optional, Any
+import logging
+from bs4 import BeautifulSoup
+import sqlite3
+from utils.helpers import safe_json_dumps, safe_json_loads, clean_text, classify_query_type, is_question
 
 logger = logging.getLogger(__name__)
 
 
 class EnhancedAI:
     """
-    Enhanced AI with internet access, math capabilities, and learning features
+    Enhanced AI with web scraping, Wikipedia, math, real-time data fetching,
+    query classification, continuous learning, data persistence, auto-correct,
+    and context awareness
     """
     
     def __init__(self, storage_path: str = "storage"):
@@ -156,36 +169,25 @@ class EnhancedAI:
         except Exception as e:
             logger.error(f"Error saving persistent data: {e}")
     
-    def learn_from_interaction(self, user_input: str, ai_response: str, feedback: Optional[Dict] = None):
-        """Learn from each interaction to improve future responses"""
+    def learn_from_interaction(self, query: str, response: str):
+        """Learn from user interaction"""
         try:
-            # Record the interaction with enhanced context
-            interaction = {
-                'timestamp': datetime.now().isoformat(),
-                'user_input': user_input,
-                'ai_response': ai_response,
-                'feedback': feedback,
-                'input_type': self._classify_input_type(user_input),
-                'response_type': self._classify_response_type(ai_response),
-                'conversation_context': self.current_conversation_context.copy(),
-                'topic': self.current_conversation_context.get('topic'),
-                'related_questions': self.current_conversation_context.get('last_questions', [])[-3:]
-            }
-            
-            self.conversation_history.append(interaction)
-            
-            # Extract knowledge from the interaction
-            self._extract_knowledge(user_input, ai_response)
-            
-            # Update conversation patterns
-            self._update_conversation_patterns(user_input, ai_response)
-            
-            # Run continuous data feed
-            self._continuous_data_feed()
-            
-            # Save data periodically (every 3 interactions for better memory)
-            if len(self.conversation_history) % 3 == 0:
-                self._save_persistent_data()
+            # Only store substantial responses, not greetings
+            if len(response) > 20 and not any(greeting in query.lower() for greeting in ['hello', 'hi', 'hey']):
+                self.knowledge_base[f"learned_{len(self.knowledge_base)}"] = {
+                    'query': query,
+                    'response': response,
+                    'type': 'learned',
+                    'timestamp': datetime.now().isoformat()
+                }
+                
+                # Keep knowledge base size manageable
+                if len(self.knowledge_base) > 50:
+                    # Remove oldest entries
+                    keys_to_remove = list(self.knowledge_base.keys())[:10]
+                    for key in keys_to_remove:
+                        if key.startswith('learned_'):
+                            del self.knowledge_base[key]
                 
         except Exception as e:
             logger.error(f"Error learning from interaction: {e}")
@@ -387,58 +389,72 @@ class EnhancedAI:
         
     def process_query(self, query: str) -> Dict[str, Any]:
         """
-        Process user query and determine the best response method
+        Process user query with enhanced capabilities
+        
+        Args:
+            query: User's input query
+            
+        Returns:
+            Dictionary with response data
         """
-        # Auto-correct the query first
-        corrected_query = self._auto_correct_query(query)
-        original_query = query
+        start_time = time.time()
         
-        if corrected_query != query:
-            logger.info(f"Auto-corrected: '{query}' -> '{corrected_query}'")
-            query = corrected_query
-        
-        query_lower = query.lower().strip()
-        
-        # Update conversation context
-        self._update_conversation_context(query)
-        
-        # Check for context-aware follow-up questions
-        context_response = self._handle_context_aware_query(query)
-        if context_response:
-            return context_response
-        
-        # Check for time/date FIRST (highest priority for current data)
-        if any(word in query_lower for word in ['time', 'date', 'today', 'now', 'current time', 'what time']):
-            return self._handle_time_query(query)
-        
-        # Check for weather
-        if 'weather' in query_lower:
-            return self._handle_weather_query(query)
-        
-        # Check for current events/news
-        if any(word in query_lower for word in ['news', 'current', 'latest', 'today', 'recent']):
-            return self._handle_news_query(query)
-        
-        # Check for math expressions
-        if self._is_math_query(query):
-            return self._handle_math_query(query)
-        
-        # Check for factual questions (but be more specific)
-        if self._is_factual_question(query):
-            return self._handle_factual_query(query)
-        
-        # Check for learned responses last (to avoid overriding current data)
-        learned_response = self.get_learned_response(query)
-        if learned_response and not self._is_current_data_request(query):
+        try:
+            # Clean and classify query
+            clean_query = clean_text(query)
+            query_type = classify_query_type(clean_query)
+            
+            # Debug logging
+            logger.info(f"Query: '{query}' -> Clean: '{clean_query}' -> Type: {query_type}")
+            
+            # Store in conversation history
+            self.conversation_history.append({
+                'query': clean_query,
+                'timestamp': datetime.now().isoformat(),
+                'type': query_type
+            })
+            
+            # Process based on query type
+            if query_type == "time":
+                response = self._handle_time_query(clean_query)
+            elif query_type == "weather":
+                response = self._handle_weather_query(clean_query)
+            elif query_type == "math":
+                response = self._handle_math_query(clean_query)
+            elif query_type == "definition":
+                response = self._handle_definition_query(clean_query)
+            elif query_type == "howto":
+                response = self._handle_howto_query(clean_query)
+            elif query_type == "question":
+                response = self._handle_question_query(clean_query)
+            else:
+                response = self._handle_general_query(clean_query)
+            
+            # Add response to conversation history
+            if len(self.conversation_history) > 0:
+                self.conversation_history[-1]['response'] = response.get('response', '')
+                self.conversation_history[-1]['type'] = response.get('type', 'general')
+            
+            # Save data
+            self._save_persistent_data()
+            
             return {
                 'success': True,
-                'response': f"[Learned Response] {learned_response}",
-                'type': 'learned',
-                'source': 'knowledge_base'
+                'response': response.get('response', 'I apologize, but I could not process your query.'),
+                'type': response.get('type', 'general'),
+                'confidence': response.get('confidence', 0.5),
+                'response_time': time.time() - start_time
             }
-        
-        # Default to general response
-        return self._handle_general_query(query)
+            
+        except Exception as e:
+            logger.error(f"Error processing query: {e}")
+            return {
+                'success': False,
+                'response': f"I encountered an error while processing your query: {str(e)}",
+                'type': 'error',
+                'confidence': 0.0,
+                'response_time': time.time() - start_time
+            }
     
     def _is_math_query(self, query: str) -> bool:
         """Check if query contains mathematical expressions"""
@@ -610,41 +626,35 @@ class EnhancedAI:
     def _handle_math_query(self, query: str) -> Dict[str, Any]:
         """Handle mathematical queries"""
         try:
-            # Extract math expression
-            math_expr = self._extract_math_expression(query)
+            # Extract mathematical expression
+            # Remove common words and keep numbers and operators
+            math_expr = re.sub(r'[a-zA-Z\s]', '', query)
+            math_expr = re.sub(r'[^0-9+\-*/().]', '', math_expr)
             
-            if not math_expr:
-                return {
-                    'success': False,
-                    'response': 'I couldn\'t identify a mathematical expression in your query.',
-                    'type': 'math'
-                }
-            
-            # Try different math approaches
-            result = self._evaluate_math_expression(math_expr)
-            
-            if result['success']:
-                return {
-                    'success': True,
-                    'response': f"The result of {math_expr} = {result['result']}",
-                    'type': 'math',
-                    'expression': math_expr,
-                    'result': result['result'],
-                    'method': result['method']
-                }
+            if math_expr:
+                try:
+                    result = eval(math_expr)
+                    response = f"Result: {math_expr} = {result}"
+                    confidence = 0.9
+                except:
+                    response = "I couldn't evaluate that mathematical expression."
+                    confidence = 0.0
             else:
-                return {
-                    'success': False,
-                    'response': f"I couldn't evaluate the expression '{math_expr}'. {result['error']}",
-                    'type': 'math'
-                }
-                
-        except Exception as e:
-            logger.error(f"Math query error: {e}")
+                response = "Please provide a mathematical expression to calculate."
+                confidence = 0.0
+            
             return {
-                'success': False,
-                'response': f"Error processing mathematical query: {str(e)}",
-                'type': 'math'
+                'response': response,
+                'type': 'math',
+                'confidence': confidence
+            }
+            
+        except Exception as e:
+            logger.error(f"Error handling math query: {e}")
+            return {
+                'response': "I couldn't process the mathematical query.",
+                'type': 'math',
+                'confidence': 0.0
             }
     
     def _extract_math_expression(self, query: str) -> str:
@@ -1101,52 +1111,455 @@ class EnhancedAI:
             }
     
     def _handle_general_query(self, query: str) -> Dict[str, Any]:
-        """Handle general queries with intelligent responses"""
+        """Handle general queries"""
         try:
-            # Try to provide a helpful response based on query content
-            query_lower = query.lower()
-            
-            if any(word in query_lower for word in ['hello', 'hi', 'hey']):
-                response = "Hello! I'm your enhanced AI assistant. I can help you with math, news, weather, factual questions, and much more. What would you like to know?"
-            
-            elif any(word in query_lower for word in ['help', 'what can you do', 'capabilities']):
-                response = "I'm an enhanced AI assistant with the following capabilities:\n\n" + \
-                          "🔢 **Math & Calculations**: Complex mathematical expressions, equations, calculus\n" + \
-                          "📰 **Current News**: Latest news from BBC and other sources\n" + \
-                          "🌍 **Factual Information**: Wikipedia searches and web research\n" + \
-                          "🌤️ **Weather**: Current weather for any location\n" + \
-                          "⏰ **Time & Date**: Current time and date information\n" + \
-                          "🧠 **General Knowledge**: Answer questions and provide insights\n" + \
-                          "📚 **Learning & Evolution**: I learn from every interaction and continuously improve!\n\n" + \
-                          "Just ask me anything! For example:\n" + \
-                          "- \"Calculate 2^10 + sqrt(144)\"\n" + \
-                          "- \"What's the latest news?\"\n" + \
-                          "- \"What is quantum computing?\"\n" + \
-                          "- \"Weather in New York\"\n" + \
-                          "- \"What time is it?\""
-            
-            elif '?' in query:
-                response = f"That's an interesting question about '{query}'. Let me search for the most current and accurate information for you."
-                # Try to get factual information
-                factual_result = self._handle_factual_query(query)
-                if factual_result['success']:
-                    response = factual_result['response']
-            
+            # Check if it's a greeting
+            greetings = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']
+            if query.lower() in greetings:
+                response = f"Hello! I'm your AI assistant. How can I help you today?"
+                confidence = 0.9
             else:
-                response = f"I understand you're asking about '{query}'. Let me provide you with the most relevant and current information available."
+                # Try to search for information about the query
+                search_results = self._multi_search(query)
+                if search_results:
+                    response = self._format_multi_source_response(query, search_results)
+                    confidence = 0.8
+                else:
+                    response = f"I understand you're asking about '{query}'. Let me provide you with the most relevant and current information available."
+                    confidence = 0.6
             
             return {
-                'success': True,
                 'response': response,
-                'type': 'general'
+                'type': 'general',
+                'confidence': confidence
             }
             
         except Exception as e:
+            logger.error(f"Error handling general query: {e}")
             return {
-                'success': False,
-                'response': f"Error processing query: {str(e)}",
-                'type': 'general'
+                'response': "I couldn't process your query.",
+                'type': 'general',
+                'confidence': 0.0
             }
+    
+    def _handle_question_query(self, query: str) -> Dict[str, Any]:
+        """Handle general question queries"""
+        try:
+            # Try to find answer in knowledge base first
+            keywords = query.lower().split()
+            best_match = None
+            best_score = 0
+            
+            for key, value in self.knowledge_base.items():
+                if isinstance(value, dict) and 'value' in value:
+                    key_words = key.lower().split()
+                    score = len(set(keywords) & set(key_words))
+                    if score > best_score:
+                        best_score = score
+                        best_match = value
+            
+            if best_match and best_score > 0:
+                response = f"Based on my knowledge base: {best_match['value']}"
+                confidence = 0.7
+            else:
+                response = f"I understand you're asking about '{query}'. Let me provide you with the most relevant and current information available."
+                confidence = 0.6
+            
+            return {
+                'response': response,
+                'type': 'question',
+                'confidence': confidence
+            }
+            
+        except Exception as e:
+            logger.error(f"Error handling question query: {e}")
+            return {
+                'response': "I couldn't process the question.",
+                'type': 'question',
+                'confidence': 0.0
+            }
+    
+    def _handle_definition_query(self, query: str) -> Dict[str, Any]:
+        """Handle definition queries using multiple search engines"""
+        try:
+            # Extract search term
+            search_term = query.lower()
+            for prefix in ['what is ', 'who is ', 'define ', 'meaning of ']:
+                if search_term.startswith(prefix):
+                    search_term = search_term[len(prefix):].strip()
+                    break
+            
+            if not search_term:
+                return {
+                    'response': "Please specify what you'd like me to search for.",
+                    'type': 'search',
+                    'confidence': 0.0
+                }
+            
+            # Use multiple search engines
+            search_results = self._multi_search(search_term)
+            
+            if search_results:
+                # Combine results from multiple sources
+                response = self._format_multi_source_response(search_term, search_results)
+                confidence = 0.9
+            else:
+                response = f"I couldn't find information about '{search_term}' from multiple sources."
+                confidence = 0.0
+            
+            return {
+                'response': response,
+                'type': 'multi_search',
+                'confidence': confidence
+            }
+            
+        except Exception as e:
+            logger.error(f"Error handling definition query: {e}")
+            return {
+                'response': "I couldn't process the search query.",
+                'type': 'search',
+                'confidence': 0.0
+            }
+    
+    def _multi_search(self, query: str) -> List[Dict]:
+        """Search multiple engines for information"""
+        results = []
+        
+        try:
+            # 1. DuckDuckGo Instant Answer
+            ddg_result = self._search_duckduckgo(query)
+            if ddg_result:
+                results.append(ddg_result)
+            
+            # 2. Google Search
+            google_results = self._search_google(query)
+            if google_results:
+                results.extend(google_results[:2])
+            
+            # 3. Bing Search
+            bing_results = self._search_bing(query)
+            if bing_results:
+                results.extend(bing_results[:2])
+            
+            # 4. Web search via DuckDuckGo
+            web_results = self._search_web(query)
+            if web_results:
+                results.extend(web_results[:2])
+            
+            # 5. Wikipedia as backup
+            wiki_result = self._search_wikipedia(query)
+            if wiki_result:
+                results.append(wiki_result)
+            
+            # 6. News search
+            news_results = self._search_news(query)
+            if news_results:
+                results.extend(news_results[:1])
+            
+            # 7. Stack Overflow for technical queries
+            if any(word in query.lower() for word in ['code', 'programming', 'error', 'bug', 'function', 'api']):
+                stack_results = self._search_stackoverflow(query)
+                if stack_results:
+                    results.extend(stack_results[:1])
+            
+        except Exception as e:
+            logger.error(f"Error in multi-search: {e}")
+        
+        return results
+    
+    def _search_duckduckgo(self, query: str) -> Dict:
+        """Search DuckDuckGo for instant answers"""
+        try:
+            import requests
+            url = f"https://api.duckduckgo.com/?q={query}&format=json&no_html=1&skip_disambig=1"
+            response = requests.get(url, timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if data.get('Abstract'):
+                    return {
+                        'source': 'DuckDuckGo',
+                        'title': data.get('AbstractSource', 'DuckDuckGo'),
+                        'content': data['Abstract'],
+                        'url': data.get('AbstractURL', ''),
+                        'type': 'instant_answer'
+                    }
+                
+                if data.get('Answer'):
+                    return {
+                        'source': 'DuckDuckGo',
+                        'title': 'Direct Answer',
+                        'content': data['Answer'],
+                        'url': data.get('AnswerURL', ''),
+                        'type': 'direct_answer'
+                    }
+            
+        except Exception as e:
+            logger.error(f"DuckDuckGo search error: {e}")
+        
+        return None
+    
+    def _search_web(self, query: str) -> List[Dict]:
+        """Search web for general information"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+            from urllib.parse import quote_plus
+            
+            # Use a search aggregator
+            search_url = f"https://duckduckgo.com/html/?q={quote_plus(query)}"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                results = []
+                
+                # Extract search results
+                for result in soup.find_all('div', class_='result')[:3]:
+                    title_elem = result.find('h2')
+                    snippet_elem = result.find('div', class_='snippet')
+                    link_elem = result.find('a')
+                    
+                    if title_elem and snippet_elem:
+                        results.append({
+                            'source': 'Web Search',
+                            'title': title_elem.get_text().strip(),
+                            'content': snippet_elem.get_text().strip(),
+                            'url': link_elem.get('href', '') if link_elem else '',
+                            'type': 'web_result'
+                        })
+                
+                return results
+                
+        except Exception as e:
+            logger.error(f"Web search error: {e}")
+        
+        return []
+    
+    def _search_wikipedia(self, query: str) -> Dict:
+        """Search Wikipedia as backup"""
+        try:
+            import wikipedia
+            
+            # Search Wikipedia
+            search_results = wikipedia.search(query, results=1)
+            if search_results:
+                page_title = search_results[0]
+                summary = wikipedia.summary(page_title, sentences=2)
+                
+                return {
+                    'source': 'Wikipedia',
+                    'title': page_title,
+                    'content': summary,
+                    'url': f"https://en.wikipedia.org/wiki/{page_title.replace(' ', '_')}",
+                    'type': 'wikipedia'
+                }
+                
+        except Exception as e:
+            logger.error(f"Wikipedia search error: {e}")
+        
+        return None
+    
+    def _search_news(self, query: str) -> List[Dict]:
+        """Search for recent news"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+            from urllib.parse import quote_plus
+            
+            # Search Google News
+            news_url = f"https://news.google.com/search?q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            
+            response = requests.get(news_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                results = []
+                
+                # Extract news articles
+                for article in soup.find_all('article')[:2]:
+                    title_elem = article.find('h3')
+                    if title_elem:
+                        results.append({
+                            'source': 'News',
+                            'title': title_elem.get_text().strip(),
+                            'content': f"Recent news about {query}",
+                            'url': '',
+                            'type': 'news'
+                        })
+                
+                return results
+                
+        except Exception as e:
+            logger.error(f"News search error: {e}")
+        
+        return []
+    
+    def _search_google(self, query: str) -> List[Dict]:
+        """Search Google for information"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+            from urllib.parse import quote_plus
+            
+            # Use a Google search proxy
+            search_url = f"https://www.google.com/search?q={quote_plus(query)}"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'DNT': '1',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+            }
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                results = []
+                
+                # Extract Google search results
+                for result in soup.find_all('div', class_='g')[:3]:
+                    title_elem = result.find('h3')
+                    snippet_elem = result.find('div', class_='VwiC3b')
+                    link_elem = result.find('a')
+                    
+                    if title_elem and snippet_elem:
+                        results.append({
+                            'source': 'Google',
+                            'title': title_elem.get_text().strip(),
+                            'content': snippet_elem.get_text().strip(),
+                            'url': link_elem.get('href', '') if link_elem else '',
+                            'type': 'google_result'
+                        })
+                
+                return results
+                
+        except Exception as e:
+            logger.error(f"Google search error: {e}")
+        
+        return []
+    
+    def _search_bing(self, query: str) -> List[Dict]:
+        """Search Bing for information"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+            from urllib.parse import quote_plus
+            
+            search_url = f"https://www.bing.com/search?q={quote_plus(query)}"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'DNT': '1',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+            }
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                results = []
+                
+                # Extract Bing search results
+                for result in soup.find_all('li', class_='b_algo')[:3]:
+                    title_elem = result.find('h2')
+                    snippet_elem = result.find('p')
+                    link_elem = result.find('a')
+                    
+                    if title_elem and snippet_elem:
+                        results.append({
+                            'source': 'Bing',
+                            'title': title_elem.get_text().strip(),
+                            'content': snippet_elem.get_text().strip(),
+                            'url': link_elem.get('href', '') if link_elem else '',
+                            'type': 'bing_result'
+                        })
+                
+                return results
+                
+        except Exception as e:
+            logger.error(f"Bing search error: {e}")
+        
+        return []
+    
+    def _search_stackoverflow(self, query: str) -> List[Dict]:
+        """Search Stack Overflow for technical information"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+            from urllib.parse import quote_plus
+            
+            search_url = f"https://stackoverflow.com/search?q={quote_plus(query)}"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'DNT': '1',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+            }
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                results = []
+                
+                # Extract Stack Overflow results
+                for result in soup.find_all('div', class_='question-summary')[:2]:
+                    title_elem = result.find('h3')
+                    excerpt_elem = result.find('div', class_='excerpt')
+                    
+                    if title_elem:
+                        results.append({
+                            'source': 'Stack Overflow',
+                            'title': title_elem.get_text().strip(),
+                            'content': excerpt_elem.get_text().strip() if excerpt_elem else f"Technical discussion about {query}",
+                            'url': '',
+                            'type': 'stackoverflow_result'
+                        })
+                
+                return results
+                
+        except Exception as e:
+            logger.error(f"Stack Overflow search error: {e}")
+        
+        return []
+    
+    def _format_multi_source_response(self, query: str, results: List[Dict]) -> str:
+        """Format response from multiple sources"""
+        if not results:
+            return f"I couldn't find information about '{query}' from multiple search engines."
+        
+        # Get unique sources used
+        sources_used = list(set(r['source'] for r in results))
+        
+        # Start with main answer from best source
+        best_result = results[0]
+        response = f"{best_result['content']}"
+        
+        # Add source attribution
+        if best_result['url']:
+            response += f"\n\nSource: {best_result['url']}"
+        
+        # Add additional sources if available (but keep it concise)
+        if len(results) > 1:
+            response += f"\n\nAdditional sources: {', '.join(sources_used[1:3])}"
+        
+        # Show which search engines were used
+        response += f"\n\n*Searched: {', '.join(sources_used)}*"
+        
+        return response
     
     def _extract_topic_from_query(self, query: str) -> str:
         """Extract main topic from a query"""

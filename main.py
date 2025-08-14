@@ -16,6 +16,12 @@ from ai_engine import AIModel, ModelManager, OnlineUpdater
 from ai_engine.enhanced_ai import EnhancedAI
 from ai_engine.advanced_core import AdvancedAICore
 from ai_engine.smart_ai import SmartAI
+
+# Import new self-improving modules
+from ai_engine.self_evaluation import SelfEvaluationModule
+from ai_engine.error_analysis import ErrorAnalysisModule
+from ai_engine.iterative_learning import IterativeLearningModule
+from ai_engine.knowledge_retrieval import KnowledgeRetrievalModule
 from utils import (
     initialize_ai_storage,
     preprocess_input,
@@ -61,6 +67,13 @@ class AISystemCLI:
         self.enhanced_ai = EnhancedAI()  # Initialize enhanced AI
         self.advanced_ai = AdvancedAICore()  # Initialize advanced AI core
         self.smart_ai = SmartAI()  # Initialize smart AI with auto-correct
+        
+        # Initialize self-improving modules
+        self.self_evaluation = SelfEvaluationModule()
+        self.error_analysis = ErrorAnalysisModule()
+        self.iterative_learning = IterativeLearningModule()
+        self.knowledge_retrieval = KnowledgeRetrievalModule()
+        
         self.performance_monitor = PerformanceMonitor(self.storage_path)
         self.cache = CacheManager()
 
@@ -230,7 +243,7 @@ class AISystemCLI:
     @measure_performance(log_result=True)
     def process_user_input(self, user_input: str) -> Dict[str, Any]:
         """
-        Process user input and generate AI response
+        Process user input and generate AI response with simplified logic
 
         Args:
             user_input: User's input text
@@ -241,6 +254,20 @@ class AISystemCLI:
         start_time = time.time()
 
         try:
+            # Handle special commands
+            if user_input.strip().lower().startswith("feedback "):
+                feedback_result = self.self_evaluation.process_feedback_command(user_input)
+                return {
+                    "success": True,
+                    "response": feedback_result,
+                    "prediction": "feedback_processed",
+                    "confidence": 1.0,
+                    "data_type": "command",
+                    "model_type": "feedback_system",
+                    "response_time": time.time() - start_time,
+                    "cached": False,
+                }
+
             # Validate input
             if not user_input or not user_input.strip():
                 return {
@@ -258,181 +285,101 @@ class AISystemCLI:
                 cached_result["cached"] = True
                 return cached_result
 
-            # Use Smart AI first (with auto-correct and advanced features)
+            # Simplified processing logic - use Enhanced AI as primary
             try:
-                smart_result = self.smart_ai.process_smart_query(user_input)
-                self.logger.info(f"Smart AI result: {smart_result}")
+                enhanced_result = self.enhanced_ai.process_query(user_input)
                 
-                if smart_result['success']:
-                    response_text = smart_result['response']
-                    confidence = smart_result.get('confidence', 0.9)
-                    data_type = smart_result.get('type', 'smart')
-                    prediction = 'smart_response'
+                if enhanced_result['success']:
+                    response_text = enhanced_result['response']
+                    confidence = enhanced_result.get('confidence', 0.8)
+                    data_type = enhanced_result.get('type', 'enhanced')
+                    prediction = 'enhanced_response'
+                    model_type = "enhanced_ai"
                     
-                    # Show auto-correct info if applicable
-                    if smart_result.get('auto_corrected'):
-                        response_text = f"**Auto-corrected:** {smart_result.get('original_query')} → {smart_result.get('corrected_query')}\n\n{response_text}"
+                    # Learn from this successful interaction
+                    self.enhanced_ai.learn_from_interaction(user_input, response_text)
+                else:
+                    # Fallback to basic response
+                    response_text = "I understand your query. Let me provide you with relevant information."
+                    confidence = 0.5
+                    data_type = 'fallback'
+                    prediction = 'fallback_response'
+                    model_type = "fallback"
                     
-                    return {
-                        "success": True,
-                        "response": response_text,
-                        "prediction": prediction,
-                        "confidence": confidence,
-                        "data_type": data_type,
-                        "model_type": "smart_ai",
-                        "response_time": time.time() - start_time,
-                        "cached": False,
-                    }
             except Exception as e:
-                self.logger.error(f"Smart AI error: {e}")
-                smart_result = {'success': False, 'response': str(e)}
-            
-            # Use Advanced AI Core if Smart AI failed
-            if not smart_result['success']:
-                try:
-                    advanced_result = self.advanced_ai.process_query_advanced(user_input)
-                    self.logger.info(f"Advanced AI result: {advanced_result}")
-                    
-                    if advanced_result['success']:
-                        response_text = advanced_result['response']
-                        confidence = advanced_result.get('confidence', 0.8)
-                        data_type = advanced_result.get('type', 'advanced')
-                        prediction = 'advanced_response'
-                        
-                        return {
-                            "success": True,
-                            "response": response_text,
-                            "prediction": prediction,
-                            "confidence": confidence,
-                            "data_type": data_type,
-                            "model_type": "advanced_ai",
-                            "response_time": time.time() - start_time,
-                            "cached": False,
-                        }
-                except Exception as e:
-                    self.logger.error(f"Advanced AI error: {e}")
-                    advanced_result = {'success': False, 'response': str(e)}
-            
-            # Use Enhanced AI if Advanced AI failed
-            if not advanced_result['success']:
-                try:
-                    enhanced_result = self.enhanced_ai.process_query(user_input)
-                    self.logger.info(f"Enhanced AI result: {enhanced_result}")
-                    
-                    if enhanced_result['success']:
-                        response_text = enhanced_result['response']
-                        confidence = 0.9  # High confidence for enhanced AI responses
-                        data_type = enhanced_result.get('type', 'enhanced')
-                        prediction = enhanced_result.get('result', 'enhanced_response')
-                        
-                        # Learn from this successful interaction
-                        self.enhanced_ai.learn_from_interaction(user_input, response_text)
-                        
-                        return {
-                            "success": True,
-                            "response": response_text,
-                            "prediction": prediction,
-                            "confidence": confidence,
-                            "data_type": data_type,
-                            "model_type": "enhanced_ai",
-                            "response_time": time.time() - start_time,
-                            "cached": False,
-                        }
-                except Exception as e:
-                    self.logger.error(f"Enhanced AI error: {e}")
-                    enhanced_result = {'success': False, 'response': str(e)}
-            
-            # If all AI systems failed, fallback to original model
-            if not enhanced_result['success']:
-                # Fallback to original model if enhanced AI fails
-                self.logger.warning(f"Enhanced AI failed: {enhanced_result.get('response', 'Unknown error')}")
-                
-                # Preprocess input
-                self.logger.debug(f"Processing input: {user_input[:100]}...")
-                processed_data, data_type = preprocess_input(user_input)
-
-                # Check if model type matches data type
-                expected_model_type = f"{data_type}_classifier"
-                if self.model.model_type != expected_model_type:
-                    self.logger.info(
-                        f"Switching model type from {self.model.model_type} to {expected_model_type}"
-                    )
-
-                    # Try to load appropriate model
-                    available_models = self.model_manager.list_models()
-                    suitable_model = next(
-                        (
-                            m
-                            for m in available_models
-                            if m.get("model_type") == expected_model_type
-                        ),
-                        None,
-                    )
-
-                    if suitable_model:
-                        self.model = self.model_manager.load_model(suitable_model["name"])
-                    else:
-                        # Create new model of appropriate type
-                        self.model = AIModel(model_type=expected_model_type)
-                        self._train_default_model()
-
-                # Make prediction
-                predictions = self.model.predict(processed_data)
-
-                if not predictions:
-                    return {
-                        "success": False,
-                        "error": "No predictions generated",
-                        "response": "I couldn't process your input. Please try rephrasing.",
-                    }
-
-                # Extract prediction and confidence
-                # predictions is a tuple: (predictions_list, confidences_list)
-                predictions_list, confidences_list = predictions
-                
-                prediction = (
-                    predictions_list[0]
-                    if isinstance(predictions_list[0], (int, float, str))
-                    else predictions_list[0][0]
-                )
-                confidence = confidences_list[0] if len(confidences_list) > 0 else 0.5
-
-                # Generate human-readable response
-                response_text = self._generate_response(prediction, confidence, data_type, user_input)
+                self.logger.error(f"Enhanced AI error: {e}")
+                response_text = "I'm here to help! What would you like to know?"
+                confidence = 0.5
+                data_type = 'error_fallback'
+                prediction = 'error_fallback'
+                model_type = "error_fallback"
 
             # Calculate response time
             response_time = time.time() - start_time
 
-            # Prepare result
+            # Create result dictionary
             result = {
                 "success": True,
                 "response": response_text,
                 "prediction": prediction,
                 "confidence": confidence,
                 "data_type": data_type,
-                "model_type": self.model.model_type,
+                "model_type": model_type,
                 "response_time": response_time,
                 "cached": False,
             }
 
-            # Cache result
-            self.cache.set(cache_key, result, ttl=300)  # 5 minute cache
+            # Cache the result
+            self.cache.set(cache_key, result)
 
-            # Log interaction
-            self._log_interaction(user_input, response_text, confidence, response_time)
+            # Self-Evaluation (simplified)
+            try:
+                evaluation = self.self_evaluation.evaluate_response(
+                    question=user_input,
+                    answer=response_text,
+                    response_time=response_time,
+                    model_type=model_type,
+                    context_info={
+                        "predicted_model": model_type,
+                        "model_confidence": confidence
+                    }
+                )
+                result["evaluation_score"] = evaluation.overall_score
+            except Exception as e:
+                self.logger.error(f"Self-evaluation error: {e}")
 
-            # Performance monitoring
-            self.performance_monitor.log_metric("response_time", response_time)
-            self.performance_monitor.log_metric("confidence", confidence)
+            # Error Analysis (simplified)
+            try:
+                error_analysis = self.error_analysis.analyze_response(
+                    question=user_input,
+                    answer=response_text,
+                    model_type=model_type
+                )
+                result["error_analysis"] = error_analysis
+            except Exception as e:
+                self.logger.error(f"Error analysis error: {e}")
+
+            # Learn from interaction (simplified)
+            try:
+                self.iterative_learning.learn_from_interaction(
+                    question=user_input,
+                    answer=response_text,
+                    model_type=model_type,
+                    score=result.get("evaluation_score", 0.5),
+                    success=result.get("evaluation_score", 0.5) >= 0.6
+                )
+            except Exception as e:
+                self.logger.error(f"Learning error: {e}")
 
             return result
 
         except Exception as e:
-            self.logger.error(f"Error processing input: {e}")
+            self.logger.error(f"Error in process_user_input: {e}")
             return {
                 "success": False,
                 "error": str(e),
-                "response": "I encountered an error processing your request. Please try again.",
+                "response": "I encountered an error while processing your request. Please try again.",
+                "response_time": time.time() - start_time,
             }
 
     def _generate_response(
@@ -662,6 +609,20 @@ class AISystemCLI:
 ║   clear       - Clear screen                                           ║
 ║   stats       - Show session statistics                                ║
 ║   clear_learning - Clear all learning data                            ║
+║   retrain       - Force immediate model retraining                     ║
+║   clear_cache   - Clear knowledge retrieval cache                      ║
+║   learning_stats - Show iterative learning statistics                  ║
+║   error_stats   - Show error analysis statistics                       ║
+║   performance_stats - Show self-evaluation statistics                  ║
+║                                                                        ║
+║ SELF-IMPROVING FEATURES:                                               ║
+║   • 🤖 Self-Evaluation: Automatic response scoring and feedback        ║
+║   • 🔍 Error Analysis: Detects failures and fetches corrections        ║
+║   • 🧠 Iterative Learning: Continuous model improvement                ║
+║   • 🌐 Knowledge Retrieval: Multi-source information gathering         ║
+║   • 📊 Performance Monitoring: Real-time statistics and metrics        ║
+║   • 🔄 Auto-Retraining: Periodic model updates every 24 hours          ║
+║   • 💬 Manual Feedback: Use "feedback good/bad <reason>" commands      ║
 ║                                                                        ║
 ║ USAGE:                                                                 ║
 ║   • Type any text or question to get AI predictions                    ║
@@ -802,6 +763,108 @@ class AISystemCLI:
         except Exception as e:
             print(f"Error retrieving statistics: {e}")
 
+    def _display_learning_statistics(self) -> None:
+        """Display iterative learning statistics"""
+        try:
+            print("\n" + "=" * 70)
+            print("🧠 ITERATIVE LEARNING STATISTICS")
+            print("=" * 70)
+            
+            stats = self.iterative_learning.get_learning_statistics()
+            
+            if stats:
+                model_info = stats.get("model_info", {})
+                print(f"Model Path: {model_info.get('model_path', 'N/A')}")
+                print(f"Has Trained Model: {model_info.get('has_trained_model', False)}")
+                print(f"Number of Classes: {model_info.get('num_classes', 0)}")
+                
+                embeddings_info = stats.get("embeddings_info", {})
+                print(f"Number of Embeddings: {embeddings_info.get('num_embeddings', 0)}")
+                print(f"Similarity Threshold: {embeddings_info.get('similarity_threshold', 0.0)}")
+                print(f"Max Results: {embeddings_info.get('max_results', 0)}")
+                
+                training_info = stats.get("training_info", {})
+                print(f"Minimum Training Samples: {training_info.get('min_samples', 0)}")
+                print(f"Retraining Interval: {training_info.get('retraining_interval', 'N/A')}")
+                print(f"Last Retraining: {training_info.get('last_retraining', 'Never')}")
+            else:
+                print("No learning statistics available")
+            
+            print("=" * 70)
+            
+        except Exception as e:
+            print(f"Error retrieving learning statistics: {e}")
+
+    def _display_error_statistics(self) -> None:
+        """Display error analysis statistics"""
+        try:
+            print("\n" + "=" * 70)
+            print("🔍 ERROR ANALYSIS STATISTICS")
+            print("=" * 70)
+            
+            stats = self.error_analysis.get_error_statistics()
+            
+            if stats:
+                overall = stats.get("overall", {})
+                print(f"Total Errors: {overall.get('total_errors', 0)}")
+                print(f"Corrected Errors: {overall.get('corrected_errors', 0)}")
+                print(f"Correction Rate: {overall.get('correction_rate', 0.0):.1f}%")
+                print(f"Average Confidence: {overall.get('average_confidence', 0.0):.3f}")
+                
+                error_types = stats.get("error_types", [])
+                if error_types:
+                    print("\nError Types Distribution:")
+                    for error_type in error_types:
+                        print(f"  • {error_type['type']}: {error_type['count']}")
+                
+                correction_sources = stats.get("correction_sources", [])
+                if correction_sources:
+                    print("\nCorrection Sources Effectiveness:")
+                    for source in correction_sources:
+                        print(f"  • {source['source']}: {source['count']} corrections (avg confidence: {source['avg_confidence']:.3f})")
+            else:
+                print("No error statistics available")
+            
+            print("=" * 70)
+            
+        except Exception as e:
+            print(f"Error retrieving error statistics: {e}")
+
+    def _display_performance_statistics(self) -> None:
+        """Display self-evaluation performance statistics"""
+        try:
+            print("\n" + "=" * 70)
+            print("📊 SELF-EVALUATION PERFORMANCE STATISTICS")
+            print("=" * 70)
+            
+            stats = self.self_evaluation.get_performance_stats()
+            
+            if stats:
+                overall = stats.get("overall", {})
+                print(f"Total Responses: {overall.get('total_responses', 0)}")
+                print(f"Average Score: {overall.get('average_score', 0.0):.3f}")
+                print(f"Average Response Time: {overall.get('average_response_time', 0.0):.3f}s")
+                print(f"Success Rate: {overall.get('success_rate', 0.0):.1f}%")
+                
+                models = stats.get("models", [])
+                if models:
+                    print("\nModel Performance:")
+                    for model in models:
+                        print(f"  • {model['model_type']}: {model['average_score']:.3f} score, {model['successful_responses']}/{model['total_responses']} successful")
+                
+                recent_evaluations = stats.get("recent_evaluations", [])
+                if recent_evaluations:
+                    print("\nRecent Evaluations:")
+                    for i, eval_item in enumerate(recent_evaluations[:5], 1):
+                        print(f"  {i}. {eval_item['question']} → Score: {eval_item['score']:.3f} ({eval_item['model_type']})")
+            else:
+                print("No performance statistics available")
+            
+            print("=" * 70)
+            
+        except Exception as e:
+            print(f"Error retrieving performance statistics: {e}")
+
     def handle_feedback_command(self) -> None:
         """Handle interactive feedback collection"""
         try:
@@ -933,6 +996,37 @@ class AISystemCLI:
                         self._clear_learning_data()
                         continue
 
+                    elif user_input.lower() == "stats":
+                        self.display_stats()
+                        continue
+
+                    elif user_input.lower() == "retrain":
+                        print("🔄 Forcing immediate model retraining...")
+                        success = self.iterative_learning.force_retraining()
+                        if success:
+                            print("✅ Model retraining completed successfully!")
+                        else:
+                            print("❌ Model retraining failed. Check logs for details.")
+                        continue
+
+                    elif user_input.lower() == "clear_cache":
+                        print("🗑️ Clearing knowledge cache...")
+                        self.knowledge_retrieval.clear_cache()
+                        print("✅ Knowledge cache cleared!")
+                        continue
+
+                    elif user_input.lower() == "learning_stats":
+                        self._display_learning_statistics()
+                        continue
+
+                    elif user_input.lower() == "error_stats":
+                        self._display_error_statistics()
+                        continue
+
+                    elif user_input.lower() == "performance_stats":
+                        self._display_performance_statistics()
+                        continue
+
                     # Process regular input
                     print("🤖 AI: Processing...", end="", flush=True)
 
@@ -1005,6 +1099,31 @@ class AISystemCLI:
                 print("✅ Enhanced AI data saved")
             except Exception as e:
                 self.logger.error(f"Error saving enhanced AI data: {e}")
+
+            # Save self-improving modules data
+            try:
+                self.self_evaluation.cleanup()
+                print("✅ Self-Evaluation data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving self-evaluation data: {e}")
+            
+            try:
+                self.error_analysis.cleanup()
+                print("✅ Error Analysis data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving error analysis data: {e}")
+            
+            try:
+                self.iterative_learning.cleanup()
+                print("✅ Iterative Learning data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving iterative learning data: {e}")
+            
+            try:
+                self.knowledge_retrieval.cleanup()
+                print("✅ Knowledge Retrieval data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving knowledge retrieval data: {e}")
 
             # Update session summary in knowledge base
             session_summary = {

@@ -16,6 +16,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Union, Callable, Tuple
 from contextlib import contextmanager
 import traceback
+import re
+
+# Import existing functions
+from .storage_init import initialize_ai_storage
+from .preprocess import preprocess_input
 
 
 # Logging Configuration
@@ -69,180 +74,156 @@ class LogManager:
 
 # File I/O Utilities
 class FileManager:
-    """File I/O utilities for the AI system"""
+    """File management utilities"""
     
     @staticmethod
-    def ensure_directory(path: Union[str, Path]) -> Path:
-        """
-        Ensure directory exists, create if it doesn't
-        
-        Args:
-            path: Directory path
-            
-        Returns:
-            Path object of created/existing directory
-        """
-        path_obj = Path(path)
-        path_obj.mkdir(parents=True, exist_ok=True)
-        return path_obj
-    
-    @staticmethod
-    def safe_file_write(file_path: Union[str, Path], content: Union[str, bytes], 
-                       mode: str = 'w', backup: bool = True) -> bool:
+    def safe_write_file(filepath: str, content: str, backup: bool = True) -> bool:
         """
         Safely write content to file with optional backup
         
         Args:
-            file_path: Target file path
+            filepath: Path to the file
             content: Content to write
-            mode: File write mode
             backup: Whether to create backup of existing file
             
         Returns:
-            True if successful, False otherwise
+            True if successful
         """
         try:
-            file_path = Path(file_path)
+            import os
+            from pathlib import Path
             
-            # Create backup if file exists
-            if backup and file_path.exists():
-                backup_path = file_path.with_suffix(f'.bak_{int(time.time())}')
-                file_path.rename(backup_path)
-                logging.debug(f"Created backup: {backup_path}")
+            # Ensure directory exists
+            Path(filepath).parent.mkdir(parents=True, exist_ok=True)
             
-            # Ensure parent directory exists
-            FileManager.ensure_directory(file_path.parent)
+            # Create backup if file exists and backup is requested
+            if backup and os.path.exists(filepath):
+                backup_path = f"{filepath}.bak"
+                counter = 1
+                while os.path.exists(backup_path):
+                    backup_path = f"{filepath}.bak_{counter}"
+                    counter += 1
+                
+                try:
+                    import shutil
+                    shutil.copy2(filepath, backup_path)
+                except Exception as e:
+                    logging.warning(f"Failed to create backup: {e}")
             
-            # Write content
-            with open(file_path, mode) as f:
+            # Write new content
+            with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
             
-            logging.debug(f"Successfully wrote to: {file_path}")
             return True
             
         except Exception as e:
-            logging.error(f"Failed to write file {file_path}: {e}")
+            logging.error(f"Failed to write file {filepath}: {e}")
             return False
     
     @staticmethod
-    def safe_file_read(file_path: Union[str, Path], mode: str = 'r', 
-                      default: Any = None) -> Union[str, bytes, Any]:
+    def safe_read_file(filepath: str, default_content: str = "") -> str:
         """
         Safely read content from file
         
         Args:
-            file_path: Source file path
-            mode: File read mode
-            default: Default value if file doesn't exist
+            filepath: Path to the file
+            default_content: Default content if file doesn't exist
             
         Returns:
-            File content or default value
+            File content or default content
         """
         try:
-            with open(file_path, mode) as f:
-                return f.read()
-        except FileNotFoundError:
-            logging.warning(f"File not found: {file_path}")
-            return default
+            if os.path.exists(filepath):
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    return f.read()
+            return default_content
+            
         except Exception as e:
-            logging.error(f"Failed to read file {file_path}: {e}")
-            return default
+            logging.error(f"Failed to read file {filepath}: {e}")
+            return default_content
+    
+    @staticmethod
+    def file_exists(filepath: str) -> bool:
+        """Check if file exists"""
+        import os
+        return os.path.exists(filepath)
+    
+    @staticmethod
+    def get_file_size(filepath: str) -> int:
+        """Get file size in bytes"""
+        try:
+            import os
+            return os.path.getsize(filepath)
+        except Exception:
+            return 0
+    
+    @staticmethod
+    def delete_file(filepath: str) -> bool:
+        """Delete file safely"""
+        try:
+            import os
+            if os.path.exists(filepath):
+                os.remove(filepath)
+                return True
+            return False
+        except Exception as e:
+            logging.error(f"Failed to delete file {filepath}: {e}")
+            return False
 
 
 # JSON Utilities
 class JSONManager:
-    """JSON serialization and knowledge.json manipulation utilities"""
+    """JSON file management utilities"""
     
     @staticmethod
-    def load_json(file_path: Union[str, Path], default: Dict = None) -> Dict:
-        """
-        Load JSON data from file
-        
-        Args:
-            file_path: JSON file path
-            default: Default dict if file doesn't exist
-            
-        Returns:
-            Parsed JSON data or default dict
-        """
-        if default is None:
-            default = {}
-        
-        try:
-            with open(file_path, 'r') as f:
-                return json.load(f)
-        except FileNotFoundError:
-            logging.warning(f"JSON file not found: {file_path}")
-            return default
-        except json.JSONDecodeError as e:
-            logging.error(f"Invalid JSON in {file_path}: {e}")
-            return default
-        except Exception as e:
-            logging.error(f"Failed to load JSON {file_path}: {e}")
-            return default
-    
-    @staticmethod
-    def save_json(data: Dict, file_path: Union[str, Path], 
-                  indent: int = 2, backup: bool = True) -> bool:
+    def save_json(file_path: str, data: Any, backup: bool = True) -> bool:
         """
         Save data to JSON file
         
         Args:
-            data: Dictionary to save
-            file_path: Target JSON file path
-            indent: JSON indentation
+            file_path: Path to JSON file
+            data: Data to save
             backup: Whether to create backup
             
         Returns:
             True if successful
         """
         try:
-            json_content = json.dumps(data, indent=indent, ensure_ascii=False)
-            return FileManager.safe_file_write(file_path, json_content, backup=backup)
+            json_content = safe_json_dumps(data)
+            return FileManager.safe_write_file(file_path, json_content, backup=backup)
         except Exception as e:
             logging.error(f"Failed to save JSON to {file_path}: {e}")
             return False
     
     @staticmethod
-    def update_knowledge_json(storage_path: str, updates: Dict) -> bool:
+    def load_json(file_path: str, default_data: Any = None) -> Any:
         """
-        Update knowledge.json with new data
-        Compatible with existing storage structure
+        Load data from JSON file
         
         Args:
-            storage_path: Storage directory path
-            updates: Dictionary of updates to merge
+            file_path: Path to JSON file
+            default_data: Default data if file doesn't exist
             
         Returns:
-            True if successful
+            Loaded data or default data
         """
-        knowledge_path = Path(storage_path) / 'knowledge.json'
-        
-        # Load existing knowledge
-        knowledge = JSONManager.load_json(knowledge_path, {
-            "user_preferences": {},
-            "learned_patterns": [],
-            "interaction_history": [],
-            "custom_models": {},
-            "last_updated": None
-        })
-        
-        # Merge updates
-        for key, value in updates.items():
-            if key in knowledge:
-                if isinstance(knowledge[key], dict) and isinstance(value, dict):
-                    knowledge[key].update(value)
-                elif isinstance(knowledge[key], list) and isinstance(value, list):
-                    knowledge[key].extend(value)
-                else:
-                    knowledge[key] = value
-            else:
-                knowledge[key] = value
-        
-        # Update timestamp
-        knowledge["last_updated"] = datetime.now().isoformat()
-        
-        return JSONManager.save_json(knowledge, knowledge_path)
+        try:
+            content = FileManager.safe_read_file(file_path, "")
+            if content:
+                return safe_json_loads(content) or default_data
+            return default_data
+        except Exception as e:
+            logging.error(f"Failed to load JSON from {file_path}: {e}")
+            return default_data
+    
+    @staticmethod
+    def validate_json(json_str: str) -> bool:
+        """Validate JSON string"""
+        try:
+            safe_json_loads(json_str)
+            return True
+        except Exception:
+            return False
 
 
 # Database Utilities
@@ -567,104 +548,146 @@ def measure_performance(log_result=True):
 
 # Utility Functions
 class UtilityFunctions:
-    """Miscellaneous utility functions"""
+    """Utility functions for the AI system"""
+    
+    @staticmethod
+    def calculate_hash(text: str) -> str:
+        """Calculate MD5 hash of text"""
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
     
     @staticmethod
     def generate_session_id() -> str:
-        """
-        Generate unique session ID
-        
-        Returns:
-            Unique session identifier
-        """
-        timestamp = str(int(time.time() * 1000))
-        random_str = hashlib.md5(str(time.time()).encode()).hexdigest()[:8]
-        return f"session_{timestamp}_{random_str}"
+        """Generate a unique session ID"""
+        import time
+        import random
+        timestamp = int(time.time() * 1000)
+        random_part = random.randint(1000, 9999)
+        return f"session_{timestamp}_{random_part}"
     
     @staticmethod
-    def calculate_hash(data: Union[str, bytes, Dict]) -> str:
-        """
-        Calculate MD5 hash of data
+    def clean_text(text: str) -> str:
+        """Clean and normalize text"""
+        if not text:
+            return ""
         
-        Args:
-            data: Data to hash
-            
-        Returns:
-            MD5 hash string
-        """
-        if isinstance(data, dict):
-            data = json.dumps(data, sort_keys=True)
+        # Remove extra whitespace
+        text = re.sub(r'\s+', ' ', text.strip())
         
-        if isinstance(data, str):
-            data = data.encode('utf-8')
+        # Don't remove mathematical operators and numbers
+        # Only remove special characters that might cause issues, but keep +, -, *, /, =, ., and digits
+        text = re.sub(r'[^\w\s\-.,!?;:()+\-*/=0-9]', '', text)
         
-        return hashlib.md5(data).hexdigest()
+        return text
     
     @staticmethod
-    def format_file_size(size_bytes: int) -> str:
-        """
-        Format file size in human readable format
+    def extract_keywords(text: str) -> List[str]:
+        """Extract meaningful keywords from text"""
+        if not text:
+            return []
         
-        Args:
-            size_bytes: File size in bytes
-            
-        Returns:
-            Formatted size string (e.g., "1.2 MB")
-        """
-        if size_bytes == 0:
-            return "0 B"
+        # Simple keyword extraction
+        words = text.lower().split()
         
-        size_names = ["B", "KB", "MB", "GB", "TB"]
-        import math
-        i = int(math.floor(math.log(size_bytes, 1024)))
-        p = math.pow(1024, i)
-        s = round(size_bytes / p, 2)
-        return f"{s} {size_names[i]}"
+        # Remove common stop words
+        stop_words = {
+            'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 
+            'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+            'should', 'may', 'might', 'can', 'this', 'that', 'these', 'those'
+        }
+        
+        keywords = [word for word in words if word not in stop_words and len(word) > 2]
+        return keywords[:10]  # Limit to top 10 keywords
     
     @staticmethod
-    def clean_filename(filename: str) -> str:
-        """
-        Clean filename by removing invalid characters
+    def is_question(text: str) -> bool:
+        """Check if text is a question"""
+        if not text:
+            return False
         
-        Args:
-            filename: Original filename
-            
-        Returns:
-            Cleaned filename
-        """
-        import string
-        valid_chars = f"-_.() {string.ascii_letters}{string.digits}"
-        cleaned = ''.join(c for c in filename if c in valid_chars)
-        return cleaned.strip()
+        question_words = ['what', 'who', 'where', 'when', 'why', 'how', 'which', 'whose']
+        text_lower = text.lower().strip()
+        
+        # Check if starts with question word
+        for word in question_words:
+            if text_lower.startswith(word):
+                return True
+        
+        # Check if ends with question mark
+        if text_lower.endswith('?'):
+            return True
+        
+        return False
     
     @staticmethod
-    def get_system_info() -> Dict:
-        """
-        Get basic system information
+    def classify_query_type(text: str) -> str:
+        """Classify the type of query"""
+        if not text:
+            return "general"
         
-        Returns:
-            Dictionary with system info
-        """
-        import platform
-        import psutil
+        text_lower = text.lower()
         
-        try:
-            return {
-                "platform": platform.system(),
-                "platform_version": platform.version(),
-                "python_version": platform.python_version(),
-                "cpu_count": psutil.cpu_count(),
-                "memory_total": psutil.virtual_memory().total,
-                "memory_available": psutil.virtual_memory().available,
-                "disk_usage": psutil.disk_usage('/').percent if platform.system() != 'Windows' else psutil.disk_usage('C:\\').percent
-            }
-        except ImportError:
-            # Fallback if psutil is not available
-            return {
-                "platform": platform.system(),
-                "platform_version": platform.version(),
-                "python_version": platform.python_version(),
-            }
+        # Math queries - check for numbers and operators
+        if any(char in text for char in ['+', '-', '*', '/', '=']) and any(char.isdigit() for char in text):
+            return "math"
+        
+        # Time-related queries
+        if any(word in text_lower for word in ['time', 'date', 'when']):
+            return "time"
+        
+        # Weather queries
+        if any(word in text_lower for word in ['weather', 'temperature', 'forecast']):
+            return "weather"
+        
+        # Definition queries
+        if text_lower.startswith(('what is', 'who is', 'define', 'meaning')):
+            return "definition"
+        
+        # How-to queries
+        if text_lower.startswith('how'):
+            return "howto"
+        
+        # General questions
+        if UtilityFunctions.is_question(text):
+            return "question"
+        
+        return "general"
+    
+    @staticmethod
+    def format_response_time(seconds: float) -> str:
+        """Format response time in a human-readable way"""
+        if seconds < 1:
+            return f"{seconds*1000:.0f}ms"
+        elif seconds < 60:
+            return f"{seconds:.1f}s"
+        else:
+            minutes = int(seconds // 60)
+            remaining_seconds = seconds % 60
+            return f"{minutes}m {remaining_seconds:.1f}s"
+    
+    @staticmethod
+    def truncate_text(text: str, max_length: int = 200) -> str:
+        """Truncate text to specified length"""
+        if len(text) <= max_length:
+            return text
+        return text[:max_length-3] + "..."
+    
+    @staticmethod
+    def sanitize_filename(filename: str) -> str:
+        """Sanitize filename for safe file operations"""
+        # Remove or replace invalid characters
+        invalid_chars = '<>:"/\\|?*'
+        for char in invalid_chars:
+            filename = filename.replace(char, '_')
+        
+        # Remove leading/trailing spaces and dots
+        filename = filename.strip('. ')
+        
+        # Ensure it's not empty
+        if not filename:
+            filename = "unnamed"
+        
+        return filename
 
 
 # Performance Monitoring
@@ -813,8 +836,10 @@ class CacheManager:
 
 # Export commonly used functions for easy imports
 __all__ = [
+    'initialize_ai_storage',
+    'preprocess_input',
     'LogManager',
-    'FileManager', 
+    'FileManager',
     'JSONManager',
     'DatabaseManager',
     'ConfigManager',
@@ -823,5 +848,173 @@ __all__ = [
     'PerformanceMonitor',
     'CacheManager',
     'handle_errors',
-    'measure_performance'
+    'measure_performance',
+    'JSONEncoder',
+    'safe_json_dumps',
+    'safe_json_loads',
+    'calculate_hash',
+    'clean_text',
+    'extract_keywords',
+    'is_question',
+    'classify_query_type',
+    'generate_session_id',
+    'format_response_time',
+    'truncate_text',
+    'sanitize_filename'
 ]
+
+class JSONEncoder(json.JSONEncoder):
+    """Custom JSON encoder that handles datetime objects and other special types"""
+    def default(self, obj):
+        if isinstance(obj, datetime.datetime):
+            return obj.isoformat()
+        elif isinstance(obj, datetime.date):
+            return obj.isoformat()
+        elif hasattr(obj, '__dict__'):
+            return obj.__dict__
+        return super().default(obj)
+
+def safe_json_dumps(obj: Any) -> str:
+    """Safely serialize object to JSON string"""
+    try:
+        return json.dumps(obj, cls=JSONEncoder, ensure_ascii=False, indent=2)
+    except Exception as e:
+        # Fallback: convert to string representation
+        return json.dumps(str(obj), ensure_ascii=False)
+
+def safe_json_loads(s: str) -> Any:
+    """Safely deserialize JSON string"""
+    try:
+        return json.loads(s)
+    except Exception as e:
+        return None
+
+def calculate_hash(text: str) -> str:
+    """Calculate MD5 hash of text"""
+    return hashlib.md5(text.encode('utf-8')).hexdigest()
+
+def clean_text(text: str) -> str:
+    """Clean and normalize text"""
+    if not text:
+        return ""
+    
+    # Remove extra whitespace
+    text = re.sub(r'\s+', ' ', text.strip())
+    
+    # Don't remove mathematical operators and numbers
+    # Only remove special characters that might cause issues, but keep +, -, *, /, =, ., and digits
+    text = re.sub(r'[^\w\s\-.,!?;:()+\-*/=0-9]', '', text)
+    
+    return text
+
+def extract_keywords(text: str) -> List[str]:
+    """Extract meaningful keywords from text"""
+    if not text:
+        return []
+    
+    # Simple keyword extraction
+    words = text.lower().split()
+    
+    # Remove common stop words
+    stop_words = {
+        'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 
+        'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+        'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+        'should', 'may', 'might', 'can', 'this', 'that', 'these', 'those'
+    }
+    
+    keywords = [word for word in words if word not in stop_words and len(word) > 2]
+    return keywords[:10]  # Limit to top 10 keywords
+
+def is_question(text: str) -> bool:
+    """Check if text is a question"""
+    if not text:
+        return False
+    
+    question_words = ['what', 'who', 'where', 'when', 'why', 'how', 'which', 'whose']
+    text_lower = text.lower().strip()
+    
+    # Check if starts with question word
+    for word in question_words:
+        if text_lower.startswith(word):
+            return True
+    
+    # Check if ends with question mark
+    if text_lower.endswith('?'):
+        return True
+    
+    return False
+
+def classify_query_type(text: str) -> str:
+    """Classify the type of query"""
+    if not text:
+        return "general"
+    
+    text_lower = text.lower()
+    
+    # Math queries - check for numbers and operators
+    if any(char in text for char in ['+', '-', '*', '/', '=']) and any(char.isdigit() for char in text):
+        return "math"
+    
+    # Time-related queries
+    if any(word in text_lower for word in ['time', 'date', 'when']):
+        return "time"
+    
+    # Weather queries
+    if any(word in text_lower for word in ['weather', 'temperature', 'forecast']):
+        return "weather"
+    
+    # Definition queries
+    if text_lower.startswith(('what is', 'who is', 'define', 'meaning')):
+        return "definition"
+    
+    # How-to queries
+    if text_lower.startswith('how'):
+        return "howto"
+    
+    # General questions
+    if is_question(text):
+        return "question"
+    
+    return "general"
+
+def generate_session_id() -> str:
+    """Generate a unique session ID"""
+    import time
+    import random
+    timestamp = int(time.time() * 1000)
+    random_part = random.randint(1000, 9999)
+    return f"session_{timestamp}_{random_part}"
+
+def format_response_time(seconds: float) -> str:
+    """Format response time in a human-readable way"""
+    if seconds < 1:
+        return f"{seconds*1000:.0f}ms"
+    elif seconds < 60:
+        return f"{seconds:.1f}s"
+    else:
+        minutes = int(seconds // 60)
+        remaining_seconds = seconds % 60
+        return f"{minutes}m {remaining_seconds:.1f}s"
+
+def truncate_text(text: str, max_length: int = 200) -> str:
+    """Truncate text to specified length"""
+    if len(text) <= max_length:
+        return text
+    return text[:max_length-3] + "..."
+
+def sanitize_filename(filename: str) -> str:
+    """Sanitize filename for safe file operations"""
+    # Remove or replace invalid characters
+    invalid_chars = '<>:"/\\|?*'
+    for char in invalid_chars:
+        filename = filename.replace(char, '_')
+    
+    # Remove leading/trailing spaces and dots
+    filename = filename.strip('. ')
+    
+    # Ensure it's not empty
+    if not filename:
+        filename = "unnamed"
+    
+    return filename
