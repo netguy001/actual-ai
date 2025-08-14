@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2025-08-14T12:01:01.013476",
+    "user_input": "hi",
+    "ai_response": "Hello! I'm your enhanced AI assistant. I can help you with math, news, weather, factual questions, and much more. What would you like to know?",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "news"
+  },
+  {
+    "timestamp": "2025-08-14T12:01:14.597458",
+    "user_input": "what is time",
+    "ai_response": "According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:01:27.573083",
+    "user_input": "current time",
+    "ai_response": "[Learned Response] According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)",
+    "feedback": null,
+    "input_type": "news_request",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:01:45.177972",
+    "user_input": "who is sunnyleone",
+    "ai_response": "According to Wikipedia:\n\nSunny Leone is a Canadian-American actress, model, and former pornstar, currently active in Indian film industry. She was named Penthouse Pet of the Year in 2003, was a contract performer for Vivid Entertainment, and was named by Maxim as one of the 12 top porn stars in 2010. She has played roles in independent mainstream events, films and television shows.\n\nSource: https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:01:57.660928",
+    "user_input": "what is dog",
+    "ai_response": "According to Wikipedia:\n\nWhat Up, Dog? is the third studio album by Was (Not Was). It became the group's breakthrough album worldwide and was ranked #99 on the Rolling Stone magazine's list of the 100 Best Albums of the 1980s.\n\nSource: https://en.wikipedia.org/wiki/What_Up,_Dog%3F",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:02:28.591312",
+    "user_input": "where is china",
+    "ai_response": "Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:08:21.917350",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:08:43.539383",
+    "user_input": "what is nuclear bomb",
+    "ai_response": "According to Wikipedia:\n\nA nuclear weapon is an explosive device that derives its destructive force from nuclear reactions, either nuclear fission (fission or atomic bomb) or a combination of fission and nuclear fusion reactions (thermonuclear weapon), producing a nuclear explosion. Both bomb types release large quantities of energy from relatively small amounts of matter. \nNuclear bombs have had yields between 10 tons (the W54) and 50 megatons for the Tsar Bomba (see TNT equivalent). Yields in the low kilotons can devastate cities.\n\nSource: https://en.wikipedia.org/wiki/Nuclear_weapon",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:08:59.382502",
+    "user_input": "who is mia khalifa",
+    "ai_response": "According to Wikipedia:\n\n\"Mia Khalifa\" (originally titled \"Mia Khalifa (Diss)\", also known as \"Hit or Miss\", and sometimes stylized as \"MiA KHALiFA\") is a song by American hip hop group iLoveFriday (stylized as iLOVEFRiDAY). The duo of Atlanta-based rappers Aqsa Malik (also known as Smoke Hijabi) and Xeno Carr self-released the song on February 12, 2018, which was later re-released by Records Co and Columbia Records on December 14, 2018. It was included on their second EP, Mood (2019). The song was produced by Carr.\n\nSource: https://en.wikipedia.org/wiki/Mia_Khalifa_(song)",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:09:15.757733",
+    "user_input": "who is she",
+    "ai_response": "'she' could refer to several things:\n\n1. She (pronoun)\n2. She County, Anhui\n3. She Prefecture\n4. She County, Hebei\n5. She River\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T12:09:35.069804",
+    "user_input": "who is pooja hedge",
+    "ai_response": "According to Wikipedia:\n\nPooja Hegde ( born 13 October 1990) is an Indian actress who primarily works in Telugu, Hindi and Tamil films. One of the highest-paid actresses of South Indian cinema, Hegde is a recipient of four SIIMA Awards along with three Filmfare Awards South nominations.\nAfter participating in the 2010 Miss Universe India beauty pageant, Hegde made her film debut with the Tamil film Mugamoodi (2012). She received praise for her starring role in her first Telugu release Oka Laila Kosam (2014), and gained further success with Mukunda (2014).\n\nSource: https://en.wikipedia.org/wiki/Pooja_Hegde",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:09:49.819941",
+    "user_input": "what is her recent movie",
+    "ai_response": "Here are the latest news headlines:\n\n1. Humanitarian groups call on Israel to end 'weaponisation of aid' in Gaza\n   More than 100 aid organisations say they are increasingly being told they are \"not authorised\" to de...\n\n2. After mass arrests, what happens next with Palestine Action ban?\n   The battle over the Palestine Action ban now feels as much a political and PR clash as a legal one....\n\n3. Taylor Swift gushes over 'good kind of crazy' boyfriend Travis Kelce\n   The pop superstar gives a rare insight into their life together and reveals details of her new album...\n\n4. ADHD drugs cut risk of suicide, car accidents and criminality, study suggests\n   A study has linked ADHD drugs to reduced substance misuse, suicide, transport accidents and criminal...\n\n5. 'Our children are dying': Rare footage shows plight of civilians in besieged Sudan city\n   Parents are struggling to feed their children in war-hit Sudan's Darfur region. ...\n\n",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "news"
+  },
+  {
+    "timestamp": "2025-08-14T12:23:16.599683",
+    "user_input": "python main.py",
+    "ai_response": "I understand you're asking about 'python main.py'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T12:23:21.148494",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:23:26.867913",
+    "user_input": "what",
+    "ai_response": "I understand you're asking about 'what'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "created_at": "2024-01-01T00:00:00Z",
+  "knowledge_base": {},
+  "training_data": [],
+  "user_preferences": {
+    "session_duration": 11.91519808769226,
+    "interaction_count": 0,
+    "preferred_model": null
+  },
+  "last_updated": "2025-08-14T11:08:42.553158"
+}

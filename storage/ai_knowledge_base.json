@@ -1,0 +1,50 @@
+{
+  "time": {
+    "information": "[Learned Response] According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:01:27.573110",
+    "confidence": 0.8
+  },
+  "who  sunnylee": {
+    "information": "According to Wikipedia:\n\nSunny Leone is a Canadian-American actress, model, and former pornstar, currently active in Indian film industry. She was named Penthouse Pet of the Year in 2003, was a contract performer for Vivid Entertainment, and was named by Maxim as one of the 12 top porn stars in 2010. She has played roles in independent mainstream events, films and television shows.\n\nSource: https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:01:45.177990",
+    "confidence": 0.8
+  },
+  "dog": {
+    "information": "According to Wikipedia:\n\nWhat Up, Dog? is the third studio album by Was (Not Was). It became the group's breakthrough album worldwide and was ranked #99 on the Rolling Stone magazine's list of the 100 Best Albums of the 1980s.\n\nSource: https://en.wikipedia.org/wiki/What_Up,_Dog%3F",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:01:57.660946",
+    "confidence": 0.8
+  },
+  "where  china": {
+    "information": "Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:02:28.591335",
+    "confidence": 0.8
+  },
+  "hi": {
+    "information": "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:23:21.148522",
+    "confidence": 0.8
+  },
+  "nuclear bomb": {
+    "information": "According to Wikipedia:\n\nA nuclear weapon is an explosive device that derives its destructive force from nuclear reactions, either nuclear fission (fission or atomic bomb) or a combination of fission and nuclear fusion reactions (thermonuclear weapon), producing a nuclear explosion. Both bomb types release large quantities of energy from relatively small amounts of matter. \nNuclear bombs have had yields between 10 tons (the W54) and 50 megatons for the Tsar Bomba (see TNT equivalent). Yields in the low kilotons can devastate cities.\n\nSource: https://en.wikipedia.org/wiki/Nuclear_weapon",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:08:43.539409",
+    "confidence": 0.8
+  },
+  "mia khalifa": {
+    "information": "According to Wikipedia:\n\n\"Mia Khalifa\" (originally titled \"Mia Khalifa (Diss)\", also known as \"Hit or Miss\", and sometimes stylized as \"MiA KHALiFA\") is a song by American hip hop group iLoveFriday (stylized as iLOVEFRiDAY). The duo of Atlanta-based rappers Aqsa Malik (also known as Smoke Hijabi) and Xeno Carr self-released the song on February 12, 2018, which was later re-released by Records Co and Columbia Records on December 14, 2018. It was included on their second EP, Mood (2019). The song was produced by Carr.\n\nSource: https://en.wikipedia.org/wiki/Mia_Khalifa_(song)",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:08:59.382524",
+    "confidence": 0.8
+  },
+  "pooja hedge": {
+    "information": "According to Wikipedia:\n\nPooja Hegde ( born 13 October 1990) is an Indian actress who primarily works in Telugu, Hindi and Tamil films. One of the highest-paid actresses of South Indian cinema, Hegde is a recipient of four SIIMA Awards along with three Filmfare Awards South nominations.\nAfter participating in the 2010 Miss Universe India beauty pageant, Hegde made her film debut with the Tamil film Mugamoodi (2012). She received praise for her starring role in her first Telugu release Oka Laila Kosam (2014), and gained further success with Mukunda (2014).\n\nSource: https://en.wikipedia.org/wiki/Pooja_Hegde",
+    "source": "interaction",
+    "timestamp": "2025-08-14T12:09:35.069825",
+    "confidence": 0.8
+  }
+}

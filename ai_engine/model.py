@@ -114,7 +114,7 @@ class AIModel:
 
         results = {
             "train_accuracy": train_accuracy,
-            "training_samples": len(X_train),
+            "training_samples": X_train.shape[0] if hasattr(X_train, 'shape') else len(X_train),
             "model_version": self.version,
             "timestamp": self.last_updated.isoformat(),
         }
@@ -123,7 +123,7 @@ class AIModel:
             val_pred = self.model.predict(X_val)
             val_accuracy = accuracy_score(y_val, val_pred)
             results["val_accuracy"] = val_accuracy
-            results["validation_samples"] = len(X_val)
+            results["validation_samples"] = X_val.shape[0] if hasattr(X_val, 'shape') else len(X_val)
             logger.info(
                 f"Training completed - Train Acc: {train_accuracy:.3f}, Val Acc: {val_accuracy:.3f}"
             )

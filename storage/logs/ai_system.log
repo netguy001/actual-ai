@@ -1,0 +1,209 @@
+2025-08-14 11:07:30 - root - INFO - Starting new session: session_1755149850705_d674fd22
+2025-08-14 11:07:30 - root - INFO - Initializing storage system...
+2025-08-14 11:07:30 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:07:36 - root - ERROR - Error processing input: 'NoneType' object has no attribute 'model_type'
+2025-08-14 11:07:43 - root - ERROR - Error processing input: 'NoneType' object has no attribute 'model_type'
+2025-08-14 11:07:50 - root - ERROR - Error processing input: 'NoneType' object has no attribute 'model_type'
+2025-08-14 11:08:06 - root - ERROR - Invalid JSON in storage\knowledge.json: Expecting value: line 1 column 1 (char 0)
+2025-08-14 11:08:06 - root - INFO - Session ended. Duration: 0.6 minutes, Interactions: 0
+2025-08-14 11:08:06 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755149886'
+2025-08-14 11:08:06 - root - INFO - Session ended. Duration: 0.6 minutes, Interactions: 0
+2025-08-14 11:08:30 - root - INFO - Starting new session: session_1755149910637_ad9b5e40
+2025-08-14 11:08:30 - root - INFO - Initializing storage system...
+2025-08-14 11:08:30 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:08:33 - root - ERROR - Error processing input: 'NoneType' object has no attribute 'model_type'
+2025-08-14 11:08:38 - root - ERROR - Error processing input: 'NoneType' object has no attribute 'model_type'
+2025-08-14 11:08:42 - root - INFO - Session ended. Duration: 0.2 minutes, Interactions: 0
+2025-08-14 11:08:42 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755149922'
+2025-08-14 11:08:42 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755149922'
+2025-08-14 11:08:42 - root - INFO - Session ended. Duration: 0.2 minutes, Interactions: 0
+2025-08-14 11:10:00 - root - INFO - Starting new session: session_1755150000231_05d793aa
+2025-08-14 11:10:00 - root - INFO - Initializing storage system...
+2025-08-14 11:10:00 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:10:00 - root - INFO - Creating fallback model...
+2025-08-14 11:10:00 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:10:00 - root - WARNING - Failed to train default model: sparse array length is ambiguous; use getnnz() or shape[0]
+2025-08-14 11:10:05 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:10:09 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:49 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:52 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:54 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:55 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:56 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:57 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:11:59 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:00 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:01 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:02 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:02 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:03 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:04 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:05 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:06 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:07 - root - ERROR - Error processing input: '<' not supported between instances of 'list' and 'float'
+2025-08-14 11:12:15 - root - INFO - Session ended. Duration: 2.2 minutes, Interactions: 0
+2025-08-14 11:12:15 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755150135'
+2025-08-14 11:12:15 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755150135'
+2025-08-14 11:12:15 - root - INFO - Session ended. Duration: 2.2 minutes, Interactions: 0
+2025-08-14 11:13:24 - root - INFO - Starting new session: session_1755150204745_932aa70c
+2025-08-14 11:13:24 - root - INFO - Initializing storage system...
+2025-08-14 11:13:24 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:13:24 - root - INFO - Creating fallback model...
+2025-08-14 11:13:24 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:13:24 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:13:24 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:13:47 - root - ERROR - Database error: no such table: user_interactions
+2025-08-14 11:13:47 - root - ERROR - Query execution failed: no such table: user_interactions
+Query: 
+        INSERT INTO user_interactions 
+        (session_id, timestamp, user_input, ai_response, confidence_score, model_used, response_time_ms)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2025-08-14 11:13:47 - root - WARNING - Failed to log interaction to database
+2025-08-14 11:14:00 - root - ERROR - Database error: no such table: user_interactions
+2025-08-14 11:14:00 - root - ERROR - Query execution failed: no such table: user_interactions
+Query: 
+        INSERT INTO user_interactions 
+        (session_id, timestamp, user_input, ai_response, confidence_score, model_used, response_time_ms)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2025-08-14 11:14:00 - root - WARNING - Failed to log interaction to database
+2025-08-14 11:14:14 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 0
+2025-08-14 11:14:14 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755150254'
+2025-08-14 11:14:14 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755150254'
+2025-08-14 11:14:14 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 0
+2025-08-14 11:20:12 - root - INFO - Starting new session: session_1755150612028_17d77d80
+2025-08-14 11:20:12 - root - INFO - Initializing storage system...
+2025-08-14 11:20:12 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:20:12 - root - INFO - Creating fallback model...
+2025-08-14 11:20:12 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:20:12 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:20:12 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:20:15 - root - ERROR - Database error: no such table: user_interactions
+2025-08-14 11:20:15 - root - ERROR - Query execution failed: no such table: user_interactions
+Query: 
+        INSERT INTO user_interactions 
+        (session_id, timestamp, user_input, ai_response, confidence_score, model_used, response_time_ms)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2025-08-14 11:20:15 - root - WARNING - Failed to log interaction to database
+2025-08-14 11:20:25 - root - ERROR - Database error: no such table: user_interactions
+2025-08-14 11:20:25 - root - ERROR - Query execution failed: no such table: user_interactions
+Query: 
+        INSERT INTO user_interactions 
+        (session_id, timestamp, user_input, ai_response, confidence_score, model_used, response_time_ms)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2025-08-14 11:20:25 - root - WARNING - Failed to log interaction to database
+2025-08-14 11:23:37 - root - INFO - Starting new session: session_1755150817790_76fa205d
+2025-08-14 11:23:37 - root - INFO - Initializing storage system...
+2025-08-14 11:23:37 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:23:37 - root - INFO - Creating fallback model...
+2025-08-14 11:23:37 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:23:37 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:23:37 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:24:28 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 3
+2025-08-14 11:24:28 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755150868'
+2025-08-14 11:24:28 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755150868'
+2025-08-14 11:24:28 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 3
+2025-08-14 11:31:38 - root - INFO - Starting new session: session_1755151298934_61e4b136
+2025-08-14 11:31:38 - root - INFO - Initializing storage system...
+2025-08-14 11:31:38 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:31:38 - root - INFO - Creating fallback model...
+2025-08-14 11:31:38 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:31:38 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:31:38 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:32:17 - root - INFO - Session ended. Duration: 0.6 minutes, Interactions: 4
+2025-08-14 11:32:17 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755151337'
+2025-08-14 11:32:17 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755151337'
+2025-08-14 11:32:17 - root - INFO - Session ended. Duration: 0.6 minutes, Interactions: 4
+2025-08-14 11:36:58 - root - INFO - Starting new session: session_1755151618958_bfaf321f
+2025-08-14 11:36:58 - root - INFO - Initializing storage system...
+2025-08-14 11:36:58 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:36:58 - root - INFO - Creating fallback model...
+2025-08-14 11:36:58 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:36:58 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:36:58 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:37:45 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 5
+2025-08-14 11:37:45 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755151665'
+2025-08-14 11:37:45 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755151665'
+2025-08-14 11:37:45 - root - INFO - Session ended. Duration: 0.8 minutes, Interactions: 5
+2025-08-14 11:40:04 - root - INFO - Starting new session: session_1755151804485_09fe7d4f
+2025-08-14 11:40:04 - root - INFO - Initializing storage system...
+2025-08-14 11:40:04 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:40:04 - root - INFO - Creating fallback model...
+2025-08-14 11:40:04 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:40:04 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:40:04 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:40:14 - root - INFO - Enhanced AI result: {'success': True, 'response': "Hello! I'm your enhanced AI assistant. I can help you with math, news, weather, factual questions, and much more. What would you like to know?", 'type': 'general'}
+2025-08-14 11:40:23 - root - INFO - Enhanced AI result: {'success': True, 'response': 'The current time is 11:40 AM', 'type': 'time', 'timestamp': '2025-08-14T11:40:23.493008'}
+2025-08-14 11:40:30 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Today is Thursday, August 14, 2025', 'type': 'time', 'timestamp': '2025-08-14T11:40:30.661511'}
+2025-08-14 11:40:41 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't evaluate the expression 'current prime minister of india'. Expression not recognized", 'type': 'math'}
+2025-08-14 11:40:41 - root - WARNING - Enhanced AI failed: I couldn't evaluate the expression 'current prime minister of india'. Expression not recognized
+2025-08-14 11:40:41 - root - WARNING - Enhanced AI failed: I couldn't evaluate the expression 'current prime minister of india'. Expression not recognized
+2025-08-14 11:40:55 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't evaluate the expression 'who is elon musk'. Expression not recognized", 'type': 'math'}
+2025-08-14 11:40:55 - root - WARNING - Enhanced AI failed: I couldn't evaluate the expression 'who is elon musk'. Expression not recognized
+2025-08-14 11:40:55 - root - WARNING - Enhanced AI failed: I couldn't evaluate the expression 'who is elon musk'. Expression not recognized
+2025-08-14 11:41:05 - root - INFO - Session ended. Duration: 1.0 minutes, Interactions: 5
+2025-08-14 11:41:05 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755151865'
+2025-08-14 11:41:05 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755151865'
+2025-08-14 11:41:05 - root - INFO - Session ended. Duration: 1.0 minutes, Interactions: 5
+2025-08-14 11:41:27 - root - INFO - Starting new session: session_1755151887411_38cd3067
+2025-08-14 11:41:27 - root - INFO - Initializing storage system...
+2025-08-14 11:41:27 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:41:27 - root - INFO - Creating fallback model...
+2025-08-14 11:41:27 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:41:27 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:41:27 - root - INFO - Trained default text classifier with sample data
+2025-08-14 11:41:29 - root - INFO - Enhanced AI result: {'success': True, 'response': "Hello! I'm your enhanced AI assistant. I can help you with math, news, weather, factual questions, and much more. What would you like to know?", 'type': 'general'}
+2025-08-14 11:41:40 - root - INFO - Enhanced AI result: {'success': True, 'response': "Web search result:\n\nElon Reeve Musk is a businessman, known for his leadership of Tesla, SpaceX, X, and the Department of Government Efficiency. Musk has been the wealthiest person in the world since 2021; as of May 2025, Forbes estimates his net worth to be US$424.7 billion. Born to a wealthy family in Pretoria, South Africa, Musk emigrated in 1989 to Canada. He received bachelor's degrees from the University of Pennsylvania in 1997 before moving to California, United States, to pursue business ventures. In 1995, Musk co-founded the software company Zip2. Following its sale in 1999, he co-founded X.com, an online payment company that later merged to form PayPal, which was acquired by eBay in 2002. That year, Musk also became an American citizen. In 2002, Musk founded the space technology company SpaceX, becoming its CEO and chief engineer; the company has since led innovations in reusable rockets and commercial spaceflight.\n\nSource: https://en.wikipedia.org/wiki/Elon_Musk", 'type': 'web_search', 'source': 'https://en.wikipedia.org/wiki/Elon_Musk'}
+2025-08-14 11:41:52 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Here are the latest news headlines:\n\n1. Humanitarian groups call on Israel to end \'weaponisation of aid\' in Gaza\n   More than 100 aid organisations say they are increasingly being told they are "not authorised" to de...\n\n2. After mass arrests, what happens next with Palestine Action ban?\n   The battle over the Palestine Action ban now feels as much a political and PR clash as a legal one....\n\n3. Taylor Swift gushes over \'good kind of crazy\' boyfriend Travis Kelce\n   The singer talked about her life since the Eras Tour and discussed the theme of her new album....\n\n4. ADHD drugs cut risk of suicide, car accidents and criminality, study suggests\n   A study has linked ADHD drugs to reduced substance misuse, suicide, transport accidents and criminal...\n\n5. \'Our children are dying\': Rare footage shows plight of civilians in besieged Sudan city\n   Parents are struggling to feed their children in war-hit Sudan\'s Darfur region. ...\n\n', 'type': 'news', 'source': 'BBC News RSS'}
+2025-08-14 11:42:11 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Here are the latest news headlines:\n\n1. Humanitarian groups call on Israel to end \'weaponisation of aid\' in Gaza\n   More than 100 aid organisations say they are increasingly being told they are "not authorised" to de...\n\n2. After mass arrests, what happens next with Palestine Action ban?\n   The battle over the Palestine Action ban now feels as much a political and PR clash as a legal one....\n\n3. Taylor Swift gushes over \'good kind of crazy\' boyfriend Travis Kelce\n   The singer talked about her life since the Eras Tour and discussed the theme of her new album....\n\n4. ADHD drugs cut risk of suicide, car accidents and criminality, study suggests\n   A study has linked ADHD drugs to reduced substance misuse, suicide, transport accidents and criminal...\n\n5. \'Our children are dying\': Rare footage shows plight of civilians in besieged Sudan city\n   Parents are struggling to feed their children in war-hit Sudan\'s Darfur region. ...\n\n', 'type': 'news', 'source': 'BBC News RSS'}
+2025-08-14 11:42:26 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\n"What Happens Tomorrow" is a song by the English pop rock band Duran Duran from their eleventh studio album, Astronaut (2004). It was released on 18 January 2005 as the second single from that album. The song debuted at number 11 in the UK singles chart on 6 February 2005 and was the second single from the album to peak at number two in Italy.\n\nSource: https://en.wikipedia.org/wiki/What_Happens_Tomorrow', 'type': 'wikipedia', 'title': 'What Happens Tomorrow', 'url': 'https://en.wikipedia.org/wiki/What_Happens_Tomorrow'}
+2025-08-14 11:42:42 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nNarendra Modi Stadium is a cricket ground in Motera, Ahmedabad, Gujarat, India. With a total capacity of 132,000, it is the world's largest stadium. It is owned by the Gujarat Cricket Association, and hosts both domestic and international cricket matches.\n\nSource: https://en.wikipedia.org/wiki/Narendra_Modi_Stadium", 'type': 'wikipedia', 'title': 'Narendra Modi Stadium', 'url': 'https://en.wikipedia.org/wiki/Narendra_Modi_Stadium'}
+2025-08-14 11:42:55 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nThe Tesla Cybertruck is a battery-electric full-size pickup truck manufactured by Tesla, Inc. since 2023. It was first unveiled as a prototype in November 2019, featuring a distinctive angular design composed of flat, unpainted stainless steel body panels, drawing comparisons to low-polygon computer models.\n\nSource: https://en.wikipedia.org/wiki/Tesla_Cybertruck', 'type': 'wikipedia', 'title': 'Tesla Cybertruck', 'url': 'https://en.wikipedia.org/wiki/Tesla_Cybertruck'}
+2025-08-14 11:43:34 - root - INFO - Session ended. Duration: 2.1 minutes, Interactions: 7
+2025-08-14 11:43:34 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755152014'
+2025-08-14 11:43:34 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755152014'
+2025-08-14 11:43:34 - root - INFO - Session ended. Duration: 2.1 minutes, Interactions: 7
+2025-08-14 11:59:45 - root - INFO - Starting new session: session_1755152985302_d363d51b
+2025-08-14 11:59:45 - root - INFO - Initializing storage system...
+2025-08-14 11:59:45 - root - ERROR - System initialization failed: 'version'
+2025-08-14 11:59:45 - root - INFO - Creating fallback model...
+2025-08-14 11:59:45 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 11:59:45 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 11:59:45 - root - INFO - Trained default text classifier with sample data
+2025-08-14 12:01:01 - root - INFO - Enhanced AI result: {'success': True, 'response': "Hello! I'm your enhanced AI assistant. I can help you with math, news, weather, factual questions, and much more. What would you like to know?", 'type': 'general'}
+2025-08-14 12:01:14 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)", 'type': 'wikipedia', 'title': 'What Time Is It? (album)', 'url': 'https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)'}
+2025-08-14 12:01:27 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 12:01:45 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nSunny Leone is a Canadian-American actress, model, and former pornstar, currently active in Indian film industry. She was named Penthouse Pet of the Year in 2003, was a contract performer for Vivid Entertainment, and was named by Maxim as one of the 12 top porn stars in 2010. She has played roles in independent mainstream events, films and television shows.\n\nSource: https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone', 'type': 'wikipedia', 'title': 'List of filmography and awards of Sunny Leone', 'url': 'https://en.wikipedia.org/wiki/List_of_filmography_and_awards_of_Sunny_Leone'}
+2025-08-14 12:01:57 - root - INFO - Enhanced AI result: {'success': True, 'response': "According to Wikipedia:\n\nWhat Up, Dog? is the third studio album by Was (Not Was). It became the group's breakthrough album worldwide and was ranked #99 on the Rolling Stone magazine's list of the 100 Best Albums of the 1980s.\n\nSource: https://en.wikipedia.org/wiki/What_Up,_Dog%3F", 'type': 'wikipedia', 'title': 'What Up, Dog?', 'url': 'https://en.wikipedia.org/wiki/What_Up,_Dog%3F'}
+2025-08-14 12:01:57 - ai_engine.enhanced_ai - INFO - Persistent data saved successfully
+2025-08-14 12:02:10 - root - INFO - Enhanced AI result: {'success': False, 'response': "I couldn't find specific information about 'what is 3i atlas'. Try rephrasing your question.", 'type': 'factual'}
+2025-08-14 12:02:10 - root - WARNING - Enhanced AI failed: I couldn't find specific information about 'what is 3i atlas'. Try rephrasing your question.
+2025-08-14 12:02:10 - root - WARNING - Enhanced AI failed: I couldn't find specific information about 'what is 3i atlas'. Try rephrasing your question.
+2025-08-14 12:02:28 - root - INFO - Enhanced AI result: {'success': True, 'response': "Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China", 'type': 'web_search', 'source': 'https://en.wikipedia.org/wiki/China'}
+2025-08-14 12:02:51 - root - INFO - Starting new session: session_1755153171532_c071c625
+2025-08-14 12:02:51 - ai_engine.enhanced_ai - INFO - Loaded 5 conversation records
+2025-08-14 12:02:51 - ai_engine.enhanced_ai - INFO - Loaded knowledge base with 3 entries
+2025-08-14 12:02:51 - ai_engine.enhanced_ai - INFO - Loaded user preferences
+2025-08-14 12:02:51 - root - INFO - Initializing storage system...
+2025-08-14 12:02:51 - root - ERROR - System initialization failed: 'version'
+2025-08-14 12:02:51 - root - INFO - Creating fallback model...
+2025-08-14 12:02:51 - ai_engine.model - INFO - Starting training with 6 samples
+2025-08-14 12:02:51 - ai_engine.model - INFO - Training completed - Train Acc: 1.000, Val Acc: 1.000
+2025-08-14 12:02:51 - root - INFO - Trained default text classifier with sample data
+2025-08-14 12:02:59 - root - INFO - Enhanced AI result: {'success': True, 'response': "Web search result:\n\nSpace is a three-dimensional continuum containing positions and directions. In classical physics, physical space is often conceived in three linear dimensions. Modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework. In the 19th and 20th centuries mathematicians began to examine geometries that are non-Euclidean, in which space is conceived as curved, rather than flat, as in the Euclidean space. According to Albert Einstein's theory of general relativity, space around gravitational fields deviates from Euclidean space. Experimental tests of general relativity have confirmed that non-Euclidean geometries provide a better model for the shape of space.\n\nSource: https://en.wikipedia.org/wiki/Space", 'type': 'web_search', 'source': 'https://en.wikipedia.org/wiki/Space'}
+2025-08-14 12:03:16 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Here are the latest news headlines:\n\n1. Humanitarian groups call on Israel to end \'weaponisation of aid\' in Gaza\n   More than 100 aid organisations say they are increasingly being told they are "not authorised" to de...\n\n2. After mass arrests, what happens next with Palestine Action ban?\n   The battle over the Palestine Action ban now feels as much a political and PR clash as a legal one....\n\n3. Taylor Swift gushes over \'good kind of crazy\' boyfriend Travis Kelce\n   The pop superstar gives a rare insight into their life together and reveals details of her new album...\n\n4. ADHD drugs cut risk of suicide, car accidents and criminality, study suggests\n   A study has linked ADHD drugs to reduced substance misuse, suicide, transport accidents and criminal...\n\n5. \'Our children are dying\': Rare footage shows plight of civilians in besieged Sudan city\n   Parents are struggling to feed their children in war-hit Sudan\'s Darfur region. ...\n\n', 'type': 'news', 'source': 'BBC News RSS'}
+2025-08-14 12:03:38 - root - INFO - Enhanced AI result: {'success': True, 'response': 'According to Wikipedia:\n\nNine sovereign states are generally understood to possess nuclear weapons, though only eight formally acknowledge possessing them. In order of acquisition of nuclear weapons, these are the United States, Russia (as successor to the former Soviet Union), the United Kingdom, France, China, Israel (not formally acknowledged), India, Pakistan, and North Korea.\nThe first five of these are the nuclear-weapon states (NWS) as defined by the Nuclear Non-Proliferation Treaty (NPT).\n\nSource: https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons', 'type': 'wikipedia', 'title': 'List of states with nuclear weapons', 'url': 'https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons'}
+2025-08-14 12:03:51 - root - INFO - Enhanced AI result: {'success': True, 'response': 'Here are the latest news headlines:\n\n1. Humanitarian groups call on Israel to end \'weaponisation of aid\' in Gaza\n   More than 100 aid organisations say they are increasingly being told they are "not authorised" to de...\n\n2. After mass arrests, what happens next with Palestine Action ban?\n   The battle over the Palestine Action ban now feels as much a political and PR clash as a legal one....\n\n3. Taylor Swift gushes over \'good kind of crazy\' boyfriend Travis Kelce\n   The pop superstar gives a rare insight into their life together and reveals details of her new album...\n\n4. ADHD drugs cut risk of suicide, car accidents and criminality, study suggests\n   A study has linked ADHD drugs to reduced substance misuse, suicide, transport accidents and criminal...\n\n5. \'Our children are dying\': Rare footage shows plight of civilians in besieged Sudan city\n   Parents are struggling to feed their children in war-hit Sudan\'s Darfur region. ...\n\n', 'type': 'news', 'source': 'BBC News RSS'}
+2025-08-14 12:03:56 - root - INFO - Enhanced AI result: {'success': True, 'response': "[Learned Response] [Learned Response] According to Wikipedia:\n\nWhat Time Is It? is a 1982 album by the Time. Their second album, it was recorded at Sunset Sound and Prince's home studio in the Minneapolis suburbs.\n\nSource: https://en.wikipedia.org/wiki/What_Time_Is_It%3F_(album)", 'type': 'learned', 'source': 'knowledge_base'}
+2025-08-14 12:03:56 - ai_engine.enhanced_ai - INFO - Persistent data saved successfully
+2025-08-14 12:04:06 - ai_engine.enhanced_ai - INFO - Persistent data saved successfully
+2025-08-14 12:04:06 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 12:04:06 - root - INFO - Session ended. Duration: 4.3 minutes, Interactions: 7
+2025-08-14 12:04:06 - root - ERROR - Failed to write file storage\performance_metrics.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\performance_metrics.json' -> 'storage\\performance_metrics.bak_1755153246'
+2025-08-14 12:04:06 - ai_engine.enhanced_ai - INFO - Persistent data saved successfully
+2025-08-14 12:04:06 - ai_engine.enhanced_ai - INFO - Enhanced AI cleanup completed
+2025-08-14 12:04:06 - root - ERROR - Failed to write file storage\knowledge.json: [WinError 183] Cannot create a file when that file already exists: 'storage\\knowledge.json' -> 'storage\\knowledge.bak_1755153246'
+2025-08-14 12:04:06 - root - INFO - Session ended. Duration: 4.3 minutes, Interactions: 7

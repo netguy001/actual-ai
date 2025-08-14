@@ -4,9 +4,9 @@
   "knowledge_base": {},
   "training_data": [],
   "user_preferences": {
-    "session_duration": 260.85486483573914,
-    "interaction_count": 7,
+    "session_duration": 49.62190651893616,
+    "interaction_count": 0,
     "preferred_model": "text_classifier"
   },
-  "last_updated": "2025-08-14T12:04:06.159065"
+  "last_updated": "2025-08-14T11:14:14.367913"
 }
