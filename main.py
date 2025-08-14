@@ -14,6 +14,8 @@ from typing import Dict, List, Optional, Tuple, Any
 # Import existing components
 from ai_engine import AIModel, ModelManager, OnlineUpdater
 from ai_engine.enhanced_ai import EnhancedAI
+from ai_engine.advanced_core import AdvancedAICore
+from ai_engine.smart_ai import SmartAI
 from utils import (
     initialize_ai_storage,
     preprocess_input,
@@ -57,6 +59,8 @@ class AISystemCLI:
         self.model_manager = None
         self.updater = None
         self.enhanced_ai = EnhancedAI()  # Initialize enhanced AI
+        self.advanced_ai = AdvancedAICore()  # Initialize advanced AI core
+        self.smart_ai = SmartAI()  # Initialize smart AI with auto-correct
         self.performance_monitor = PerformanceMonitor(self.storage_path)
         self.cache = CacheManager()
 
@@ -254,27 +258,91 @@ class AISystemCLI:
                 cached_result["cached"] = True
                 return cached_result
 
-            # Use Enhanced AI for intelligent responses
+            # Use Smart AI first (with auto-correct and advanced features)
             try:
-                enhanced_result = self.enhanced_ai.process_query(user_input)
-                self.logger.info(f"Enhanced AI result: {enhanced_result}")
+                smart_result = self.smart_ai.process_smart_query(user_input)
+                self.logger.info(f"Smart AI result: {smart_result}")
                 
-                if enhanced_result['success']:
-                    response_text = enhanced_result['response']
-                    confidence = 0.9  # High confidence for enhanced AI responses
-                    data_type = enhanced_result.get('type', 'enhanced')
-                    prediction = enhanced_result.get('result', 'enhanced_response')
+                if smart_result['success']:
+                    response_text = smart_result['response']
+                    confidence = smart_result.get('confidence', 0.9)
+                    data_type = smart_result.get('type', 'smart')
+                    prediction = 'smart_response'
                     
-                    # Learn from this successful interaction
-                    self.enhanced_ai.learn_from_interaction(user_input, response_text)
-                else:
-                    # Fallback to original model if enhanced AI fails
-                    self.logger.warning(f"Enhanced AI failed: {enhanced_result.get('response', 'Unknown error')}")
+                    # Show auto-correct info if applicable
+                    if smart_result.get('auto_corrected'):
+                        response_text = f"**Auto-corrected:** {smart_result.get('original_query')} → {smart_result.get('corrected_query')}\n\n{response_text}"
+                    
+                    return {
+                        "success": True,
+                        "response": response_text,
+                        "prediction": prediction,
+                        "confidence": confidence,
+                        "data_type": data_type,
+                        "model_type": "smart_ai",
+                        "response_time": time.time() - start_time,
+                        "cached": False,
+                    }
             except Exception as e:
-                self.logger.error(f"Enhanced AI error: {e}")
-                enhanced_result = {'success': False, 'response': str(e)}
+                self.logger.error(f"Smart AI error: {e}")
+                smart_result = {'success': False, 'response': str(e)}
             
-            # If enhanced AI failed, fallback to original model
+            # Use Advanced AI Core if Smart AI failed
+            if not smart_result['success']:
+                try:
+                    advanced_result = self.advanced_ai.process_query_advanced(user_input)
+                    self.logger.info(f"Advanced AI result: {advanced_result}")
+                    
+                    if advanced_result['success']:
+                        response_text = advanced_result['response']
+                        confidence = advanced_result.get('confidence', 0.8)
+                        data_type = advanced_result.get('type', 'advanced')
+                        prediction = 'advanced_response'
+                        
+                        return {
+                            "success": True,
+                            "response": response_text,
+                            "prediction": prediction,
+                            "confidence": confidence,
+                            "data_type": data_type,
+                            "model_type": "advanced_ai",
+                            "response_time": time.time() - start_time,
+                            "cached": False,
+                        }
+                except Exception as e:
+                    self.logger.error(f"Advanced AI error: {e}")
+                    advanced_result = {'success': False, 'response': str(e)}
+            
+            # Use Enhanced AI if Advanced AI failed
+            if not advanced_result['success']:
+                try:
+                    enhanced_result = self.enhanced_ai.process_query(user_input)
+                    self.logger.info(f"Enhanced AI result: {enhanced_result}")
+                    
+                    if enhanced_result['success']:
+                        response_text = enhanced_result['response']
+                        confidence = 0.9  # High confidence for enhanced AI responses
+                        data_type = enhanced_result.get('type', 'enhanced')
+                        prediction = enhanced_result.get('result', 'enhanced_response')
+                        
+                        # Learn from this successful interaction
+                        self.enhanced_ai.learn_from_interaction(user_input, response_text)
+                        
+                        return {
+                            "success": True,
+                            "response": response_text,
+                            "prediction": prediction,
+                            "confidence": confidence,
+                            "data_type": data_type,
+                            "model_type": "enhanced_ai",
+                            "response_time": time.time() - start_time,
+                            "cached": False,
+                        }
+                except Exception as e:
+                    self.logger.error(f"Enhanced AI error: {e}")
+                    enhanced_result = {'success': False, 'response': str(e)}
+            
+            # If all AI systems failed, fallback to original model
             if not enhanced_result['success']:
                 # Fallback to original model if enhanced AI fails
                 self.logger.warning(f"Enhanced AI failed: {enhanced_result.get('response', 'Unknown error')}")
@@ -598,8 +666,10 @@ class AISystemCLI:
 ║ USAGE:                                                                 ║
 ║   • Type any text or question to get AI predictions                    ║
 ║   • The system automatically detects text vs numerical data            ║
-║   • AI remembers conversations and provides context-aware responses    ║
-║   • Auto-corrects typos and spelling mistakes                          ║
+║   • 🧠 Smart AI: Auto-corrects typos and provides context-aware responses ║
+║   • 🚀 Advanced AI: Multi-source search and information synthesis      ║
+║   • ⚡ Enhanced AI: Continuous learning and evolution                   ║
+║   • AI remembers conversations and provides intelligent responses      ║
 ║   • Continuously learns and updates with latest information            ║
 ║   • Provide feedback to improve future predictions                     ║
 ║   • Use 'feedback' command after any interaction                       ║
@@ -683,22 +753,49 @@ class AISystemCLI:
 
             print(f"Cache Hit Ratio: {len(self.cache.cache)} cached items")
             
-            # Enhanced AI Evolution Stats
+            # AI Components Statistics
+            print("\n" + "=" * 70)
+            print("🤖 AI COMPONENTS STATISTICS")
+            print("=" * 70)
+            
+            # Smart AI Stats
+            try:
+                smart_stats = self.smart_ai.get_smart_stats()
+                if smart_stats:
+                    print("🧠 SMART AI (Auto-correct & Context):")
+                    print(f"  • Conversations: {smart_stats.get('total_conversations', 0)}")
+                    print(f"  • Knowledge Entries: {smart_stats.get('knowledge_entries', 0)}")
+                    print(f"  • Typo Corrections: {smart_stats.get('typo_corrections', 0)}")
+                    print(f"  • Current Topic: {smart_stats.get('current_context', {}).get('topic', 'None')}")
+            except Exception as e:
+                print(f"  • Smart AI stats error: {e}")
+            
+            # Advanced AI Stats
+            try:
+                advanced_stats = self.advanced_ai.get_advanced_stats()
+                if advanced_stats:
+                    print("🚀 ADVANCED AI (Multi-source & Synthesis):")
+                    print(f"  • Interactions: {advanced_stats.get('total_interactions', 0)}")
+                    print(f"  • Knowledge Base: {advanced_stats.get('knowledge_entries', 0)}")
+                    print(f"  • Code Snippets: {advanced_stats.get('code_snippets', 0)}")
+                    print(f"  • Avg Processing Time: {advanced_stats.get('avg_processing_time', 0):.3f}s")
+                    print(f"  • Cache Size: {advanced_stats.get('cache_size', 0)}")
+            except Exception as e:
+                print(f"  • Advanced AI stats error: {e}")
+            
+            # Enhanced AI Stats
             try:
                 evolution_stats = self.enhanced_ai.get_evolution_stats()
                 if evolution_stats:
-                    print("\n" + "=" * 70)
-                    print("🤖 AI EVOLUTION STATISTICS")
-                    print("=" * 70)
-                    print(f"Evolution Level: {evolution_stats.get('evolution_level', 'Unknown')}")
-                    print(f"Total Interactions: {evolution_stats.get('total_interactions', 0)}")
-                    print(f"Knowledge Entries: {evolution_stats.get('knowledge_entries', 0)}")
-                    print(f"User Preferences: {evolution_stats.get('user_preferences', 0)}")
-                    print(f"Learning Patterns: {evolution_stats.get('learning_patterns', 0)}")
-                    print(f"Average Rating: {evolution_stats.get('average_rating', 0):.2f}")
-                    print(f"Last Updated: {evolution_stats.get('last_updated', 'Unknown')}")
+                    print("⚡ ENHANCED AI (Learning & Evolution):")
+                    print(f"  • Evolution Level: {evolution_stats.get('evolution_level', 'Unknown')}")
+                    print(f"  • Total Interactions: {evolution_stats.get('total_interactions', 0)}")
+                    print(f"  • Knowledge Entries: {evolution_stats.get('knowledge_entries', 0)}")
+                    print(f"  • User Preferences: {evolution_stats.get('user_preferences', 0)}")
+                    print(f"  • Learning Patterns: {evolution_stats.get('learning_patterns', 0)}")
+                    print(f"  • Average Rating: {evolution_stats.get('average_rating', 0):.2f}")
             except Exception as e:
-                print(f"Could not retrieve evolution stats: {e}")
+                print(f"  • Enhanced AI stats error: {e}")
             
             print("=" * 70)
 
@@ -890,7 +987,19 @@ class AISystemCLI:
             if expired_count > 0:
                 self.logger.info(f"Cleaned {expired_count} expired cache entries")
 
-            # Save enhanced AI data
+            # Save all AI components data
+            try:
+                self.smart_ai.cleanup()
+                print("✅ Smart AI data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving smart AI data: {e}")
+            
+            try:
+                self.advanced_ai.cleanup()
+                print("✅ Advanced AI data saved")
+            except Exception as e:
+                self.logger.error(f"Error saving advanced AI data: {e}")
+            
             try:
                 self.enhanced_ai.cleanup()
                 print("✅ Enhanced AI data saved")

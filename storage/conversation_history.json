@@ -118,5 +118,53 @@
     "feedback": null,
     "input_type": "general",
     "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T12:23:47.515270",
+    "user_input": "who is rajinikanth",
+    "ai_response": "According to Wikipedia:\n\nAishwarya Rajinikanth (born 1 January 1982) is an Indian film director and playback singer who works in Tamil cinema. She is the elder daughter of actor Rajinikanth and playback singer Latha Rajinikanth and also the former wife of actor Dhanush. She made her feature film directorial debut with 3 (2012).\n\n\n== Early life ==\nAishwarya was born to actor Rajinikanth and singer Latha Rangachari.\n\nSource: https://en.wikipedia.org/wiki/Aishwarya_Rajinikanth",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "factual"
+  },
+  {
+    "timestamp": "2025-08-14T12:24:01.396344",
+    "user_input": "what is sex",
+    "ai_response": "'sex' could refer to several things:\n\n1. Java Platform, Standard Edition\n2. Special Edition\n3. Windows 98 Second Edition\n4. Sé (album)\n5. Se (instrument)\n\nPlease be more specific.",
+    "feedback": null,
+    "input_type": "question",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T12:24:22.675733",
+    "user_input": "can you write simple python script",
+    "ai_response": "I understand you're asking about 'can you write simple python script'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T12:24:41.451403",
+    "user_input": "i need you to write python script",
+    "ai_response": "I understand you're asking about 'i need you to write python script'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T13:19:19.101542",
+    "user_input": "python main.py",
+    "ai_response": "[Learned Response] I understand you're asking about 'python main.py'. Let me provide you with the most relevant and current information available.",
+    "feedback": null,
+    "input_type": "general",
+    "response_type": "conversational"
+  },
+  {
+    "timestamp": "2025-08-14T13:19:31.426599",
+    "user_input": "hi",
+    "ai_response": "[Learned Response] Web search result:\n\nChina, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the second-most populous country after India, representing 17.4% of the world population. China spans the equivalent of five time zones and borders fourteen countries by land across an area of nearly 9.6 million square kilometers, making it the third-largest country by land area. The country is divided into 33 province-level divisions: 22 provinces, 5 autonomous regions, 4 municipalities, and 2 semi-autonomous special administrative regions. Beijing is the country's capital, while Shanghai is its most populous city by urban area and largest financial center. Considered one of six cradles of civilization, China saw the first human inhabitants in the region arriving during the Paleolithic. By the late 2nd millennium BCE, the earliest dynastic states had emerged in the Yellow River basin.\n\nSource: https://en.wikipedia.org/wiki/China",
+    "feedback": null,
+    "input_type": "greeting",
+    "response_type": "factual"
   }
 ]
